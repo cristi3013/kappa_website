@@ -2,12 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Link } from "react-router-dom";
 
 import Homepage from "./pages/homepage";
-import LayoutPath from "./layout";
+import LayoutPath from "./layout/index";
+import Header from "./components/Header/index"
+
+import {LayoutsWrapperCss,GlobalStyle} from "./layout/index.css"
+
 
 export default function App() {
   return (
     <Router>
-      <div>
+      <LayoutsWrapperCss>
+      <GlobalStyle/>
+      <Header>
         <nav>
           <ul>
             <li>
@@ -15,11 +21,12 @@ export default function App() {
             </li>
           </ul>
         </nav>
+        </Header>
 
         <Switch>
           <LayoutPath path="/" component={Homepage} />
         </Switch>
-      </div>
+      </LayoutsWrapperCss>
     </Router>
   );
 }

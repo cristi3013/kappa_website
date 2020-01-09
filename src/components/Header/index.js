@@ -1,7 +1,13 @@
 import React from "react";
+import {HeaderWrapperCss} from "./index.css"
 
-const Header = () => {
-  return <h2>Header</h2>;
+const Header = ({children}) => {
+  return (
+    <HeaderWrapperCss>
+      <nav>Kappa.London</nav>
+      {children}
+    </HeaderWrapperCss>
+  )
 };
 
 export default Header;
