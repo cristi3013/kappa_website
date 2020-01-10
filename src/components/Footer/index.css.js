@@ -24,11 +24,11 @@ export const FooterWrapperCss = styled.div`
 
 export const FooterBlockCss = styled.div`
 	display: flex;
-	margin-bottom: 184px;
+	margin-bottom: 154px;
 
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;
-		margin: 0px 25px 130px;
+		margin: 0px 25px 100px;
 	}
 `;
 
@@ -57,7 +57,7 @@ export const FooterBlockLinksCss = styled.div`
 	flex-wrap: wrap;
 
 	@media (max-width: ${screens.lg}) {
-		margin: 0px 0px 50px;
+		margin: 0px;
 		width: 90%;
 	}
 `;
