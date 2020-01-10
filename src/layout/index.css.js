@@ -1,7 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { screens, fonts,colors } from '../constants/theme';
-
-
+import { screens, fonts, colors } from '../constants/theme';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
@@ -9,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.primary};
     background-color:${colors.black};
   }
-`
+`;
 
 export const LayoutsWrapperCss = styled.div`
 	h1,
@@ -134,3 +132,118 @@ export const LayoutsWrapperCss = styled.div`
 		}
 	}
 `;
+
+export const PrimaryLinkCss = styled.a`
+	font-style: italic;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	letter-spacing: 0.03em;
+	width: auto;
+	color: ${colors.white};
+	display:block;
+	
+
+	padding: 7px 10px 8px;
+	margin:-7px 25px 30px 0px;
+
+	text-align: center;
+
+	position: relative;
+	overflow: hidden;
+	transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+	&:after {
+		position: absolute;
+		transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+		content: '';
+		width: 100%;
+		right: auto;
+		left: 0;
+		bottom: 0;
+		height: 2px;
+		background: ${colors.brown};
+	}
+
+	&:hover {
+		cursor: pointer;
+		&:after {
+			width: 0%;
+			right: 0;
+			left: auto;
+		}
+	}
+`;
+
+export const SecondaryLinkCss = styled(PrimaryLinkCss)`
+	
+
+	&:after {
+		
+		background: ${colors.gray};
+	}
+
+	
+`;
+
+export const PrimaryLinkBgCss = styled(PrimaryLinkCss)`
+	
+	&:after {
+
+		width: 100%;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top:0;
+		height: 0px;
+		background: ${colors.brown};
+		z-index:-1;
+	}
+
+	&:before {
+		content:'';
+		width: 100%;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		top:auto;
+		height: 2px;
+		background: ${colors.brown};
+		position:absolute;
+		
+		transition: all 0.3s 0.5s linear;
+		}
+
+	&:hover {
+		cursor: pointer;
+		color:${colors.black};
+		&:after {
+			width:100%;
+			height: 100%;
+			top: auto;
+			bottom: 0;
+			left:0;
+			right:0;
+		}
+
+		&:before {
+		height:0px;
+		opacity:0.5;
+		transition: all 0.1s 0.3s linear;
+		}
+	}
+
+	
+`;
+
+export const SecondaryLinkBgCss = styled(PrimaryLinkBgCss)`
+	
+
+	&:before,&:after {
+		
+		background: ${colors.gray};
+	}
+
+	
+`;
+

@@ -12,12 +12,9 @@ const LayoutPath = ({ component: Component, ...rest }) => {
       render={matchProps => (
         
         <>
-     
-         
+        <Component {...matchProps} />
 
-          <Component {...matchProps} />
-
-          <Footer />
+        <Footer />
         </>
       )}
     />
