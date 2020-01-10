@@ -24,6 +24,18 @@ export const LayoutsWrapperCss = styled.div`
 		font-family: ${fonts.primary};
 	}
 
+	h1,
+	h2,
+	h3,
+	h5,
+	h6,
+	p,
+	a,
+	li,
+	nav {
+		color:${colors.white};
+	}
+
 	h1 {
 		font-style: normal;
 		font-weight: normal;
@@ -70,6 +82,7 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 23px;
+		color:${colors.brown};
 		@media (max-width: ${screens.lg}) {
 			font-style: italic;
 			font-weight: normal;
@@ -139,13 +152,12 @@ export const PrimaryLinkCss = styled.a`
 	font-size: 18px;
 	line-height: 23px;
 	letter-spacing: 0.03em;
-	width: auto;
+	width: fit-content;
 	color: ${colors.white};
-	display:block;
-	
+	display: inline-block;
 
-	padding: 7px 10px 8px;
-	margin:-7px 25px 30px 0px;
+	padding: 7px 7px 8px;
+	margin: -7px 25px 30px 0px;
 
 	text-align: center;
 
@@ -246,4 +258,3 @@ export const SecondaryLinkBgCss = styled(PrimaryLinkBgCss)`
 
 	
 `;
-

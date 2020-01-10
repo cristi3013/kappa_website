@@ -21,10 +21,7 @@ const FirstSection = () => {
 					<PrimaryLinkCss>Join Kappa</PrimaryLinkCss>
 				</LinksCss>
 
-				<LinksCss>
-					<SecondaryLinkBgCss>Work with us</SecondaryLinkBgCss>
-					<PrimaryLinkBgCss>Join Kappa</PrimaryLinkBgCss>
-				</LinksCss>
+			
 			</FirstSectionContainerCss>
 		</FirstSectionWrapperCss>
 	);
