@@ -16,7 +16,13 @@ export default function App() {
 					<nav>
 						<ul>
 							<li>
-								<Link to="/">Home</Link>
+								<Link to="/">Who we are</Link>
+							</li>
+							<li>
+								<Link to="/">Internship</Link>
+							</li>
+							<li>
+								<Link to="/">Join us</Link>
 							</li>
 						</ul>
 					</nav>

@@ -5,7 +5,8 @@ export const SecondSectionWrapperCss = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
+	padding-left:9.5vw;
 `;
 
 export const BlockCss = styled.div`

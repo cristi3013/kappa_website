@@ -124,6 +124,12 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 23px;
+		ul{
+			display:flex;
+			li{
+				margin:0px 21px;
+			}
+		}
 		@media (max-width: ${screens.lg}) {
 			font-style: normal;
 			font-weight: 500;
