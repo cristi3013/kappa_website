@@ -13,8 +13,7 @@ export default function App() {
 		<Router>
 			<LayoutsWrapperCss>
 				<GlobalStyle />
-				<Header/>
-
+				<Header />
 
 				<Switch>
 					<LayoutPath exact path="/" component={Homepage} />

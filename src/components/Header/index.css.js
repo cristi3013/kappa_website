@@ -2,7 +2,15 @@ import styled from 'styled-components';
 import { screens, colors } from '../../constants/theme';
 
 export const DesktopMenuCss = styled.div `
-	display:block;
+	display:flex;
+
+	ul{
+		display:flex;
+		li{
+			margin:0px 21px;
+		}
+	}
+	
 	@media (max-width:${screens.lg}) {
 		display:none;
 	}
@@ -54,6 +62,11 @@ export const MobileMenuCss = styled.div `
 
 export const MobileToggleCss = styled.div`
 	z-index:9999;
+	@media (max-width:${screens.lg}) {
+		display:block;
+	}
+
+	display:none;
 `;
 
 
