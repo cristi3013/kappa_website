@@ -12,14 +12,29 @@ export const WhoWeAreSecondSectionWrapperCss = styled.div`
     
     align-items:flex-start;
 
+    @media (max-width:${screens.lg}) {
+        flex-direction:column;
+        padding:25px;
+    }
+
     h4{
         width:16.66vw;
         margin-right:8.33vw;
+
+        @media (max-width:${screens.lg}) {
+        width:100%;
+        margin-right:0px;
+        }
     }
 `;
 
 export const InfoBlockCss = styled.div`
     width:50vw;
+
+    @media (max-width:${screens.lg}) {
+        width:100%;
+        margin-right:0px;
+        }
 
     ol{
         counter-reset:listCnt;
@@ -54,6 +69,10 @@ export const InfoBlockCss = styled.div`
 
         margin-right:24px;
         margin-left:-65px;
+
+        @media (max-width:${screens.lg}) {
+            margin-left:0px;
+        }
         
 
     }
