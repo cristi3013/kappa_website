@@ -124,10 +124,15 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 23px;
+	
 		ul{
 			display:flex;
 			li{
 				margin:0px 21px;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 23px;
 			}
 		}
 		@media (max-width: ${screens.lg}) {
@@ -150,6 +155,8 @@ export const LayoutsWrapperCss = styled.div`
 			line-height: 23px;
 		}
 	}
+
+	
 `;
 
 export const PrimaryLinkCss = styled.a`

@@ -13,21 +13,8 @@ export default function App() {
 		<Router>
 			<LayoutsWrapperCss>
 				<GlobalStyle />
-				<Header>
-					<nav>
-						<ul>
-							<li>
-								<Link to="/whoweare">Who we are</Link>
-							</li>
-							<li>
-								<Link to="/">Internship</Link>
-							</li>
-							<li>
-								<Link to="/">Join us</Link>
-							</li>
-						</ul>
-					</nav>
-				</Header>
+				<Header/>
+
 
 				<Switch>
 					<LayoutPath exact path="/" component={Homepage} />
