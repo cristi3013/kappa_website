@@ -8,7 +8,7 @@ import {
 } from './index.css';
 import { PrimaryLinkCss, SecondaryLinkCss } from '../../layout/index.css';
 
-const Footer = () => {
+const Footer = (props) => {
 	return (
 		<FooterWrapperCss>
 			<FooterBlockCss>

@@ -24,7 +24,7 @@ const Header = (props) => {
 
 	return (
 		<HeaderWrapperCss>
-			<nav>Kappa.London</nav>
+			<nav><Link to="/">Kappa.London</Link></nav>
 			<MobileToggleCss>
 				{!show && <nav onTouchEnd={() => setShow(true)}>Menu</nav>}
 				{show && <nav onTouchEnd={() => setShow(false)}>&#10005; Close</nav>}

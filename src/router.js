@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import Homepage from './pages/homepage';
 import WhoWeAre from './pages/whoweare';
 import JoinUs from './pages/joinus';
+import Internship from './pages/internship';
 import LayoutPath from './layout/index';
 import Header from './components/Header/index';
 
@@ -20,6 +21,7 @@ export default function App() {
 					<LayoutPath exact path="/" component={Homepage} />
 					<LayoutPath path="/whoweare" component={WhoWeAre} />
 					<LayoutPath path="/joinus" component={JoinUs} />
+					<LayoutPath path="/internship" component={Internship} />
 				</Switch>
 			</LayoutsWrapperCss>
 		</Router>
