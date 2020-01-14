@@ -19,11 +19,13 @@ export const OverlayCss = styled.div`
 export const TitleLinkCss = styled.div`
 	h3 {
 		border-bottom: 2px solid ${colors.grey};
-		padding-bottom: 5px;
+		padding-bottom: 7px;
 		display: inline-block;
 		width: fit-content;
 		cursor: pointer;
+		
 	}
+	display: inline-block;
 	text-decoration: none;
 
 	
