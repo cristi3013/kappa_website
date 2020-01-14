@@ -18,10 +18,10 @@ export default function App() {
 				<Header />
 
 				<Switch>
-					<LayoutPath exact path="/" component={Homepage} />
-					<LayoutPath path="/whoweare" component={WhoWeAre} />
-					<LayoutPath path="/joinus" component={JoinUs} />
-					<LayoutPath path="/internship" component={Internship} />
+					<LayoutPath exact path="/" component={Homepage}  blocks={[1,2,3]}/>
+					<LayoutPath path="/whoweare" component={WhoWeAre}  blocks={[2,3]}/>
+					<LayoutPath path="/joinus" component={JoinUs}  blocks={[1,3]}/>
+					<LayoutPath path="/internship" component={Internship}  blocks={[1,3]}/>
 				</Switch>
 			</LayoutsWrapperCss>
 		</Router>

@@ -14,7 +14,7 @@ const LayoutPath = ({ component: Component, ...rest }) => {
         <>
         <Component {...matchProps} />
 
-        <Footer />
+        <Footer blocks={rest.blocks}/>
         </>
       )}
     />

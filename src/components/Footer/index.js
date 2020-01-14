@@ -11,7 +11,7 @@ import { PrimaryLinkCss, SecondaryLinkCss } from '../../layout/index.css';
 const Footer = (props) => {
 	return (
 		<FooterWrapperCss>
-			<FooterBlockCss>
+{props.blocks.includes(1)&&(<FooterBlockCss>
 				<FooterBlockTitleCss>| Who we are &lt;</FooterBlockTitleCss>
 				<FooterBlockInfoCss>
 					<h2>
@@ -25,9 +25,9 @@ const Footer = (props) => {
 						<PrimaryLinkCss>Find out more</PrimaryLinkCss>
 					</FooterBlockLinksCss>
 				</FooterBlockInfoCss>
-			</FooterBlockCss>
+			</FooterBlockCss>)}
 
-			<FooterBlockCss>
+{props.blocks.includes(2)&&(<FooterBlockCss>
 				<FooterBlockTitleCss>| Intern with us &lt;</FooterBlockTitleCss>
 				<FooterBlockInfoCss>
 					<h2>Want to pursue a programming career? Tell us your story, we’re great listeners: </h2>
@@ -36,9 +36,9 @@ const Footer = (props) => {
 						<PrimaryLinkCss>Find out more</PrimaryLinkCss>
 					</FooterBlockLinksCss>
 				</FooterBlockInfoCss>
-			</FooterBlockCss>
+			</FooterBlockCss>)}
 
-			<FooterBlockCss>
+{props.blocks.includes(3)&&(<FooterBlockCss>
 				<FooterBlockTitleCss>| Send us GIFs &lt;</FooterBlockTitleCss>
 				<FooterBlockInfoCss>
 					<FooterBlockLinksCss>
@@ -48,7 +48,7 @@ const Footer = (props) => {
 						<SecondaryLinkCss>Facebook</SecondaryLinkCss>
 					</FooterBlockLinksCss>
 				</FooterBlockInfoCss>
-			</FooterBlockCss>
+			</FooterBlockCss>)}
 		</FooterWrapperCss>
 	);
 };
