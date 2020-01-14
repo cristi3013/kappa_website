@@ -198,7 +198,7 @@ export const SecondaryLinkCss = styled(PrimaryLinkCss)`
 
 	&:after {
 		
-		background: ${colors.gray};
+		background: ${colors.grey};
 	}
 
 	
@@ -259,7 +259,7 @@ export const SecondaryLinkBgCss = styled(PrimaryLinkBgCss)`
 
 	&:before,&:after {
 		
-		background: ${colors.gray};
+		background: ${colors.grey};
 	}
 
 	

@@ -8,6 +8,7 @@ const SecondSection = () => {
     return (
 
         <SecondSectionWrapperCss>
+            <h4>| Currently working on &lt;</h4>
             <BlockCss>
                 <InfoCss>
                     <h2>Bryant Dental</h2>

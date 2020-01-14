@@ -35,12 +35,13 @@ export const FooterBlockCss = styled.div`
 export const FooterBlockTitleCss = styled.h4`
 	display: flex;
 	width: 100%;
-	max-width: 200px;
+	max-width: 16.66vw;
 
-	margin: 0px 12vw 0px 9.5vw;
+	margin: 0px 8.33vw;
 
 	@media (max-width: ${screens.lg}) {
 		margin: 0px 0px 50px;
+		max-width: 100%;
 	}
 `;
 

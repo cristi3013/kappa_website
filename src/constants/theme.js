@@ -2,7 +2,7 @@ export const colors = {
     white:'#F5F5F5',
     black:'#0E0E0E',
     brown:'#CB8A7C',
-    gray:'#9B9999'
+    grey:'#9B9999'
   };
   
   export const screens = {
