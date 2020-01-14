@@ -10,10 +10,10 @@ const Menu = () =>{
 							<Link to="/whoweare">Who we are</Link>
 						</li>
 						<li>
-							<Link to="/">Internship</Link>
+							<Link to="/internship">Internship</Link>
 						</li>
 						<li>
-							<Link to="/">Join us</Link>
+							<Link to="/joinus">Join us</Link>
 						</li>
 					</ul>
 	)

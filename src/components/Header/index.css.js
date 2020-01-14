@@ -62,6 +62,11 @@ export const MobileMenuCss = styled.div `
 
 export const MobileToggleCss = styled.div`
 	z-index:9999;
+	color:${colors.white};
+		&:hover{
+			color:${colors.grey};
+		}
+
 	@media (max-width:${screens.lg}) {
 		display:block;
 	}

@@ -143,6 +143,16 @@ export const LayoutsWrapperCss = styled.div`
 		}
 	}
 
+	ul{
+		li{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 28px;
+			color:${colors.white};
+		}
+	}
+
 	.numbers {
 		font-style: normal;
 		font-weight: 600;
