@@ -21,7 +21,7 @@ export default function App() {
 				<Switch>
 					<LayoutPath exact path="/" component={Homepage}  blocks={[1,2,3]}/>
 					
-					<LayoutPath path="/nova" component={Nova} project={true}  blocks={[1,2,3]}/>
+					<LayoutPath exact path="/nova" component={Nova} project={true}  blocks={[1,2,3]}/>
 					<LayoutPath path="/whoweare" component={WhoWeAre}  blocks={[2,3]}/>
 					<LayoutPath path="/joinus" component={JoinUs}  blocks={[1,3]}/>
 					<LayoutPath path="/internship" component={Internship}  blocks={[1,3]}/>
