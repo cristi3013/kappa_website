@@ -21,6 +21,7 @@ export const NovaSectionWrapperCss = styled.div`
 
 		p,h1,h4{
 			padding:0px 25px;
+		
 		}
 	}
 `;
@@ -58,7 +59,7 @@ export const InfoBlockItemCss = styled.div`
 		width: 100%;
 
 		@media (max-width: ${screens.lg}) {
-			width: 100%;
+			width: auto;
 			margin-bottom:0px;
 		}
 	}
