@@ -12,6 +12,8 @@ const LayoutPath = ({ component: Component, ...rest }) => {
       render={matchProps => (
         
         <>
+        <Header project={rest.project}/>
+
         <Component {...matchProps} />
 
         <Footer blocks={rest.blocks}/>

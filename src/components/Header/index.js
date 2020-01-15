@@ -29,7 +29,10 @@ const Header = (props) => {
 				{!show && <nav onTouchEnd={() => setShow(true)}>Menu</nav>}
 				{show && <nav onTouchEnd={() => setShow(false)}>&#10005; Close</nav>}
 			</MobileToggleCss>
-			<DesktopMenuCss><Menu/></DesktopMenuCss>
+			<DesktopMenuCss>
+			{props.project&&<nav><Link to="/">&#10005; Close</Link></nav>}
+			{!props.project&&<Menu/>}
+			</DesktopMenuCss>
 			<MobileMenuCss show={show}>
 				<img src={anim} />
 				<nav onClick={() => setShow(false)}>

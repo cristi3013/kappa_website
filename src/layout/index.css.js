@@ -175,6 +175,7 @@ export const PrimaryLinkCss = styled.a`
 	font-size: 18px;
 	line-height: 23px;
 	letter-spacing: 0.03em;
+	text-decoration:none;
 	width: fit-content;
 	color: ${colors.white};
 	display: inline-block;
