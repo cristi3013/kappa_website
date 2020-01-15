@@ -32,7 +32,7 @@ export const InfoBlockCss = styled.div`
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	div{
+	a{
 		margin: -7px 0px 30px 0px;
 	}
 	@media (max-width: ${screens.lg}) {

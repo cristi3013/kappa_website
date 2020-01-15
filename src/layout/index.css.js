@@ -169,7 +169,7 @@ export const LayoutsWrapperCss = styled.div`
 	
 `;
 
-export const PrimaryLinkCss = styled.div`
+export const PrimaryLinkCss = styled.a`
 	font-style: italic;
 	font-weight: normal;
 	font-size: 18px;
@@ -179,10 +179,6 @@ export const PrimaryLinkCss = styled.div`
 	width: fit-content;
 	color: ${colors.white};
 	display: inline-block;
-
-	a{
-		text-decoration:none;
-	}
 
 	padding: 7px 7px 8px;
 	margin: -7px 25px 30px 0px;

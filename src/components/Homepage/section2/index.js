@@ -21,7 +21,7 @@ const SecondSection = () => {
                             <li>2018 <span>Awwwards Honorable Mention</span></li>
                         </ul>
                     </section>
-                   <PrimaryLinkCss><Link to="/bryant">View project</Link></PrimaryLinkCss>
+                   <PrimaryLinkCss href="/bryant">View project</PrimaryLinkCss>
                 </InfoCss>
                 <ImageCss>
                     <img src={img1} alt="Bryant Dental"/>
@@ -33,7 +33,7 @@ const SecondSection = () => {
                     <h2>Nova AI</h2>
                     <p>Nova is a powerful AI assisted dental practice management and counter litigation system.</p>
                     <section>&nbsp;</section>
-                    <PrimaryLinkCss><Link to="/nova">View project</Link></PrimaryLinkCss>
+                    <PrimaryLinkCss href="/nova">View project</PrimaryLinkCss>
                 </InfoCss>
                 <ImageCss>
                     <img src={img2} alt="Nova AI"/>
