@@ -6,8 +6,8 @@ import WhoWeAre from './pages/whoweare';
 import JoinUs from './pages/joinus';
 import Internship from './pages/internship';
 import Nova from './pages/nova';
+import Bryant from './pages/bryant';
 import LayoutPath from './layout/index';
-
 
 import { LayoutsWrapperCss, GlobalStyle } from './layout/index.css';
 
@@ -16,15 +16,14 @@ export default function App() {
 		<Router>
 			<LayoutsWrapperCss>
 				<GlobalStyle />
-				
 
 				<Switch>
-					<LayoutPath exact path="/" component={Homepage}  blocks={[1,2,3]}/>
-					
-					<LayoutPath path="/nova" component={Nova} project={true}  blocks={[1,2,3]}/>
-					<LayoutPath path="/whoweare" component={WhoWeAre}  blocks={[2,3]}/>
-					<LayoutPath path="/joinus" component={JoinUs}  blocks={[1,3]}/>
-					<LayoutPath path="/internship" component={Internship}  blocks={[1,3]}/>
+					<LayoutPath exact path="/" component={Homepage} blocks={[ 1, 2, 3 ]} />
+					<LayoutPath path="/bryant" component={Bryant} project={true} blocks={[ 1, 2, 3 ]} />
+					<LayoutPath path="/nova" component={Nova} project={true} blocks={[ 1, 2, 3 ]} />
+					<LayoutPath path="/whoweare" component={WhoWeAre} blocks={[ 2, 3 ]} />
+					<LayoutPath path="/joinus" component={JoinUs} blocks={[ 1, 3 ]} />
+					<LayoutPath path="/internship" component={Internship} blocks={[ 1, 3 ]} />
 				</Switch>
 			</LayoutsWrapperCss>
 		</Router>
