@@ -19,10 +19,11 @@ export const OverlayCss = styled.div`
 export const TitleLinkCss = styled.div`
 	h3 {
 		border-bottom: 2px solid ${colors.grey};
-		padding-bottom: 7px;
 		display: inline-block;
 		width: fit-content;
 		cursor: pointer;
+		padding:0px 7px 5px;
+		margin-bottom:3px;
 		
 	}
 	display: inline-block;
@@ -36,10 +37,13 @@ export const ImgCss = styled.div`
 		display: ${(props) => (props.show ? 'block' : 'none')};
 		position: absolute;
 		z-index: 9999;
-		
-		transform: translate(-102%, -30px);
+		width:100%;
+		max-width:${props=>props.width||'250px'};
+		/*transform: translate(-102%, -30px);*/
+
 		@media (max-width: ${screens.lg}) {
 			width: 100%;
+			max-width:100%;
 			position: fixed;
 			left: 0;
 			top: 50%;

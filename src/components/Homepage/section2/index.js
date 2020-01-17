@@ -13,7 +13,7 @@ const SecondSection = () => {
             <BlockCss>
                 <InfoCss>
                     <h2>Bryant Dental</h2>
-                    <p>Bryant Dental is a UK-based manufacturer and distributor for dentistry equipment.</p>
+                    <p>Bryant Dental is a UK-based dentistry equipment manufacturer and distributor.</p>
                     <section>
                     <p>Acknowledgements:</p>
                         <ul>

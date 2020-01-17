@@ -16,7 +16,7 @@ export const SecondSectionWrapperCss = styled.div`
 	}
 
 	@media(max-width:${screens.lg}){
-		padding:20px 0px;
+		padding:20px 0px 0px;
 	}
 
 `;
@@ -48,8 +48,17 @@ export const InfoCss = styled.div`
 	margin-right: 73px;
 
     @media(max-width:${screens.lg}){
-        margin:0px 20px;
+        margin:0px 25px;
         width:auto;
+
+		h2{
+			margin-top:33px;
+			margin-bottom:0px;
+		}
+
+		a{
+			margin-top:30px;
+		}
     }
 
 	ul {
@@ -61,13 +70,13 @@ export const InfoCss = styled.div`
 			margin-bottom: 13px;
 			list-style: none;
 			position: relative;
-			padding-left: 10px;
+			padding-left: 7px;
 			&:before {
 				content: '■';
 				position: absolute;
 				left: 0px;
 				top: 0px;
-				font-size: 10px;
+				font-size: 7px;
 			}
 
 			span {

@@ -9,7 +9,7 @@ export const ThirdSectionWrapperCss = styled.div`
 	padding-left:33.32vw;
 
 	@media (max-width: ${screens.lg}) {
-		padding:25px;
+		padding:0px 25px 25px;
 	}
 `;
 

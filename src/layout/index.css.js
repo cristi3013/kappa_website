@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${fonts.primary};
     background-color:${colors.black};
+	margin:10px 0px 0px;
   }
 `;
 
@@ -109,13 +110,13 @@ export const LayoutsWrapperCss = styled.div`
 		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;
-		line-height: 23px;
+		line-height: 27px;
 		letter-spacing: 0.03em;
 		@media (max-width: ${screens.lg}) {
 			font-style: normal;
 			font-weight: normal;
 			font-size: 16px;
-			line-height: 28px;
+			line-height: 27px;
 		}
 	}
 
@@ -140,16 +141,6 @@ export const LayoutsWrapperCss = styled.div`
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 21px;
-		}
-	}
-
-	ul{
-		li{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 18px;
-			line-height: 28px;
-			color:${colors.white};
 		}
 	}
 
@@ -181,7 +172,7 @@ export const PrimaryLinkCss = styled.a`
 	display: inline-block;
 
 	padding: 7px 7px 8px;
-	margin: -7px 25px 30px 0px;
+	margin: -7px 25px 20px 0px;
 
 	text-align: center;
 

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { PrimaryLinkCss } from '../../../layout/index.css';
 
 import {
@@ -14,12 +14,29 @@ import {
 const InfoBlock = (props) => {
 	const [ show, setShow ] = useState(false);
 	const childElement = useRef(null);
+	useEffect(() => {
+		if (props.opened !== props.id && show) {
+			setShow(false);
+		}
+	});
+
+	const clickHandle = () => {
+		if (props.opened === props.id) {
+			setShow(!show);
+		} else {
+			props.setOpened(props.id);
+			setShow(true);
+
+			window.scrollTo({ top: childElement.current.offsetTop-310, behavior: 'smooth' })
+		}
+	};
+
 	return (
 		<InfoBlockCss>
 			<InfoBlockHeaderCss>
-				<IconCss show={show} onClick={() => setShow(!show)} />
+				<IconCss show={show} onClick={clickHandle} />
 				<InfoBlockTitleCss>
-					<h3 onClick={() => setShow(!show)}>{props.title}</h3>
+					<h3 onClick={clickHandle}>{props.title}</h3>
 					<p>{props.subtitle}</p>
 				</InfoBlockTitleCss>
 			</InfoBlockHeaderCss>
@@ -31,12 +48,20 @@ const InfoBlock = (props) => {
 };
 
 const JoinUsSecondSection = () => {
+	const [ opened, setOpened ] = useState(0);
+
 	return (
 		<JoinUsSecondSectionWrapperCss>
 			<h4>| Openings &lt;</h4>
 
 			<BlocksCss>
-				<InfoBlock title="Backend Developer" subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL">
+				<InfoBlock
+					title="Backend Developer"
+					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
+					setOpened={setOpened}
+					opened={opened}
+					id="1"
+				>
 					<h4>| Qualifications and Skills &lt;</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
@@ -89,7 +114,13 @@ const JoinUsSecondSection = () => {
 					<PrimaryLinkCss>Apply now</PrimaryLinkCss>
 				</InfoBlock>
 
-				<InfoBlock title="Front-End Developer" subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL">
+				<InfoBlock
+					title="Front-End Developer"
+					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
+					setOpened={setOpened}
+					opened={opened}
+					id="2"
+				>
 					<h4>| Qualifications and Skills &lt;</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
@@ -145,6 +176,9 @@ const JoinUsSecondSection = () => {
 				<InfoBlock
 					title="Research and Development Engineer"
 					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
+					id="3"
+					setOpened={setOpened}
+					opened={opened}
 				>
 					<h4>| Qualifications and Skills &lt;</h4>
 					<ul>

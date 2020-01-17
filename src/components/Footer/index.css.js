@@ -16,9 +16,9 @@ export const FooterWrapperCss = styled.div`
 		i {
 			text-decoration: underline;
 		}
-        @media (max-width: ${screens.lg}) {
-            margin-bottom: 50px;
-	}
+		@media (max-width: ${screens.lg}) {
+			margin-bottom: 50px;
+		}
 	}
 `;
 
@@ -56,6 +56,16 @@ export const FooterBlockLinksCss = styled.div`
 	display: flex;
 	width: 70%;
 	flex-wrap: wrap;
+
+	p {
+		border-bottom: 2px solid ${colors.grey};
+
+		height: fit-content;
+		padding: 0px 0px 4px;
+		margin-top: -2px;
+		margin-right: 50px;
+		margin-bottom: 20px;
+	}
 
 	@media (max-width: ${screens.lg}) {
 		margin: 0px;

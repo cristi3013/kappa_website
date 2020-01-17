@@ -1,5 +1,16 @@
-import styled from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 import { screens, colors } from '../../constants/theme';
+
+export const GlobalStyle = createGlobalStyle`
+  @media screen and (max-width: ${screens.lg}) {
+    body {
+      overflow: ${props => (props.show ? 'hidden' : 'auto')};
+	  position: ${props => (props.show ? 'fixed' : 'relative')};
+      width: ${props => (props.show ? '100vw' : 'unset')};
+     
+    }
+  }
+`;
 
 export const DesktopMenuCss = styled.div `
 	display:flex;

@@ -6,7 +6,10 @@ import {
     ItemsCss
 } from './index.css';
 
-import sampleGif from "./images/tenor.gif"
+import gif1 from "./images/1.gif"
+import gif2 from "./images/2.gif"
+import gif3 from "./images/3.gif"
+import gif4 from "./images/4.gif"
 
 
 const InternshipFirstSection = () => {
@@ -21,7 +24,7 @@ const InternshipFirstSection = () => {
                 <h2>We are always on the lookout for motivated students or recent graduates that wish to take their skills to the next level. This is not a regular internship but a bootcamp for the most determined individuals.</h2>
             <ItemsCss>
                 <InfoBlockItemCss>
-                    <img src={sampleGif}/>
+                    <img src={gif1}/>
                     <h1>
                     Intense training
                     </h1>
@@ -32,7 +35,7 @@ const InternshipFirstSection = () => {
 
 
                 <InfoBlockItemCss>
-                    <img src={sampleGif}/>
+                    <img src={gif2}/>
                     <h1>
                     Guaranteed growth
                     </h1>
@@ -43,7 +46,7 @@ const InternshipFirstSection = () => {
 
 
                 <InfoBlockItemCss>
-                    <img src={sampleGif}/>
+                    <img src={gif3}/>
                     <h1>
                     Hands-on experience
                     </h1>
@@ -53,7 +56,7 @@ const InternshipFirstSection = () => {
                 </InfoBlockItemCss>
 
                 <InfoBlockItemCss>
-                    <img src={sampleGif}/>
+                    <img src={gif4}/>
                     <h1>
                     Personal development
                     </h1>
