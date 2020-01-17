@@ -7,6 +7,8 @@ import {
 	FooterBlockLinksCss
 } from './index.css';
 import { PrimaryLinkCss, SecondaryLinkCss } from '../../layout/index.css';
+import TitleLink from "../TitleLink/index";
+import friends from "./images/friends.gif";
 
 const footer1 = (block) => {
 	return (
@@ -16,7 +18,7 @@ const footer1 = (block) => {
 				<h2>
 					Freelancers or agency? We are neither.<br />
 					<br />
-					<i>Two highschool friends</i> decided to stick together and build great products. Years later, an
+					<TitleLink inline img={friends}><i>Two highschool friends</i></TitleLink> decided to stick together and build great products. Years later, an
 					international community of passionate makers grew, working side by side and looking out for each
 					other. Embracing remote work and the chaos that comes with it.
 				</h2>

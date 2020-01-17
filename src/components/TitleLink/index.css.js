@@ -26,6 +26,7 @@ export const TitleLinkCss = styled.div`
 		margin-bottom:3px;
 		
 	}
+	cursor:pointer;
 	display: inline-block;
 	text-decoration: none;
 
