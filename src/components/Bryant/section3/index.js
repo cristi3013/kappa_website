@@ -1,10 +1,30 @@
-import React from 'react';
+/* global $ Sirv */
+import React, { useRef, useEffect } from 'react';
 import { BryantSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss } from './index.css';
 import { SecondaryLinkCss } from '../../../layout/index.css';
+import { useInView } from 'react-intersection-observer';
 import image from '../images/image3-1.png';
 import image2 from '../images/image3-2.png';
 
 const BryantSection3 = () => {
+	const r3dRef = useRef(null);
+
+	const [ render3d, inView ] = useInView({
+		threshold: 0
+	});
+
+	useEffect(
+		() => {
+			if (inView) {
+				Sirv.stop();
+				Sirv.start();
+			} else {
+				r3dRef.current.children.length > 0 && Sirv.stop();
+			}
+		},
+		[ inView ]
+	);
+
 	return (
 		<BryantSectionWrapperCss>
 			<InfoBlockCss>
@@ -15,12 +35,19 @@ const BryantSection3 = () => {
 					added to complete the final render.
 				</p>
 			</InfoBlockCss>
-			<ItemsCss>
-					<InfoBlockItemCss><img src={image} /></InfoBlockItemCss>
-					<InfoBlockItemCss><img src={image2} /></InfoBlockItemCss>
+			<ItemsCss ref={render3d}>
+				<InfoBlockItemCss>
+					<img src={image} alt="2.8x" />
+				</InfoBlockItemCss>
+
+				<div
+					id="r3d"
+					ref={r3dRef}
+					className="Sirv render3d"
+					data-options="autostart:false"
+					data-src="https://bryant-dental.sirv.com/BD_360_28_R01/360-28/360-28.spin?startColumn=4&autospin=once"
+				/>
 			</ItemsCss>
-				
-			
 		</BryantSectionWrapperCss>
 	);
 };

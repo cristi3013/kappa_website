@@ -68,6 +68,18 @@ export const ItemsCss = styled.div`
 	margin: 25px 0px 25px;
 	justify-content: center;
 	width: 100%;
+
+	
+
+
+	.render3d{
+		width:100;
+		max-width:520px;
+        }
+
+
+
+
 	
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;
@@ -81,6 +93,9 @@ export const InfoBlockItemCss = styled.div`
 	
 	width: auto;
 	margin:0px 12px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 	img{
 		width:100%;
 		
