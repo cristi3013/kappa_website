@@ -76,6 +76,8 @@ export const ItemsCss = styled.div`
 		width:100%;
 		max-width:520px;
 		position:absolute;
+		z-index:0;
+		height:auto;
         }
 
 
