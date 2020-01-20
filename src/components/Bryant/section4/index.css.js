@@ -60,6 +60,25 @@ export const ImageCss = styled.div`
 	}
 `;
 
+export const VideoCss = styled.div`
+	overflow: hidden;
+	width: 83vw;
+	margin: 70px 0px 0px;
+	video {
+		width: 100%;
+	}
+
+	@media (max-width: ${screens.lg}) {
+		margin: 60px 0px 0px;
+	
+		width:100%;
+		video {
+			width:100%;
+			
+		}
+	}
+`;
+
 export const ItemsCss = styled.div`
 	display: flex;
 	margin: 25px 0px 25px;
