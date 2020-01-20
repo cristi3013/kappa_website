@@ -73,8 +73,9 @@ export const ItemsCss = styled.div`
 
 
 	.render3d{
-		width:100;
+		width:100%;
 		max-width:520px;
+		position:absolute;
         }
 
 
@@ -98,7 +99,7 @@ export const InfoBlockItemCss = styled.div`
 	align-items:center;
 	img{
 		width:100%;
-		
+		opacity:${props=>props.transparent==="true"?0:1};
 	}
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;

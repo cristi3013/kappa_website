@@ -1,10 +1,9 @@
 /* global $ Sirv */
 import React, { useRef, useEffect } from 'react';
 import { BryantSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss } from './index.css';
-import { SecondaryLinkCss } from '../../../layout/index.css';
 import { useInView } from 'react-intersection-observer';
 import image from '../images/image3-1.png';
-import image2 from '../images/image3-2.png';
+
 
 const BryantSection3 = () => {
 	const r3dRef = useRef(null);
@@ -39,14 +38,18 @@ const BryantSection3 = () => {
 				<InfoBlockItemCss>
 					<img src={image} alt="2.8x" />
 				</InfoBlockItemCss>
-
-				<div
+				<InfoBlockItemCss transparent="true">
+					<img src={image} alt="2.8x"/>
+					<div
 					id="r3d"
 					ref={r3dRef}
 					className="Sirv render3d"
 					data-options="autostart:false"
 					data-src="https://bryant-dental.sirv.com/BD_360_28_R01/360-28/360-28.spin?startColumn=4&autospin=once"
 				/>
+				</InfoBlockItemCss>
+
+				
 			</ItemsCss>
 		</BryantSectionWrapperCss>
 	);
