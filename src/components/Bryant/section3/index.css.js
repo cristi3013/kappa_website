@@ -97,6 +97,7 @@ export const InfoBlockItemCss = styled.div`
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	flex-direction: column;
 	img{
 		width:100%;
 		opacity:${props=>props.transparent==="true"?0:1};

@@ -47,6 +47,7 @@ const BryantSection3 = () => {
 					data-options="autostart:false"
 					data-src="https://bryant-dental.sirv.com/BD_360_28_R01/360-28/360-28.spin?startColumn=4&autospin=once"
 				/>
+				<p>drag me</p>
 				</InfoBlockItemCss>
 
 				
