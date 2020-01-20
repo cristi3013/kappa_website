@@ -99,7 +99,7 @@ export const InfoBlockContentCss = styled.div`
 			position: relative;
 			padding-left: 20px;
 			&:before {
-				color: ${colors.brown};
+				color: ${colors.blue};
 				content: '■';
 				position: absolute;
 				left: 0px;

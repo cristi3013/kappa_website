@@ -36,7 +36,7 @@ export const InfoBlockCss = styled.div`
 
     p{
         span, a{
-            border-bottom:2px solid ${colors.brown};
+            border-bottom:2px solid ${colors.blue};
             text-decoration:none;
         }
     }

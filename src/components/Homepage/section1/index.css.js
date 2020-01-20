@@ -32,4 +32,4 @@ export const FirstSectionContainerCss = styled.div`
 
 export const LinksCss = styled.h4`display: flex;`;
 
-export const TitleCss = styled.h4`color: ${colors.brown};`;
+export const TitleCss = styled.h4`color: ${colors.blue};`;

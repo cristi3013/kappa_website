@@ -66,7 +66,7 @@ export const InfoCss = styled.div`
 		list-style-position: inside;
 
 		li {
-			color: ${colors.brown};
+			color: ${colors.blue};
 			margin-bottom: 13px;
 			list-style: none;
 			position: relative;

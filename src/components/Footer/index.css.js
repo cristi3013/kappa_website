@@ -6,7 +6,7 @@ export const FooterWrapperCss = styled.div`
 	flex-direction: column;
 
 	h4 {
-		color: ${colors.brown};
+		color: ${colors.blue};
 	}
 
 	h2 {

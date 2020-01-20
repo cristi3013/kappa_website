@@ -83,7 +83,7 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 23px;
-		color:${colors.brown};
+		color:${colors.blue};
 		@media (max-width: ${screens.lg}) {
 			font-style: italic;
 			font-weight: normal;
@@ -189,7 +189,7 @@ export const PrimaryLinkCss = styled.a`
 		left: 0;
 		bottom: 0;
 		height: 2px;
-		background: ${colors.brown};
+		background: ${colors.blue};
 	}
 
 	&:hover {
@@ -223,7 +223,7 @@ export const PrimaryLinkBgCss = styled(PrimaryLinkCss)`
 		bottom: 0;
 		top:0;
 		height: 0px;
-		background: ${colors.brown};
+		background: ${colors.blue};
 		z-index:-1;
 	}
 
@@ -235,7 +235,7 @@ export const PrimaryLinkBgCss = styled(PrimaryLinkCss)`
 		bottom: 0;
 		top:auto;
 		height: 2px;
-		background: ${colors.brown};
+		background: ${colors.blue};
 		position:absolute;
 		
 		transition: all 0.3s 0.5s linear;
