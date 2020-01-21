@@ -33,20 +33,20 @@ const BryantSection2 = () => {
 	useEffect(
 		() => {
 			if (video1_view) {
-				video1_ref.current.src=video1;
+				if(video1_ref.current.src!==video1)video1_ref.current.src=video1;
 			} else {
 				video1_ref.current.src=picture1;
 				
 			}
 
 			if (video2_view) {
-				video2_ref.current.src=video2;
+				if(video2_ref.current.src!==video2)video2_ref.current.src=video2;
 			} else {
 				video2_ref.current.src=picture2;
 				
 			}
 			if (video3_view) {
-				video3_ref.current.src=video3;
+				if(video3_ref.current.src!==video3)video3_ref.current.src=video3;
 			} else {
 				video3_ref.current.src=picture3;
 				

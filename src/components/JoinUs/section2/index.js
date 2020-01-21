@@ -14,6 +14,7 @@ import {
 const InfoBlock = (props) => {
 	const [ show, setShow ] = useState(false);
 	const childElement = useRef(null);
+	const headerElement = useRef(null);
 	useEffect(() => {
 		if (props.opened !== props.id && show) {
 			setShow(false);
@@ -26,14 +27,14 @@ const InfoBlock = (props) => {
 		} else {
 			props.setOpened(props.id);
 			setShow(true);
-
-			window.scrollTo({ top: childElement.current.offsetTop-310, behavior: 'smooth' })
+console.log(headerElement.current.offsetHeight)
+			setTimeout(()=>window.scrollTo({ top: headerElement.current.offsetTop-headerElement.current.offsetHeight/2 }),500);
 		}
 	};
 
 	return (
 		<InfoBlockCss>
-			<InfoBlockHeaderCss>
+			<InfoBlockHeaderCss ref={headerElement}>
 				<IconCss show={show} onClick={clickHandle} />
 				<InfoBlockTitleCss>
 					<h3 onClick={clickHandle}>{props.title}</h3>
