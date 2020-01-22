@@ -3,13 +3,9 @@ import { BryantSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss, Imag
 import { SecondaryLinkCss } from '../../../layout/index.css';
 
 import { useInView } from 'react-intersection-observer';
-
-import video1 from '../videos/2.gif';
-import picture1 from '../videos/2.png';
-import video2 from '../videos/3.gif';
-import picture2 from '../videos/3.png';
-import video3 from '../videos/4.gif';
-import picture3 from '../videos/4.png';
+import video1 from '../videos/2.mp4';
+import video2 from '../videos/3.mp4';
+import video3 from '../videos/4.mp4';
 
 
 
@@ -32,25 +28,26 @@ const BryantSection2 = () => {
 
 	useEffect(
 		() => {
-			if (video1_view) {
-				if(video1_ref.current.src!==video1)video1_ref.current.src=video1;
-			} else {
-				video1_ref.current.src=picture1;
-				
+
+			var promise;
+			if (video1_view) {promise=video1_ref.current;}else{video1_ref.current.pause(); video1_ref.current.currentTime=0;}
+			if (video2_view) {promise=video2_ref.current;}else{video2_ref.current.pause(); video2_ref.current.currentTime=0;}
+			if (video3_view) {promise=video3_ref.current;}else{video3_ref.current.pause(); video3_ref.current.currentTime=0;}
+
+			if (promise&&promise.play() !== undefined) {
+				promise.play().catch(error => {
+					promise.controls="true";
+					promise.muted = "true";
+					promise.playsinline = "true";
+					promise.autoplay = "true";
+				}).then(() => {
+					
+					//promise.play()
+				});
 			}
 
-			if (video2_view) {
-				if(video2_ref.current.src!==video2)video2_ref.current.src=video2;
-			} else {
-				video2_ref.current.src=picture2;
-				
-			}
-			if (video3_view) {
-				if(video3_ref.current.src!==video3)video3_ref.current.src=video3;
-			} else {
-				video3_ref.current.src=picture3;
-				
-			}
+
+	
 
 		
 		},
@@ -65,15 +62,15 @@ const BryantSection2 = () => {
 					experience.
 				</p>
 			</InfoBlockCss>
-			<ImageCss ref={video1_wrapper}>
-				<img src={picture1} ref={video1_ref} />
-			</ImageCss>
-			<ImageCss ref={video2_wrapper}>
-				<img src={picture2} ref={video2_ref} />
-			</ImageCss>
-			<ImageCss ref={video3_wrapper}>
-				<img src={picture3} ref={video3_ref} />
-			</ImageCss>
+			<VideoCss ref={video1_wrapper}>
+				<video src={video1} crossOrigin="true" loop ref={video1_ref} />
+			</VideoCss>
+			<VideoCss  ref={video2_wrapper}>
+				<video src={video2} crossOrigin="true" loop ref={video2_ref}/>
+			</VideoCss>
+			<VideoCss  ref={video3_wrapper}>
+				<video src={video3} crossOrigin="true" loop ref={video3_ref}/>
+			</VideoCss>
 			
 		</BryantSectionWrapperCss>
 	);
