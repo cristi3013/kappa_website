@@ -16,7 +16,7 @@ const playVideo = (video) =>{
 		if (promise !== undefined) {
 			promise.catch(error => {
 
-				video.controls = true;
+				video.controls = false;
 				
 			}).then(() => {
 				
@@ -31,7 +31,6 @@ const BryantSection2 = () => {
 	const video2_ref = useRef(null);
 	const video3_ref = useRef(null);
 
-	var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
 
 	const [ video1_wrapper, video1_view ] = useInView({
 		threshold: 0
@@ -62,7 +61,6 @@ const BryantSection2 = () => {
 
 	return (
 		<BryantSectionWrapperCss>
-		<h1>{iOS}</h1>
 			<InfoBlockCss>
 				<p>
 					Alongside the product renders, smooth transitions and custom interactions ensure a pleasent
@@ -70,14 +68,14 @@ const BryantSection2 = () => {
 				</p>
 			</InfoBlockCss>
 			<VideoCss ref={video1_wrapper}>
-				<video src={video1} crossOrigin="true" autoplay loop muted playsinline ref={video1_ref} />
+				<video src={video1} crossOrigin="true" loop muted playsInline ref={video1_ref} />
 
 			</VideoCss>
 			<VideoCss  ref={video2_wrapper}>
-				<video src={video2} crossOrigin="true" loop playsinline muted ref={video2_ref}/>
+				<video src={video2} crossOrigin="true" loop playsInline muted ref={video2_ref}/>
 			</VideoCss>
 			<VideoCss  ref={video3_wrapper}>
-				<video src={video3} crossOrigin="true" loop playsinline muted ref={video3_ref}/>
+				<video src={video3} crossOrigin="true" loop playsInline muted ref={video3_ref}/>
 			</VideoCss>
 			
 		</BryantSectionWrapperCss>

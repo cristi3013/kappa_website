@@ -37,7 +37,7 @@ const footer2 = (block) => {
 			<FooterBlockInfoCss>
 				<h2>Want to pursue a programming career? Tell us your story, we’re great listeners: </h2>
 				<FooterBlockLinksCss>
-					<SecondaryLinkCss as="a" href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to="" href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
 					<PrimaryLinkCss to="/internship">Find out more</PrimaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
@@ -51,10 +51,10 @@ const footer3 = (block) => {
 			<FooterBlockTitleCss>| Send us GIFs &lt;</FooterBlockTitleCss>
 			<FooterBlockInfoCss>
 				<FooterBlockLinksCss>
-					<SecondaryLinkCss as="a"  href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to=""  href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
 					<p>+44 7754 45 84 95 </p>
-					<SecondaryLinkCss as="a"  href="https://www.linkedin.com/company/kappalondon/">LinkedIn</SecondaryLinkCss>
-					<SecondaryLinkCss as="a"  href="https://www.facebook.com/kappalondon/">Facebook</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to=""  href="https://www.linkedin.com/company/kappalondon/">LinkedIn</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to=""  href="https://www.facebook.com/kappalondon/">Facebook</SecondaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
 		</FooterBlockCss>
