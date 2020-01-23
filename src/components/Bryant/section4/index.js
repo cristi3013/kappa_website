@@ -9,22 +9,6 @@ import video3 from '../videos/4.mp4';
 
 
 
-const playVideo = (video) =>{
-
-	var promise = video.play();
-
-		if (promise !== undefined) {
-			promise.catch(error => {
-
-				video.controls = false;
-				
-			}).then(() => {
-				
-				//promise.play()
-			});
-		}
-
-}
 
 const BryantSection2 = () => {
 	const video1_ref = useRef(null);
@@ -50,9 +34,9 @@ const BryantSection2 = () => {
 
 		
 		
-			if (video1_view) {playVideo(video1_ref.current);}else{video1_ref.current.pause(); video1_ref.current.currentTime=0;}
-			if (video2_view) {playVideo(video2_ref.current);}else{video2_ref.current.pause(); video2_ref.current.currentTime=0;}
-			if (video3_view) {playVideo(video3_ref.current);}else{video3_ref.current.pause(); video3_ref.current.currentTime=0;}
+			if (video1_view) {video1_ref.current.play();}else{video1_ref.current.pause(); video1_ref.current.currentTime=0;}
+			if (video2_view) {video2_ref.current.play();}else{video2_ref.current.pause(); video2_ref.current.currentTime=0;}
+			if (video3_view) {video3_ref.current.play();}else{video3_ref.current.pause(); video3_ref.current.currentTime=0;}
 
 		
 		},
@@ -68,14 +52,14 @@ const BryantSection2 = () => {
 				</p>
 			</InfoBlockCss>
 			<VideoCss ref={video1_wrapper}>
-				<video src={video1} crossOrigin="true" loop muted playsInline ref={video1_ref} />
+				<video src={video1} crossOrigin="true" autoPlay="false" loop muted playsInline ref={video1_ref} />
 
 			</VideoCss>
 			<VideoCss  ref={video2_wrapper}>
-				<video src={video2} crossOrigin="true" loop playsInline muted ref={video2_ref}/>
+				<video src={video2} crossOrigin="true" autoPlay="false" loop playsInline muted ref={video2_ref}/>
 			</VideoCss>
 			<VideoCss  ref={video3_wrapper}>
-				<video src={video3} crossOrigin="true" loop playsInline muted ref={video3_ref}/>
+				<video src={video3} crossOrigin="true" autoPlay="false" loop playsInline muted ref={video3_ref}/>
 			</VideoCss>
 			
 		</BryantSectionWrapperCss>

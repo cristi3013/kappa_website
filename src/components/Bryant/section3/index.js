@@ -1,11 +1,12 @@
 /* global $ Sirv */
 import React, { useRef, useEffect } from 'react';
-import { BryantSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss } from './index.css';
+import { BryantSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss,HintWrapperCss } from './index.css';
 import { useInView } from 'react-intersection-observer';
 import image from '../images/image3-1.png';
+import rotate from '../images/rotate.svg';
 
 
-const BryantSection3 = () => {
+const BryantSection3 = () => { 
 	const r3dRef = useRef(null);
 
 	const [ render3d, inView ] = useInView({
@@ -38,8 +39,8 @@ const BryantSection3 = () => {
 				<InfoBlockItemCss>
 					<img src={image} alt="2.8x" />
 				</InfoBlockItemCss>
-				<InfoBlockItemCss transparent="true">
-					<img src={image} alt="2.8x"/>
+				<InfoBlockItemCss>
+					<img src={image} className="hidden" alt="2.8x"/>
 					<div
 					id="r3d"
 					ref={r3dRef}
@@ -47,7 +48,7 @@ const BryantSection3 = () => {
 					data-options="autostart:false"
 					data-src="https://bryant-dental.sirv.com/BD_360_28_R01/360-28/360-28.spin?startColumn=4&autospin=once"
 				/>
-				<p>drag me</p>
+				<HintWrapperCss><img src={rotate}/></HintWrapperCss>
 				</InfoBlockItemCss>
 
 				
