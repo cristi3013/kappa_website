@@ -4,7 +4,6 @@ import { SecondaryLinkCss } from '../../../layout/index.css';
 
 import { useInView } from 'react-intersection-observer';
 import video1 from '../videos/2.mp4';
-import gif1 from '../videos/2.gif';
 import video2 from '../videos/3.mp4';
 import video3 from '../videos/4.mp4';
 
