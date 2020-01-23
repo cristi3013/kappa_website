@@ -11,7 +11,7 @@ const NovaSection6 = () => {
 			
 
 				<h1>Bryant Dental</h1>
-				<PrimaryLinkCss href="/bryant">Go to project</PrimaryLinkCss>
+				<PrimaryLinkCss to="/bryant">Go to project</PrimaryLinkCss>
 
 			</InfoBlockCss>
 			

@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import { screens, fonts, colors } from '../constants/theme';
+import { Link } from 'react-router-dom';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
@@ -160,7 +161,7 @@ export const LayoutsWrapperCss = styled.div`
 	
 `;
 
-export const PrimaryLinkCss = styled.a`
+export const PrimaryLinkCss = styled(Link)`
 	font-style: italic;
 	font-weight: normal;
 	font-size: 18px;
@@ -189,6 +190,7 @@ export const PrimaryLinkCss = styled.a`
 		left: 0;
 		bottom: 0;
 		height: 2px;
+		padding-bottom: 1px;
 		background: ${colors.blue};
 	}
 

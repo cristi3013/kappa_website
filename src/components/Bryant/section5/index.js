@@ -9,7 +9,7 @@ const BryantSection6 = () => {
 			
 
 				<h1>Nova AI</h1>
-				<PrimaryLinkCss href="/nova">Go to project</PrimaryLinkCss>
+				<PrimaryLinkCss to="/nova">Go to project</PrimaryLinkCss>
 
 			</InfoBlockCss>
 			

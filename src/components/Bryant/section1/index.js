@@ -27,7 +27,7 @@ const BryantSection1 = () => {
 
 					<InfoBlockItemCss>
 						<h4>| Live website &lt;</h4>
-						<SecondaryLinkCss href="http://bryant.dental" target="_blank">
+						<SecondaryLinkCss as="a" href="http://bryant.dental" target="_blank">
 							bryant.dental
 						</SecondaryLinkCss>
 					</InfoBlockItemCss>

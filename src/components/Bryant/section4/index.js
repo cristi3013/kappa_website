@@ -31,6 +31,8 @@ const BryantSection2 = () => {
 	const video2_ref = useRef(null);
 	const video3_ref = useRef(null);
 
+	var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
 	const [ video1_wrapper, video1_view ] = useInView({
 		threshold: 0
 	});
@@ -46,6 +48,8 @@ const BryantSection2 = () => {
 	useEffect(
 		() => {
 
+
+		
 		
 			if (video1_view) {playVideo(video1_ref.current);}else{video1_ref.current.pause(); video1_ref.current.currentTime=0;}
 			if (video2_view) {playVideo(video2_ref.current);}else{video2_ref.current.pause(); video2_ref.current.currentTime=0;}
@@ -58,6 +62,7 @@ const BryantSection2 = () => {
 
 	return (
 		<BryantSectionWrapperCss>
+		<h1>{iOS}</h1>
 			<InfoBlockCss>
 				<p>
 					Alongside the product renders, smooth transitions and custom interactions ensure a pleasent

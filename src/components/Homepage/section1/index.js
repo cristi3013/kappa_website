@@ -17,8 +17,8 @@ const FirstSection = () => {
 				</h2>
 
 				<LinksCss>
-					<SecondaryLinkCss>Work with us</SecondaryLinkCss>
-					<PrimaryLinkCss>Join Kappa</PrimaryLinkCss>
+					<SecondaryLinkCss to="/joinus">Work with us</SecondaryLinkCss>
+					<PrimaryLinkCss to="/joinus">Join Kappa</PrimaryLinkCss>
 				</LinksCss>
 
 			

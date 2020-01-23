@@ -23,7 +23,7 @@ const footer1 = (block) => {
 					other. Embracing remote work and the chaos that comes with it.
 				</h2>
 				<FooterBlockLinksCss>
-					<PrimaryLinkCss href="/whoweare">Find out more</PrimaryLinkCss>
+					<PrimaryLinkCss to="/whoweare">Find out more</PrimaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
 		</FooterBlockCss>
@@ -37,8 +37,8 @@ const footer2 = (block) => {
 			<FooterBlockInfoCss>
 				<h2>Want to pursue a programming career? Tell us your story, we’re great listeners: </h2>
 				<FooterBlockLinksCss>
-					<SecondaryLinkCss href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
-					<PrimaryLinkCss href="/internship">Find out more</PrimaryLinkCss>
+					<SecondaryLinkCss as="a" href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
+					<PrimaryLinkCss to="/internship">Find out more</PrimaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
 		</FooterBlockCss>
@@ -51,10 +51,10 @@ const footer3 = (block) => {
 			<FooterBlockTitleCss>| Send us GIFs &lt;</FooterBlockTitleCss>
 			<FooterBlockInfoCss>
 				<FooterBlockLinksCss>
-					<SecondaryLinkCss href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
+					<SecondaryLinkCss as="a"  href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
 					<p>+44 7754 45 84 95 </p>
-					<SecondaryLinkCss href="https://www.linkedin.com/company/kappalondon/">LinkedIn</SecondaryLinkCss>
-					<SecondaryLinkCss href="https://www.facebook.com/kappalondon/">Facebook</SecondaryLinkCss>
+					<SecondaryLinkCss as="a"  href="https://www.linkedin.com/company/kappalondon/">LinkedIn</SecondaryLinkCss>
+					<SecondaryLinkCss as="a"  href="https://www.facebook.com/kappalondon/">Facebook</SecondaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
 		</FooterBlockCss>
