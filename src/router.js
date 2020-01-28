@@ -1,5 +1,6 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Link } from 'react-router-dom';
+import React,{ useEffect }  from 'react';
+import { BrowserRouter as Router, Switch, useLocation } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
 import Homepage from './pages/homepage';
 import WhoWeAre from './pages/whoweare';
@@ -11,12 +12,23 @@ import LayoutPath from './layout/index';
 
 import { LayoutsWrapperCss, GlobalStyle } from './layout/index.css';
 
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 export default function App() {
 	return (
 		<Router>
 			<LayoutsWrapperCss>
 				<GlobalStyle />
-
+				<ScrollToTop/>
 				<Switch>
 					<LayoutPath exact path="/" component={Homepage} blocks={[ 1, 2, 3 ]} />
 					<LayoutPath path="/bryant" component={Bryant} project={true} blocks={[ 1, 2, 3 ]} />
