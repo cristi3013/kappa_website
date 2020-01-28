@@ -11,23 +11,30 @@ import {
 	IconCss
 } from './index.css';
 
+
+
 const InfoBlock = (props) => {
 	const [ show, setShow ] = useState(false);
 	const childElement = useRef(null);
 	const headerElement = useRef(null);
 	useEffect(() => {
 		if (props.opened !== props.id && show) {
-			setShow(false);
+			//setShow(false);
 		}
 	});
 
 	const clickHandle = () => {
+		setShow(!show);
 		if (props.opened === props.id) {
-			setShow(!show);
+		//	setShow(!show);
 		} else {
-			props.setOpened(props.id);
-			setShow(true);
-			setTimeout(()=>window.scrollTo({ top: headerElement.current.offsetTop-headerElement.current.offsetHeight/2 }),50);
+			
+			
+			//props.setOpened(props.id);
+			//setShow(true);
+			//headerElement.current.scrollIntoView({ left: 0, block: 'center', behavior: 'smooth' });
+			//window.scrollBy({ top: -2000, left: 0, behavior: "smooth" });
+			//setTimeout(()=>headerElement.current.scrollIntoView({ left: 0, block: 'center', behavior: 'smooth' }),10);
 		}
 	};
 
@@ -49,6 +56,13 @@ const InfoBlock = (props) => {
 
 const JoinUsSecondSection = () => {
 	const [ opened, setOpened ] = useState(0);
+
+	useEffect(() => {
+		
+		console.log(window.innerHeight);
+	  });
+
+	
 
 	return (
 		<JoinUsSecondSectionWrapperCss>
