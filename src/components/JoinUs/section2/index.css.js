@@ -85,7 +85,7 @@ export const InfoBlockContentCss = styled.div`
 	}
 
 	height: ${(props) => (props.show ? props.childrenHeight + 50 + 'px' : '0px')};
-	transition: all 0.3s;
+	
 
 	margin-bottom: 78px;
 

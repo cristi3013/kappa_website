@@ -27,8 +27,7 @@ const InfoBlock = (props) => {
 		} else {
 			props.setOpened(props.id);
 			setShow(true);
-console.log(headerElement.current.offsetHeight)
-			setTimeout(()=>window.scrollTo({ top: headerElement.current.offsetTop-headerElement.current.offsetHeight/2 }),500);
+			setTimeout(()=>window.scrollTo({ top: headerElement.current.offsetTop-headerElement.current.offsetHeight/2 }),50);
 		}
 	};
 
