@@ -54,18 +54,18 @@ const InfoBlock = (props) => {
 		});
 	  }
 
-	  var prev_height = childElement.current&&childElement.current.scrollHeight;
+	  var prev_height = childElement.current&&(childElement.current.scrollHeight+50);
 	  function drawBack(progress) {
-		var diff = prev_height - (1-progress)*childElement.current.scrollHeight;
+		var diff = prev_height - (1-progress)*(childElement.current.scrollHeight+50);
 		
-		listElement.current.style.height = (1-progress)*childElement.current.scrollHeight + 'px';
-		prev_height =  (1-progress)*childElement.current.scrollHeight;
+		listElement.current.style.height = (1-progress)*(childElement.current.scrollHeight+50) + 'px';
+		prev_height =  (1-progress)*(childElement.current.scrollHeight+50);
 
-		if(props.opened > props.id)window.scrollBy({ top: -(diff-0.605), left: 0 });
+		if(props.opened > props.id)window.scrollBy({ top: -(diff-0.58), left: 0 });
 	  }
 
 	  function draw(progress) {
-		listElement.current.style.height = (progress)*childElement.current.scrollHeight + 'px';
+		listElement.current.style.height = (progress)*(childElement.current.scrollHeight+50)+ 'px';
 	
 	  }
 
