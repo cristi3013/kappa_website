@@ -17,24 +17,77 @@ const InfoBlock = (props) => {
 	const [ show, setShow ] = useState(false);
 	const childElement = useRef(null);
 	const headerElement = useRef(null);
+	const listElement = useRef(null);
+	const expSpeed = 500;
 	useEffect(() => {
 		if (props.opened !== props.id && show) {
-			//setShow(false);
+			setShow(false);
+			animate(linear,drawBack,expSpeed);
+
 		}
 	});
 
+	function linear(timeFraction) {
+		return 1 - Math.sin(Math.acos(timeFraction));
+	  }
+
+	function animate(timing, draw, duration) {
+
+		let start = performance.now();
+	  
+		requestAnimationFrame(function animate(time) {
+		
+		  let timeFraction = (time - start) / duration;
+		  if (timeFraction > 1) timeFraction = 1;
+
+		  
+	  
+		
+		  let progress = timing(timeFraction);
+	  
+		  draw(progress); 
+	  
+		  if (timeFraction < 1) {
+			requestAnimationFrame(animate);
+		  }
+	  
+		});
+	  }
+
+	  var prev_height = childElement.current&&childElement.current.scrollHeight;
+	  function drawBack(progress) {
+		var diff = prev_height - (1-progress)*childElement.current.scrollHeight;
+		
+		listElement.current.style.height = (1-progress)*childElement.current.scrollHeight + 'px';
+		prev_height =  (1-progress)*childElement.current.scrollHeight;
+
+		if(props.opened > props.id)window.scrollBy({ top: -(diff-0.605), left: 0 });
+	  }
+
+	  function draw(progress) {
+		listElement.current.style.height = (progress)*childElement.current.scrollHeight + 'px';
+	
+	  }
+
 	const clickHandle = () => {
-		setShow(!show);
+
 		if (props.opened === props.id) {
-		//	setShow(!show);
+			
+			if(show==true){
+				animate(linear,drawBack,expSpeed);
+				setShow(false);	
+			}else{
+				animate(linear,draw,expSpeed);
+				setShow(true);	
+			}
+	
+
 		} else {
 			
-			
-			//props.setOpened(props.id);
-			//setShow(true);
-			//headerElement.current.scrollIntoView({ left: 0, block: 'center', behavior: 'smooth' });
-			//window.scrollBy({ top: -2000, left: 0, behavior: "smooth" });
-			//setTimeout(()=>headerElement.current.scrollIntoView({ left: 0, block: 'center', behavior: 'smooth' }),10);
+			animate(linear,draw,expSpeed);
+			props.setOpened(props.id);
+			setShow(true);
+
 		}
 	};
 
@@ -47,7 +100,7 @@ const InfoBlock = (props) => {
 					<p>{props.subtitle}</p>
 				</InfoBlockTitleCss>
 			</InfoBlockHeaderCss>
-			<InfoBlockContentCss show={show} childrenHeight={childElement.current && childElement.current.scrollHeight}>
+			<InfoBlockContentCss show={show} ref={listElement} childrenHeight={childElement.current && childElement.current.scrollHeight}>
 				<div ref={childElement}>{props.children}</div>
 			</InfoBlockContentCss>
 		</InfoBlockCss>
@@ -74,7 +127,7 @@ const JoinUsSecondSection = () => {
 					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
 					setOpened={setOpened}
 					opened={opened}
-					id="1"
+					id={1}
 				>
 					<h4>| Qualifications and Skills &lt;</h4>
 					<ul>
@@ -133,7 +186,7 @@ const JoinUsSecondSection = () => {
 					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
 					setOpened={setOpened}
 					opened={opened}
-					id="2"
+					id={2}
 				>
 					<h4>| Qualifications and Skills &lt;</h4>
 					<ul>
@@ -190,7 +243,7 @@ const JoinUsSecondSection = () => {
 				<InfoBlock
 					title="Research and Development Engineer"
 					subtitle="HTML CSS JavaScript jQuery PHP CodeIgniter MySQL"
-					id="3"
+					id={3}
 					setOpened={setOpened}
 					opened={opened}
 				>
