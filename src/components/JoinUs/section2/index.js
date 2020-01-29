@@ -61,7 +61,7 @@ const InfoBlock = (props) => {
 		listElement.current.style.height = (1-progress)*(childElement.current.scrollHeight+50) + 'px';
 		prev_height =  (1-progress)*(childElement.current.scrollHeight+50);
 
-		if(props.opened > props.id)window.scrollBy({ top: -(diff-0.58), left: 0 });
+		if(props.opened > props.id)window.scrollBy(0, -(diff-0.58) );
 	  }
 
 	  function draw(progress) {
