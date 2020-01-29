@@ -27,8 +27,8 @@ const InfoBlock = (props) => {
 		}
 	});
 
-	function linear(timeFraction) {
-		return 1 - Math.sin(Math.acos(timeFraction));
+	function linear(t) {
+		return t > 0.5 ? 4*Math.pow((t-1),3)+1 : 4*Math.pow(t,3);
 	  }
 
 	function animate(timing, draw, duration) {
