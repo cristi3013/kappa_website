@@ -53,8 +53,8 @@ const footer3 = (block) => {
 				<FooterBlockLinksCss>
 					<SecondaryLinkCss as="a" to=""  href="mailto:captain@kappa.london">captain@kappa.london</SecondaryLinkCss>
 					<p>+44 7754 45 84 95 </p>
-					<SecondaryLinkCss as="a" to=""  href="https://www.linkedin.com/company/kappalondon/">LinkedIn</SecondaryLinkCss>
-					<SecondaryLinkCss as="a" to=""  href="https://www.facebook.com/kappalondon/">Facebook</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to=""  href="https://www.linkedin.com/company/kappalondon/" target="_blank">LinkedIn</SecondaryLinkCss>
+					<SecondaryLinkCss as="a" to=""  href="https://www.facebook.com/kappalondon/" target="_blank">Facebook</SecondaryLinkCss>
 				</FooterBlockLinksCss>
 			</FooterBlockInfoCss>
 		</FooterBlockCss>

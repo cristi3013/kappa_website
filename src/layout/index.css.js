@@ -108,7 +108,6 @@ export const LayoutsWrapperCss = styled.div`
 	}
 
 	li {
-		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 27px;

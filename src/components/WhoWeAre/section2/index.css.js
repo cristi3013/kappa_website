@@ -58,6 +58,7 @@ export const InfoBlockCss = styled.div`
         width:38px;
         height:38px;
         text-align:center;
+        opacity:0.9
 
         font-style: normal;
         font-weight: 600;

@@ -51,6 +51,12 @@ console.log(headerElement.current.offsetHeight)
 const JoinUsSecondSection = () => {
 	const [ opened, setOpened ] = useState(0);
 
+	const SendEmail= (title) =>{
+		let email = 'captain@kappa.london';
+		let subject = 'Job Application for' + title;
+		document.location = "mailto:"+email+"?subject="+subject;
+	};
+
 	return (
 		<JoinUsSecondSectionWrapperCss>
 			<h4>| Openings &lt;</h4>
@@ -112,7 +118,7 @@ const JoinUsSecondSection = () => {
 						<li>Super Informal Dress Code </li>
 					</ul>
 
-					<PrimaryLinkCss>Apply now</PrimaryLinkCss>
+					<PrimaryLinkCss onClick={()=>SendEmail('Backend Developer')}>Apply now</PrimaryLinkCss>
 				</InfoBlock>
 
 				<InfoBlock
@@ -171,7 +177,7 @@ const JoinUsSecondSection = () => {
 						<li>Super Informal Dress Code </li>
 					</ul>
 
-					<PrimaryLinkCss>Apply now</PrimaryLinkCss>
+					<PrimaryLinkCss onClick={()=>SendEmail('Front-End Developer')}>Apply now</PrimaryLinkCss>
 				</InfoBlock>
 
 				<InfoBlock
@@ -230,7 +236,7 @@ const JoinUsSecondSection = () => {
 						<li>Super Informal Dress Code </li>
 					</ul>
 
-					<PrimaryLinkCss>Apply now</PrimaryLinkCss>
+					<PrimaryLinkCss onClick={()=>SendEmail('Research and Development Engineer')}>Apply now</PrimaryLinkCss>
 				</InfoBlock>
 			</BlocksCss>
 		</JoinUsSecondSectionWrapperCss>
