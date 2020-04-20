@@ -7,6 +7,8 @@ import JoinUs from "./pages/joinus";
 import Internship from "./pages/internship";
 import Nova from "./pages/nova";
 import Bryant from "./pages/bryant";
+import Blog from "./pages/blog";
+import BlogPage from "./pages/blog-page";
 import LayoutPath from "./layout/index";
 
 import { LayoutsWrapperCss, GlobalStyle } from "./layout/index.css";
@@ -42,6 +44,8 @@ export default function App() {
           />
           <LayoutPath path="/whoweare" component={WhoWeAre} blocks={[2, 3]} />
           <LayoutPath path="/joinus" component={JoinUs} blocks={[2, 1, 3]} />
+          <LayoutPath path="/blog/:id" component={BlogPage} blocks={[3]} />
+          <LayoutPath path="/blog" exact component={Blog} blocks={[3]} />
           <LayoutPath
             path="/internship"
             component={Internship}
