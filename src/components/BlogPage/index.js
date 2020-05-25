@@ -21,7 +21,7 @@ export const BlogPageWrapperCss = styled.div`
   }
 `;
 
-const FEED = "https://medium.com/feed/@adamichelllle";
+const FEED = "https://medium.com/feed/kappa-london";
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);

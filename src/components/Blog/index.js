@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./card";
 import { CardsWrapperCss, LinkCss } from "./index.css";
-const FEED = "https://medium.com/feed/@adamichelllle";
+const FEED = "https://medium.com/feed/kappa-london";
 
 const BlogComponent = () => {
   const [posts, setPosts] = useState([]);
