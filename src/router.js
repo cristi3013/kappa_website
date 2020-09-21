@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Switch, useLocation } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Switch, useLocation } from 'react-router-dom';
 
-import Homepage from "./pages/homepage";
-import WhoWeAre from "./pages/whoweare";
-import JoinUs from "./pages/joinus";
-import Internship from "./pages/internship";
-import Nova from "./pages/nova";
-import Bryant from "./pages/bryant";
-import Blog from "./pages/blog";
-import BlogPage from "./pages/blog-page";
-import LayoutPath from "./layout/index";
+import Homepage from './pages/homepage';
+import WhoWeAre from './pages/whoweare';
+import JoinUs from './pages/joinus';
+import Internship from './pages/internship';
+import Nova from './pages/nova';
+import Bryant from './pages/bryant';
+import Blog from './pages/blog';
+import BlogPage from './pages/blog-page';
+import LayoutPath from './layout/index';
 
-import { LayoutsWrapperCss, GlobalStyle } from "./layout/index.css";
+import { LayoutsWrapperCss, GlobalStyle } from './layout/index.css';
 function ScrollToTop() {
   const { pathname } = useLocation();
 

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import styled from "styled-components";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import styled from 'styled-components';
 export const BlogPageWrapperCss = styled.div`
   margin: 100px auto;
   max-width: 700px;
@@ -21,19 +21,19 @@ export const BlogPageWrapperCss = styled.div`
   }
 `;
 
-const FEED = "https://medium.com/feed/kappa-london";
+const FEED = 'https://medium.com/feed/kappa-london';
 
 const BlogPage = () => {
   const [posts, setPosts] = useState([]);
   let { id } = useParams();
-  console.log("id", id);
+  console.log('id', id);
 
   useEffect(() => {
     fetch(`https://api.rss2json.com/v1/api.json?rss_url=${FEED}`)
       .then((response) => {
         if (!response.ok) {
           debugger;
-          throw Error("Network request failed");
+          throw Error('Network request failed');
         }
 
         return response;

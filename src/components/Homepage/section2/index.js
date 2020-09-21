@@ -1,13 +1,13 @@
-import React from "react";
-import { PrimaryLinkCss } from "../../../layout/index.css";
+import React from 'react';
+import { PrimaryLinkCss } from '../../../layout/index.css';
 import {
   SecondSectionWrapperCss,
   BlockCss,
   InfoCss,
   ImageCss,
-} from "./index.css";
-import img1 from "./images/image1.png";
-import img2 from "./images/image2.png";
+} from './index.css';
+import img1 from './images/image1.png';
+import img2 from './images/image2.png';
 
 const SecondSection = () => {
   return (

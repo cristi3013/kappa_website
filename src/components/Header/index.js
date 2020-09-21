@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   HeaderWrapperCss,
   DesktopMenuCss,
   MobileMenuCss,
   MobileToggleCss,
   GlobalStyle,
-} from "./index.css";
-import anim from "./images/menu.gif";
-import { Link } from "react-router-dom";
+} from './index.css';
+import anim from './images/menu.gif';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   return (

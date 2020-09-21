@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import Card from "./card";
-import { CardsWrapperCss, LinkCss } from "./index.css";
-const FEED = "https://medium.com/feed/kappa-london";
+import React, { useState, useEffect } from 'react';
+import Card from './card';
+import { CardsWrapperCss, LinkCss } from './index.css';
+const FEED = 'https://medium.com/feed/kappa-london';
 
 const BlogComponent = () => {
   const [posts, setPosts] = useState([]);
@@ -11,7 +11,7 @@ const BlogComponent = () => {
       .then((response) => {
         if (!response.ok) {
           debugger;
-          throw Error("Network request failed");
+          throw Error('Network request failed');
         }
 
         return response;
@@ -27,7 +27,7 @@ const BlogComponent = () => {
   return (
     <CardsWrapperCss>
       {posts.map((post) => {
-        const guidArray = post.guid.split("/");
+        const guidArray = post.guid.split('/');
         const id = guidArray[guidArray.length - 1];
         return (
           <LinkCss key={id} to={`/blog/${id}`}>

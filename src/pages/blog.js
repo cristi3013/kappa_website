@@ -1,5 +1,5 @@
-import React from "react";
-import BlogSection from "../components/Blog";
+import React from 'react';
+import BlogSection from '../components/Blog';
 
 const Blog = () => {
   return <BlogSection />;
