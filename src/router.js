@@ -9,6 +9,7 @@ import Nova from './pages/nova';
 import Bryant from './pages/bryant';
 import Blog from './pages/blog';
 import BlogPage from './pages/blog-page';
+import Bloomd from './pages/bloomd';
 import LayoutPath from './layout/index';
 
 import { LayoutsWrapperCss, GlobalStyle } from './layout/index.css';
@@ -39,6 +40,12 @@ export default function App() {
           <LayoutPath
             path="/nova"
             component={Nova}
+            project={true}
+            blocks={[1, 2, 3]}
+          />
+          <LayoutPath
+            path="/bloomd"
+            component={Bloomd}
             project={true}
             blocks={[1, 2, 3]}
           />
