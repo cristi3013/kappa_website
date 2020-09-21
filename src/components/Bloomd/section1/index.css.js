@@ -16,7 +16,7 @@ export const BloomdSectionWrapperCss = styled.div`
 
   @media (max-width: ${screens.lg}) {
     flex-direction: column;
-    padding: 50px 0px 25px;
+    padding: 50px 0px 0px;
     width: auto;
   }
 `;
@@ -118,6 +118,7 @@ export const ImageCss = styled.div`
   width: 100%;
   margin: 80px 0px 0px;
   img {
+    display: block;
     width: 100%;
   }
 
