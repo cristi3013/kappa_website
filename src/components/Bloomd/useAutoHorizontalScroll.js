@@ -10,22 +10,19 @@ const useAutoHorizontalScroll = () => {
     const containerBottom =
       containerRef.current.offsetTop + containerRef.current.offsetHeight;
 
-    const top = (containerTop - window.innerHeight) * 1.1;
-    const bottom = containerBottom * 0.9;
+    const top = (containerTop - window.innerHeight) * 1.15;
+    const bottom = containerBottom * 0.85;
 
     const isInView = userScroll > top && userScroll < bottom;
 
     if (isInView) {
       const horizontalScroll = (userScroll - top) / (bottom - top);
-      const percentageContainerWidthFromWindow =
-        window.innerWidth / containerRef.current.offsetWidth;
+      const maxPercentageCanTranslate =
+        1 - window.innerWidth / containerRef.current.offsetWidth;
 
-      if (
-        containerRef.current &&
-        horizontalScroll <= 1 - percentageContainerWidthFromWindow
-      ) {
+      if (containerRef.current) {
         containerRef.current.style.transform = `translateX(-${
-          horizontalScroll * 100
+          horizontalScroll * maxPercentageCanTranslate * 100
         }%)`;
       }
     }

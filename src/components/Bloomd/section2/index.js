@@ -6,9 +6,9 @@ import {
   ImagesWrapperCss,
   VideoWrapperCss,
 } from './index.css';
-import image2Png from '../images/image2.png';
-import image3Png from '../images/image3.png';
-import video1Png from '../images/video1.png';
+import image1Png from '../images/image2-1.png';
+import image2Png from '../images/image2-2.png';
+import videoPng from '../images/video2.png';
 import IphoneXFrame from '../IphoneXFrame';
 
 const BloomdSection2 = () => {
@@ -30,10 +30,10 @@ const BloomdSection2 = () => {
         <div style={{ width: '100%', maxWidth: 650 }}>
           <ImagesWrapperCss>
             <IphoneXFrame>
-              <img src={image2Png} alt="" />
+              <img src={image1Png} alt="" />
             </IphoneXFrame>
             <IphoneXFrame>
-              <img src={image3Png} alt="" />
+              <img src={image2Png} alt="" />
             </IphoneXFrame>
           </ImagesWrapperCss>
           <em>Easily post a request and manage replies.</em>
@@ -41,7 +41,7 @@ const BloomdSection2 = () => {
 
         <VideoWrapperCss>
           <IphoneXFrame>
-            <img src={video1Png} alt="" />
+            <img src={videoPng} alt="" />
           </IphoneXFrame>
           <em>Cancelling upcoming appointments.</em>
         </VideoWrapperCss>

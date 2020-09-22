@@ -7,9 +7,19 @@ export const BloomdSectionWrapperCss = styled.div`
   width: 100%;
   padding: 130px 0;
   background: ${colors.grey2};
+  overflow: hidden;
 
   justify-content: center;
   align-items: center;
+
+  em.auto-horizontal-scroll-active {
+    display: none;
+    color: ${colors.grey};
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0 25px;
+  }
 
   @media (max-width: ${screens.sm}) {
     padding: 50px 0;
@@ -18,6 +28,10 @@ export const BloomdSectionWrapperCss = styled.div`
   @media (max-width: ${screens.lg}) {
     flex-direction: column;
     width: auto;
+
+    em.auto-horizontal-scroll-active {
+      display: block;
+    }
   }
 `;
 
@@ -54,10 +68,11 @@ export const InfoBlockCss = styled.div`
 
 export const ContentWrapperCss = styled.div`
   width: 80vw;
-  max-width: 1050px;
+  max-width: 1200px;
   margin-top: 130px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 
   em {
     display: block;
@@ -67,49 +82,46 @@ export const ContentWrapperCss = styled.div`
     margin-top: 50px;
   }
 
-  @media (max-width: ${screens.sm}) {
-    margin-top: 60px;
-  }
+  & > * {
+    &:first-child {
+      width: 40%;
+      margin-right: 65px;
 
-  @media (max-width: ${screens.xl}) {
-    flex-direction: column;
-    align-items: center;
+      img {
+        max-width: 40%;
+      }
 
-    & > * {
-      width: 100%;
+      & > *:first-child {
+        margin-right: 35px;
+      }
+    }
 
-      &:first-child {
-        margin-bottom: 50px;
+    &:last-child {
+      width: 60%;
+
+      img {
+        max-width: 100%;
       }
     }
   }
-`;
 
-export const ImagesWrapperCss = styled.div`
-  display: flex;
+  @media (max-width: ${screens.sm}) {
+    margin-top: 50px;
+  }
 
-  & > * {
-    width: 40%;
-    height: auto;
-    max-width: 270px;
+  @media (max-width: ${screens.lg}) {
+    display: inline-flex;
+    width: 1200px;
+    max-width: initial;
+    padding: 0 5%;
+    align-self: flex-start;
 
-    &:first-child {
-      margin-right: 10%;
+    em {
+      display: none;
     }
   }
 
-  @media (max-width: ${screens.xl}) {
-    justify-content: center;
-  }
-`;
-
-export const VideoWrapperCss = styled.div`
-  & > *:first-child {
-    max-width: 270px;
-    margin: 0 auto;
-
-    @media (max-width: ${screens.sm}) {
-      max-width: 240px;
-    }
+  @media (max-width: ${screens.sm}) {
+    margin-top: 60px;
   }
 `;
