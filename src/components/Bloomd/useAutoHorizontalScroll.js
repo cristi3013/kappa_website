@@ -1,17 +1,19 @@
 import { useCallback, useEffect, useRef } from 'react';
 
-const useAutoHorizontalScroll = () => {
+const useAutoHorizontalScroll = (screenOffset = 0.2) => {
   const containerRef = useRef();
 
   const handleScroll = useCallback(() => {
+    const offset = window.innerHeight * screenOffset;
+
     const userScroll = window.scrollY;
 
     const containerTop = containerRef.current.offsetTop;
     const containerBottom =
       containerRef.current.offsetTop + containerRef.current.offsetHeight;
 
-    const top = (containerTop - window.innerHeight) * 1.15;
-    const bottom = containerBottom * 0.85;
+    const top = containerTop - window.innerHeight + offset;
+    const bottom = containerBottom - offset;
 
     const isInView = userScroll > top && userScroll < bottom;
 
@@ -24,9 +26,10 @@ const useAutoHorizontalScroll = () => {
         containerRef.current.style.transform = `translateX(-${
           horizontalScroll * maxPercentageCanTranslate * 100
         }%)`;
+        containerRef.current.style.transition = 'transform 10ms linear';
       }
     }
-  }, []);
+  }, [screenOffset]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
