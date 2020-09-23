@@ -6,6 +6,7 @@ import {
   Section4,
   Section5,
   Section6,
+  Section7,
 } from '../components/Bloomd';
 
 const Bloomd = () => {
@@ -17,6 +18,7 @@ const Bloomd = () => {
       <Section4 />
       <Section5 />
       <Section6 />
+      <Section7 />
     </div>
   );
 };
