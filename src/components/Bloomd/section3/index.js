@@ -9,7 +9,7 @@ import image1Png from '../images/image3-1.png';
 import image2Png from '../images/image3-2.png';
 import image3Png from '../images/image3-3.png';
 
-const BloomdSection3 = memo(function BloomdSection2() {
+const BloomdSection3 = memo(function BloomdSection3() {
   const ref = useAutoHorizontalScroll();
 
   return (

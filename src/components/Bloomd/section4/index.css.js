@@ -6,20 +6,11 @@ export const BloomdSectionWrapperCss = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 130px 0;
-  background: ${colors.grey2};
+  background: ${colors.grey3};
   overflow: hidden;
 
   justify-content: center;
   align-items: center;
-
-  em.auto-horizontal-scroll-active {
-    display: none;
-    color: ${colors.grey};
-    text-align: center;
-    margin: 0;
-    margin-top: 50px;
-    padding: 0 25px;
-  }
 
   @media (max-width: ${screens.sm}) {
     padding: 50px 0;
@@ -28,18 +19,22 @@ export const BloomdSectionWrapperCss = styled.div`
   @media (max-width: ${screens.lg}) {
     flex-direction: column;
     width: auto;
-
-    em.auto-horizontal-scroll-active {
-      display: block;
-    }
   }
 `;
 
-export const InfoBlockCss = styled.div`
+export const TitleWrapperCss = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
   width: 50vw;
   max-width: 648px;
+
+  img {
+    margin-right: 50px;
+    width: 140px;
+    height: auto;
+  }
 
   h1 {
     color: ${colors.black};
@@ -59,14 +54,19 @@ export const InfoBlockCss = styled.div`
       width: auto;
     }
   }
+
+  @media (max-width: ${screens.md}) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const ContentWrapperCss = styled.div`
   width: 80vw;
-  max-width: 1200px;
   margin-top: 130px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-end;
 
   em {
@@ -75,40 +75,64 @@ export const ContentWrapperCss = styled.div`
     text-align: center;
     margin: 0;
     margin-top: 50px;
+    height: 40px;
+  }
+
+  .left,
+  .center,
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .left {
+    img {
+      width: 95%;
+    }
+
+    img:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .center {
+    img {
+      width: 96.25%;
+      height: auto;
+    }
+  }
+
+  .right-images {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 49%;
+      height: auto;
+    }
+
+    img:first-child {
+      margin-right: 2%;
+    }
   }
 
   & > * {
-    &:first-child {
-      width: 40%;
-      margin-right: 65px;
-
-      img {
-        max-width: 40%;
-      }
-
-      & > *:first-child {
-        margin-right: 35px;
-      }
-    }
+    margin-right: 3%;
 
     &:last-child {
-      width: 60%;
-
-      img {
-        max-width: 100%;
-      }
+      margin-right: 0;
     }
   }
 
   @media (max-width: ${screens.lg}) {
-    display: inline-flex;
-    width: 1200px;
-    max-width: initial;
-    padding: 0 5%;
-    align-self: flex-start;
+    flex-direction: column;
+    align-items: center;
 
-    em {
-      display: none;
+    & > * {
+      /* width: 100%; */
+      margin-bottom: 50px;
     }
   }
 
