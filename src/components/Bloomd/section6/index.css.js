@@ -33,7 +33,6 @@ export const BloomdSectionWrapperCss = styled.div`
 
 export const PaddingLeftRightCss = styled.div`
   padding: 0 5%;
-  overflow: hidden;
 `;
 
 export const TitleWrapperCss = styled.div`

@@ -10,6 +10,7 @@ import image1Png from '../images/image6-1.png';
 import image2Png from '../images/image6-2.png';
 import IphoneXFrame from '../IphoneXFrame';
 import ChangesInVision from './ChangesInVision';
+import Onboarding from './Onboarding';
 
 const BloomdSection6 = memo(function BloomdSection6() {
   return (
@@ -47,6 +48,10 @@ const BloomdSection6 = memo(function BloomdSection6() {
 
       <SectionContainerCss>
         <ChangesInVision />
+      </SectionContainerCss>
+
+      <SectionContainerCss last>
+        <Onboarding />
       </SectionContainerCss>
     </BloomdSectionWrapperCss>
   );
