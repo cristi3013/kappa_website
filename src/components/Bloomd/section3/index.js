@@ -33,7 +33,7 @@ const BloomdSection3 = memo(function BloomdSection3() {
           <em>Tablet/desktop view</em>
         </div>
       </ContentWrapperCss>
-      <em class="auto-horizontal-scroll-active">
+      <em className="auto-horizontal-scroll-active">
         Different mobile/tablet and desktop viewport width
       </em>
     </BloomdSectionWrapperCss>

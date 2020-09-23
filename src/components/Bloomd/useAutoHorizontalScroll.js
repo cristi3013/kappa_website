@@ -22,12 +22,10 @@ const useAutoHorizontalScroll = (screenOffset = 0.2) => {
       const maxPercentageCanTranslate =
         1 - window.innerWidth / containerRef.current.offsetWidth;
 
-      if (containerRef.current) {
-        containerRef.current.style.transform = `translateX(-${
-          horizontalScroll * maxPercentageCanTranslate * 100
-        }%)`;
-        containerRef.current.style.transition = 'transform 10ms linear';
-      }
+      containerRef.current.style.transform = `translateX(-${
+        horizontalScroll * maxPercentageCanTranslate * 100
+      }%)`;
+      containerRef.current.style.transition = 'transform 10ms linear';
     }
   }, [screenOffset]);
 

@@ -26,17 +26,17 @@ const BloomdSection4 = memo(function BloomdSection4() {
         </div>
       </TitleWrapperCss>
       <ContentWrapperCss>
-        <div class="left">
+        <div className="left">
           <img src={image2Png} alt="" />
           <img src={image3Png} alt="" />
           <em>Users are quickly informed they must authenticate</em>
         </div>
-        <div class="center">
+        <div className="center">
           <img src={image4Png} alt="" />
           <em>Using iProov for biometric authentication</em>
         </div>
-        <div class="right">
-          <div class="right-images">
+        <div className="right">
+          <div className="right-images">
             <img src={image5Png} alt="" />
             <img src={image6Png} alt="" />
           </div>

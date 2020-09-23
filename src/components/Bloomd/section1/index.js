@@ -20,7 +20,7 @@ const BloomdSection1 = () => {
             href="https://www.bloomd.com/"
             target="_blank"
             rel="noopener noreferrer"
-            class="website"
+            className="website"
           >
             bloomd™
           </a>{' '}
