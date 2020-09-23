@@ -9,6 +9,7 @@ import {
   Section7,
   Section8,
 } from '../components/Bloomd';
+import { Section5 as NovaLinkFooter } from '../components/Bryant';
 
 const Bloomd = () => {
   return (
@@ -21,6 +22,7 @@ const Bloomd = () => {
       <Section6 />
       <Section7 />
       <Section8 />
+      <NovaLinkFooter />
     </div>
   );
 };
