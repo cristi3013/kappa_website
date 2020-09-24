@@ -99,7 +99,7 @@ export const ContentWrapperCss = styled.div`
 
   .center {
     img {
-      width: 96.25%;
+      width: 98%;
       height: auto;
     }
   }

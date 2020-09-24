@@ -15,8 +15,7 @@ export const WrapperCss = styled.div`
     background-size: auto 100%;
 
     &:first-child {
-      background-image: url(${personPng}),
-        radial-gradient(1000px circle at 50% 0, #8a7db3, #595087);
+      background-image: url(${personPng}); /* radial-gradient(1000px circle at 50% 0, #8a7db3, #595087) */
       width: 40%;
     }
 
