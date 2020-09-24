@@ -6,6 +6,7 @@ export const IphoneWrapperCss = styled.div`
   svg {
     position: relative;
     z-index: 2;
+    pointer-events: none;
   }
 `;
 

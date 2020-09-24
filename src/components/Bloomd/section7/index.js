@@ -9,13 +9,23 @@ import {
 } from './index.css';
 import IphoneXFrame from '../IphoneXFrame';
 import matchingInterestsPng from './images/matching-interests.png';
-import managingAppointmentsPng from './images/managing-appointments.png';
-import gamificationPng from './images/gamification.png';
 import { ReactComponent as MatchingInterestsSvg } from './icons/matching-interests.svg';
 import { ReactComponent as ManagingAppointmentsSvg } from './icons/managing-appointments.svg';
 import { ReactComponent as GamificationSvg } from './icons/gamification.svg';
+import managingAppointmentsMp4 from './videos/managing-appointments.mp4';
+import gamificationMp4 from './videos/gamification.mp4';
+import useVideoAutoplayInView from '../useVideoAutoplayInView';
 
 const BloomdSection7 = memo(function BloomdSection7() {
+  const [
+    managingAppointmentsMp4WrapperRef,
+    managingAppointmentsMp4Ref,
+  ] = useVideoAutoplayInView();
+  const [
+    gamificationMp4WrapperRef,
+    gamificationMp4Ref,
+  ] = useVideoAutoplayInView();
+
   return (
     <BloomdSectionWrapperCss>
       <BackgroundLineCss>
@@ -42,9 +52,18 @@ const BloomdSection7 = memo(function BloomdSection7() {
 
       <BackgroundLineCss right>
         <PaddingLeftRightCss>
-          <GroupWrapperCss right>
+          <GroupWrapperCss right ref={managingAppointmentsMp4WrapperRef}>
             <IphoneXFrame>
-              <img src={managingAppointmentsPng} alt="" />
+              <video
+                src={managingAppointmentsMp4}
+                ref={managingAppointmentsMp4Ref}
+                type="video/mp4"
+                crossOrigin="true"
+                autoPlay="false"
+                loop
+                playsInline
+                muted
+              />
             </IphoneXFrame>
             <GroupDescriptionCss>
               <ManagingAppointmentsSvg />
@@ -64,9 +83,18 @@ const BloomdSection7 = memo(function BloomdSection7() {
 
       <BackgroundLineCss>
         <PaddingLeftRightCss>
-          <GroupWrapperCss>
+          <GroupWrapperCss ref={gamificationMp4WrapperRef}>
             <IphoneXFrame>
-              <img src={gamificationPng} alt="" />
+              <video
+                src={gamificationMp4}
+                ref={gamificationMp4Ref}
+                type="video/mp4"
+                crossOrigin="true"
+                autoPlay="false"
+                loop
+                playsInline
+                muted
+              />
             </IphoneXFrame>
             <GroupDescriptionCss>
               <GamificationSvg />
