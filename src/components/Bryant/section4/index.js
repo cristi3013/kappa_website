@@ -64,7 +64,7 @@ const BryantSection2 = () => {
         <video
           src={video1}
           crossOrigin="true"
-          autoPlay="false"
+          autoPlay={false}
           loop
           muted
           playsInline
@@ -75,7 +75,7 @@ const BryantSection2 = () => {
         <video
           src={video2}
           crossOrigin="true"
-          autoPlay="false"
+          autoPlay={false}
           loop
           playsInline
           muted
@@ -86,7 +86,7 @@ const BryantSection2 = () => {
         <video
           src={video3}
           crossOrigin="true"
-          autoPlay="false"
+          autoPlay={false}
           loop
           playsInline
           muted

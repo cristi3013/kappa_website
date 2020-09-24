@@ -52,14 +52,14 @@ const BloomdSection7 = memo(function BloomdSection7() {
 
       <BackgroundLineCss right>
         <PaddingLeftRightCss>
-          <GroupWrapperCss right ref={managingAppointmentsMp4WrapperRef}>
-            <IphoneXFrame>
+          <GroupWrapperCss right>
+            <IphoneXFrame ref={managingAppointmentsMp4WrapperRef}>
               <video
                 src={managingAppointmentsMp4}
                 ref={managingAppointmentsMp4Ref}
                 type="video/mp4"
                 crossOrigin="true"
-                autoPlay="false"
+                autoPlay={false}
                 loop
                 playsInline
                 muted
@@ -83,14 +83,14 @@ const BloomdSection7 = memo(function BloomdSection7() {
 
       <BackgroundLineCss>
         <PaddingLeftRightCss>
-          <GroupWrapperCss ref={gamificationMp4WrapperRef}>
-            <IphoneXFrame>
+          <GroupWrapperCss>
+            <IphoneXFrame ref={gamificationMp4WrapperRef}>
               <video
                 src={gamificationMp4}
                 ref={gamificationMp4Ref}
                 type="video/mp4"
                 crossOrigin="true"
-                autoPlay="false"
+                autoPlay={false}
                 loop
                 playsInline
                 muted

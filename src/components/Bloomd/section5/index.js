@@ -6,11 +6,13 @@ import {
   ContentWrapperCss,
 } from './index.css';
 import image1Png from '../images/image5-1.png';
-import image2Png from '../images/image5-2.png';
+import feedbackMp4 from './videos/feedback.mp4';
 import IphoneXFrame from '../IphoneXFrame';
+import useVideoAutoplayInView from '../useVideoAutoplayInView';
 
 const BloomdSection5 = memo(function BloomdSection5() {
   const ref = useAutoHorizontalScroll();
+  const [feedbackMp4WrapperRef, feedbackMp4Ref] = useVideoAutoplayInView();
 
   return (
     <BloomdSectionWrapperCss>
@@ -25,8 +27,17 @@ const BloomdSection5 = memo(function BloomdSection5() {
         <IphoneXFrame>
           <img src={image1Png} alt="" />
         </IphoneXFrame>
-        <IphoneXFrame>
-          <img src={image2Png} alt="" />
+        <IphoneXFrame ref={feedbackMp4WrapperRef}>
+          <video
+            src={feedbackMp4}
+            ref={feedbackMp4Ref}
+            type="video/mp4"
+            crossOrigin="true"
+            autoPlay={false}
+            loop
+            playsInline
+            muted
+          />
         </IphoneXFrame>
       </ContentWrapperCss>
     </BloomdSectionWrapperCss>

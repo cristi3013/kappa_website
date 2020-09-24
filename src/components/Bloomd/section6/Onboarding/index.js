@@ -16,10 +16,10 @@ const Onboarding = memo(function Onboarding() {
     <>
       <PaddingLeftRightCss>
         <DescriptionCss>
-          <h3>Changes in Vision</h3>
+          <h3>Getting help: onboarding</h3>
           <p>
-            We chose colours that are contrasting enough for users with impaired
-            vision to use the app comfortably.
+            A tutorial takes the user through the basics in order to guide (the
+            elderly) around the “look” and “feel” of the app.
           </p>
         </DescriptionCss>
       </PaddingLeftRightCss>
