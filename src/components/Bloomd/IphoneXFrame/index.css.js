@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { screens } from '../../../constants/theme';
 
 export const IphoneWrapperCss = styled.div`
   position: relative;
@@ -21,6 +22,10 @@ export const DropShadowWrapperCss = styled.div`
   width: 97.5%;
   height: 97.5%;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+  @media (max-width: ${screens.xs}) {
+    height: 90%;
+  }
 `;
 
 export const ImageWrapperCss = styled.div`
