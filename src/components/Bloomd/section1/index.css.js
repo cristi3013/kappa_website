@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { screens, fonts, colors } from '../../../constants/theme';
+import { screens, colors } from '../../../constants/theme';
 
 export const BloomdSectionWrapperCss = styled.div`
   display: flex;
@@ -47,10 +47,15 @@ export const InfoBlockCss = styled.div`
     width: 100%;
 
     p,
-    h1,
     h4 {
       padding: 0px 25px;
       width: auto;
+    }
+
+    h1 {
+      width: calc(100% - 50px);
+      max-width: 648px;
+      padding: 0px 25px;
     }
   }
 `;

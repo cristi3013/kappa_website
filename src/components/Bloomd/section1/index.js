@@ -36,12 +36,12 @@ const BloomdSection1 = () => {
         <ItemsCss>
           <InfoBlockItemCss>
             <h4>| Responsibilities &lt;</h4>
-            <p>Development Design Interaction Front-End Backend Testing</p>
+            <p>Development Design Interaction Front-End Back-End Testing</p>
           </InfoBlockItemCss>
 
           <InfoBlockItemCss>
             <h4>| Technologies used &lt;</h4>
-            <p>Typescript ReactJs PHP Laravel MySQL Iproov Twilio Pusher</p>
+            <p>Typescript ReactJS PHP Laravel MySQL Iproov Twilio Pusher</p>
           </InfoBlockItemCss>
 
           <InfoBlockItemCss>
