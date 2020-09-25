@@ -94,7 +94,12 @@ export const DescriptiveNavigationWrapperCss = styled.div`
 
       &:last-child {
         transform: none;
+        width: 100%;
         margin-top: 40px;
+
+        img {
+          max-width: 100%;
+        }
       }
     }
   }
