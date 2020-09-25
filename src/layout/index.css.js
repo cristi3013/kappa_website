@@ -84,7 +84,12 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 23px;
-		color: ${colors.blue};
+		color: ${colors.white};
+
+		span.symbol {
+			color: ${colors.blue};
+		}
+
 		@media (max-width: ${screens.lg}) {
 			font-style: italic;
 			font-weight: normal;
