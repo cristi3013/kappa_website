@@ -79,6 +79,10 @@ export const DescriptiveNavigationWrapperCss = styled.div`
       max-width: 400px;
 
       transform: translateY(35%);
+
+      img {
+        width: 100%;
+      }
     }
   }
 
@@ -96,10 +100,6 @@ export const DescriptiveNavigationWrapperCss = styled.div`
         transform: none;
         width: 100%;
         margin-top: 40px;
-
-        img {
-          max-width: 100%;
-        }
       }
     }
   }
