@@ -8,6 +8,10 @@ export const FooterWrapperCss = styled.div`
 	h4 {
 		color: ${colors.white};
 
+		&.grey {
+			color: ${colors.grey};
+		}
+
 		span.symbol {
 			color: ${colors.blue};
 		}

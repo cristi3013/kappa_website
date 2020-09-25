@@ -10,14 +10,18 @@ const NovaSection1 = () => {
 				<h1>Nova AI</h1>
 
 				<p>
-					The dentistry practice is a complex environment. Multiple people are in charge of various processes
-					and tools that cater for the patient's health. From appointment scheduling, diagnoses and treatments
-					to financial matters, communication and resources management - all are centralised in a practice
+					The dentistry practice is a complex environment. Multiple people are in charge
+					of various processes and tools that cater for the patient's health. From
+					appointment scheduling, diagnoses and treatments to financial matters,
+					communication and resources management - all are centralised in a practice
 					management software, such as Nova AI.
 				</p>
 				<ItemsCss>
 					<InfoBlockItemCss>
-						<h4>| Responsibilities &lt;</h4>
+						<h4 class="grey">
+							<span class="symbol">|</span> Responsibilities{' '}
+							<span class="symbol">&lt;</span>
+						</h4>
 						<p>
 							Analysis Discovery <span>Architecture UX</span> UI <span>MVP Dev</span>{' '}
 							<span>Product Dev</span> Maintenance Support
@@ -25,9 +29,13 @@ const NovaSection1 = () => {
 					</InfoBlockItemCss>
 
 					<InfoBlockItemCss>
-						<h4>| Technologies used &lt;</h4>
+						<h4 class="grey">
+							<span class="symbol">|</span> Live website{' '}
+							<span class="symbol">&lt;</span>
+						</h4>
 						<p>
-							UML PHP Symfony JavaScript NodeJS ReactJS <span>Machine Learning</span> AI SQL MongoDB
+							UML PHP Symfony JavaScript NodeJS ReactJS <span>Machine Learning</span>{' '}
+							AI SQL MongoDB
 						</p>
 					</InfoBlockItemCss>
 				</ItemsCss>

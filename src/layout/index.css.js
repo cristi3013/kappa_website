@@ -86,6 +86,10 @@ export const LayoutsWrapperCss = styled.div`
 		line-height: 23px;
 		color: ${colors.white};
 
+		&.grey {
+			color: ${colors.grey};
+		}
+
 		span.symbol {
 			color: ${colors.blue};
 		}
