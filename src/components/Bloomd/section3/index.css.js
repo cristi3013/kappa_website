@@ -61,8 +61,15 @@ export const InfoBlockCss = styled.div`
   }
 `;
 
+export const ContentContainerCss = styled.div`
+  width: 100%;
+  overflow-x: auto;
+  user-select: none;
+`;
+
 export const ContentWrapperCss = styled.div`
-  width: 80vw;
+  width: 80%;
+  margin: 0 auto;
   max-width: 1200px;
   margin-top: 130px;
   display: flex;
@@ -106,6 +113,17 @@ export const ContentWrapperCss = styled.div`
     max-width: initial;
     padding: 0 5%;
     align-self: flex-start;
+
+    & > * {
+      &:first-child {
+        margin-right: 35px;
+
+        img {
+          max-width: initial;
+          width: calc(50% - (35px / 2));
+        }
+      }
+    }
 
     em {
       display: none;

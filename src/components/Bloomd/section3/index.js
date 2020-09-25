@@ -1,17 +1,15 @@
 import React, { memo } from 'react';
-import useAutoHorizontalScroll from '../useAutoHorizontalScroll';
 import {
   BloomdSectionWrapperCss,
   InfoBlockCss,
   ContentWrapperCss,
+  ContentContainerCss,
 } from './index.css';
 import image1Png from '../images/image3-1.png';
 import image2Png from '../images/image3-2.png';
 import image3Png from '../images/image3-3.png';
 
 const BloomdSection3 = memo(function BloomdSection3() {
-  const ref = useAutoHorizontalScroll();
-
   return (
     <BloomdSectionWrapperCss>
       <InfoBlockCss>
@@ -21,18 +19,20 @@ const BloomdSection3 = memo(function BloomdSection3() {
           tablets, desktop). We delivered the MVP in two months.
         </p>
       </InfoBlockCss>
-      <ContentWrapperCss ref={ref}>
-        <div>
-          <img src={image1Png} alt="" />
-          <img src={image2Png} alt="" />
-          <em>Different mobile viewport width</em>
-        </div>
+      <ContentContainerCss>
+        <ContentWrapperCss>
+          <div>
+            <img src={image1Png} alt="" />
+            <img src={image2Png} alt="" />
+            <em>Different mobile viewport width</em>
+          </div>
 
-        <div>
-          <img src={image3Png} alt="" />
-          <em>Tablet/desktop view</em>
-        </div>
-      </ContentWrapperCss>
+          <div>
+            <img src={image3Png} alt="" />
+            <em>Tablet/desktop view</em>
+          </div>
+        </ContentWrapperCss>
+      </ContentContainerCss>
       <em className="auto-horizontal-scroll-active">
         Different mobile/tablet and desktop viewport width
       </em>
