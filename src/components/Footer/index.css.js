@@ -22,7 +22,7 @@ export const FooterWrapperCss = styled.div`
 		margin-top: 0px;
 		margin-bottom: 72px;
 		i {
-			text-decoration: underline;
+			border-bottom: 2px solid ${colors.grey};
 		}
 		@media (max-width: ${screens.lg}) {
 			margin-bottom: 50px;
