@@ -3,6 +3,7 @@ import { PrimaryLinkCss } from '../../../layout/index.css';
 import { SecondSectionWrapperCss, BlockCss, InfoCss, ImageCss } from './index.css';
 import img1 from './images/image1.png';
 import img2 from './images/image2.png';
+import { Link } from 'react-router-dom';
 
 const SecondSection = () => {
 	return (
@@ -31,7 +32,9 @@ const SecondSection = () => {
 					<PrimaryLinkCss to="/bryant">View project</PrimaryLinkCss>
 				</InfoCss>
 				<ImageCss>
-					<img src={img1} alt="Bryant Dental" />
+					<Link to="/bryant">
+						<img src={img1} alt="Bryant Dental" />
+					</Link>
 				</ImageCss>
 			</BlockCss>
 
@@ -46,7 +49,9 @@ const SecondSection = () => {
 					<PrimaryLinkCss to="/nova">View project</PrimaryLinkCss>
 				</InfoCss>
 				<ImageCss>
-					<img src={img2} alt="Nova AI" />
+					<Link to="/nova">
+						<img src={img2} alt="Nova AI" />
+					</Link>
 				</ImageCss>
 			</BlockCss>
 		</SecondSectionWrapperCss>
