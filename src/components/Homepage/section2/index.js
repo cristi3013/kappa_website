@@ -21,10 +21,10 @@ const SecondSection = () => {
 						<p>Acknowledgements:</p>
 						<ul>
 							<li>
-								2019 <span>Dental Industry Awards Best Website</span>
+								2019 Dental Industry Awards <span>Best Website</span>
 							</li>
 							<li>
-								2018 <span>Awwwards Honorable Mention</span>
+								2018 Awwwards Honorable <span>Mention</span>
 							</li>
 						</ul>
 					</section>
