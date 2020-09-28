@@ -118,16 +118,13 @@ export const LayoutsWrapperCss = styled.div`
 	}
 
 	li {
-		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;
-		line-height: 27px;
+		line-height: 28px;
 		letter-spacing: 0.03em;
 		@media (max-width: ${screens.lg}) {
-			font-style: normal;
 			font-weight: normal;
 			font-size: 16px;
-			line-height: 27px;
 		}
 	}
 

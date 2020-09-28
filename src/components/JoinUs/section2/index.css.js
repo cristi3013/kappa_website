@@ -34,7 +34,10 @@ export const BlocksCss = styled.div`
 	}
 `;
 
-export const InfoBlockCss = styled.div`@media (max-width: ${screens.lg}) {}`;
+export const InfoBlockCss = styled.div`
+	@media (max-width: ${screens.lg}) {
+	}
+`;
 
 export const InfoBlockHeaderCss = styled.div`
 	display: flex;
@@ -94,12 +97,11 @@ export const InfoBlockContentCss = styled.div`
 		list-style-position: inside;
 
 		li {
-			margin-bottom: 13px;
 			list-style: none;
 			position: relative;
 			padding-left: 20px;
 			&:before {
-				color: ${colors.blue};
+				color: ${colors.grey};
 				content: '■';
 				position: absolute;
 				left: 0px;
