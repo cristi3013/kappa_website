@@ -80,6 +80,7 @@ export const LayoutsWrapperCss = styled.div`
 	}
 
 	h4 {
+		white-space: nowrap;
 		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;

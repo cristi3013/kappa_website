@@ -6,6 +6,7 @@ export const FooterWrapperCss = styled.div`
 	flex-direction: column;
 
 	h4 {
+		white-space: nowrap;
 		color: ${colors.white};
 
 		&.grey {
