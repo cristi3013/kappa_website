@@ -196,7 +196,6 @@ export const PrimaryLinkCss = styled(Link)`
 		left: 0;
 		bottom: 0;
 		height: 2px;
-		padding-bottom: 1px;
 		background: ${colors.blue};
 	}
 
