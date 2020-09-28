@@ -76,7 +76,7 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="1"
 				>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Qualifications and Skills{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -103,7 +103,7 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Responsibilities{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -127,7 +127,7 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
 					</h4>
 					<ul>
@@ -150,7 +150,7 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="2"
 				>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Qualifications and Skills{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -177,7 +177,7 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Responsibilities{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -201,7 +201,7 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
 					</h4>
 					<ul>
@@ -224,7 +224,7 @@ const JoinUsSecondSection = () => {
 					setOpened={setOpened}
 					opened={opened}
 				>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Qualifications and Skills{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -251,7 +251,7 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Responsibilities{' '}
 						<span class="symbol">&lt;</span>
 					</h4>
@@ -275,7 +275,7 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>
+					<h4 class="grey">
 						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
 					</h4>
 					<ul>
