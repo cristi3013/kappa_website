@@ -5,7 +5,7 @@ export const NovaSectionWrapperCss = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-top: 200px;
+	padding-top: 150px;
 
 	justify-content: center;
 	align-items: center;
@@ -16,12 +16,13 @@ export const NovaSectionWrapperCss = styled.div`
 
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;
-		padding: 50px 0px 25px;
+		padding: 85px 0px 25px;
 		width: auto;
 
-		p,h1,h4{
-			padding:0px 25px;
-		
+		p,
+		h1,
+		h4 {
+			padding: 0px 25px;
 		}
 	}
 `;
@@ -39,9 +40,8 @@ export const ItemsCss = styled.div`
 	margin: 25px 0px 25px;
 	justify-content: space-between;
 	@media (max-width: ${screens.lg}) {
-		flex-direction:column;
+		flex-direction: column;
 		width: 100%;
-		
 	}
 `;
 
@@ -50,9 +50,8 @@ export const InfoBlockItemCss = styled.div`
 	flex-direction: column;
 	width: 45%;
 	@media (max-width: ${screens.lg}) {
-		flex-direction:column;
+		flex-direction: column;
 		width: 100%;
-		
 	}
 
 	h4 {
@@ -60,7 +59,7 @@ export const InfoBlockItemCss = styled.div`
 
 		@media (max-width: ${screens.lg}) {
 			width: auto;
-			margin-bottom:0px;
+			margin-bottom: 0px;
 		}
 	}
 
