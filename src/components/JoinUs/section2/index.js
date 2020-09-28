@@ -76,7 +76,10 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="1"
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Qualifications and Skills{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
@@ -100,7 +103,10 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Responsibilities{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>
 							Good knowledge of English language, as we are an international team;
@@ -121,7 +127,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>
@@ -142,7 +150,10 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="2"
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Qualifications and Skills{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
@@ -166,7 +177,10 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Responsibilities{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>
 							Good knowledge of English language, as we are an international team;
@@ -187,7 +201,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>
@@ -208,7 +224,10 @@ const JoinUsSecondSection = () => {
 					setOpened={setOpened}
 					opened={opened}
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Qualifications and Skills{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
@@ -232,7 +251,10 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Responsibilities{' '}
+						<span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>
 							Good knowledge of English language, as we are an international team;
@@ -253,7 +275,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4>
+						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>
