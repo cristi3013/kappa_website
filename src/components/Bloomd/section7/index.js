@@ -28,87 +28,81 @@ const BloomdSection7 = memo(function BloomdSection7() {
 
   return (
     <BloomdSectionWrapperCss>
-      <BackgroundLineCss>
-        <PaddingLeftRightCss>
-          <GroupWrapperCss>
-            <IphoneXFrame>
-              <img src={matchingInterestsPng} alt="" />
-            </IphoneXFrame>
-            <GroupDescriptionCss>
-              <MatchingInterestsSvg />
-              <div>
-                <h1>Matching interests</h1>
-                <p>
-                  Users are matched by interests they select in order to provide
-                  more fruitful conversations.
-                </p>
-              </div>
-            </GroupDescriptionCss>
-          </GroupWrapperCss>
-        </PaddingLeftRightCss>
-      </BackgroundLineCss>
+      <PaddingLeftRightCss>
+        <GroupWrapperCss>
+          <IphoneXFrame>
+            <img src={matchingInterestsPng} alt="" />
+          </IphoneXFrame>
+          <GroupDescriptionCss>
+            <MatchingInterestsSvg />
+            <div>
+              <h1>Matching interests</h1>
+              <p>
+                Users are matched by interests they select in order to provide
+                more fruitful conversations.
+              </p>
+            </div>
+          </GroupDescriptionCss>
+        </GroupWrapperCss>
+      </PaddingLeftRightCss>
 
       <SeparatorCss />
 
-      <BackgroundLineCss right>
-        <PaddingLeftRightCss>
-          <GroupWrapperCss right>
-            <IphoneXFrame ref={managingAppointmentsMp4WrapperRef}>
-              <video
-                src={managingAppointmentsMp4}
-                ref={managingAppointmentsMp4Ref}
-                type="video/mp4"
-                crossOrigin="true"
-                autoPlay={false}
-                loop
-                playsInline
-                muted
-              />
-            </IphoneXFrame>
-            <GroupDescriptionCss>
-              <ManagingAppointmentsSvg />
-              <div>
-                <h1>Managing appointments</h1>
-                <p>
-                  All your calls are at your fingertips. Update your schedule
-                  with just a few taps.
-                </p>
-              </div>
-            </GroupDescriptionCss>
-          </GroupWrapperCss>
-        </PaddingLeftRightCss>
-      </BackgroundLineCss>
+      <PaddingLeftRightCss>
+        <GroupWrapperCss right>
+          <IphoneXFrame ref={managingAppointmentsMp4WrapperRef}>
+            <video
+              src={managingAppointmentsMp4}
+              ref={managingAppointmentsMp4Ref}
+              type="video/mp4"
+              crossOrigin="true"
+              autoPlay={false}
+              loop
+              playsInline
+              muted
+            />
+          </IphoneXFrame>
+          <GroupDescriptionCss right>
+            <ManagingAppointmentsSvg />
+            <div>
+              <h1>Managing appointments</h1>
+              <p>
+                All your calls are at your fingertips. Update your schedule with
+                just a few taps.
+              </p>
+            </div>
+          </GroupDescriptionCss>
+        </GroupWrapperCss>
+      </PaddingLeftRightCss>
 
       <SeparatorCss />
 
-      <BackgroundLineCss>
-        <PaddingLeftRightCss>
-          <GroupWrapperCss>
-            <IphoneXFrame ref={gamificationMp4WrapperRef}>
-              <video
-                src={gamificationMp4}
-                ref={gamificationMp4Ref}
-                type="video/mp4"
-                crossOrigin="true"
-                autoPlay={false}
-                loop
-                playsInline
-                muted
-              />
-            </IphoneXFrame>
-            <GroupDescriptionCss>
-              <GamificationSvg />
-              <div>
-                <h1>Gamification</h1>
-                <p>
-                  Creative achievements under the form of badges to entice
-                  engagement and user retention.
-                </p>
-              </div>
-            </GroupDescriptionCss>
-          </GroupWrapperCss>
-        </PaddingLeftRightCss>
-      </BackgroundLineCss>
+      <PaddingLeftRightCss>
+        <GroupWrapperCss>
+          <IphoneXFrame ref={gamificationMp4WrapperRef}>
+            <video
+              src={gamificationMp4}
+              ref={gamificationMp4Ref}
+              type="video/mp4"
+              crossOrigin="true"
+              autoPlay={false}
+              loop
+              playsInline
+              muted
+            />
+          </IphoneXFrame>
+          <GroupDescriptionCss>
+            <GamificationSvg />
+            <div>
+              <h1>Gamification</h1>
+              <p>
+                Creative achievements under the form of badges to entice
+                engagement and user retention.
+              </p>
+            </div>
+          </GroupDescriptionCss>
+        </GroupWrapperCss>
+      </PaddingLeftRightCss>
     </BloomdSectionWrapperCss>
   );
 });

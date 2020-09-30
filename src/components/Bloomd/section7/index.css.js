@@ -91,10 +91,12 @@ export const GroupWrapperCss = styled.div`
       height: auto;
       max-width: 300px;
       margin-right: 10%;
+      position: relative;
+      z-index: 1;
     }
 
     &:last-child {
-      max-width: 400px;
+      max-width: 365px;
     }
   }
 
@@ -150,6 +152,54 @@ export const GroupWrapperCss = styled.div`
 `;
 
 export const GroupDescriptionCss = styled.div`
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    height: 210px;
+    background: #fdfdfd;
+    width: 5000px;
+
+    border-radius: 12px;
+    transform: translate(5vw, 30%);
+
+    @media (max-width: ${screens.lg}) {
+      transform: translate(15vw, 230%);
+      z-index: 0;
+    }
+
+    @media (max-width: ${screens.sm}) {
+      transform: translate(5vw, 230%);
+    }
+
+    @media (max-width: ${screens.xs}) {
+      transform: translate(0, 200%);
+    }
+
+    ${({ right }) =>
+      right &&
+      css`
+        left: 0;
+        transform: translate(-5vw, 30%);
+
+        @media (max-width: ${screens.lg}) {
+          transform: translate(-15vw, 230%);
+        }
+
+        @media (max-width: ${screens.sm}) {
+          transform: translate(-5vw, 230%);
+        }
+
+        @media (max-width: ${screens.xs}) {
+          transform: translate(0, 200%);
+        }
+      `};
+  }
+
   svg {
     display: block;
   }
