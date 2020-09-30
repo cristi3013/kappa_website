@@ -1,5 +1,5 @@
 import React, { memo, useState, useCallback } from 'react';
-import { DescriptionCss, PaddingLeftRightCss } from '../index.css';
+import { TitleWrapperCss, PaddingLeftRightCss } from '../index.css';
 import {
   DesktopWrapperCss,
   DesktopImagesWrapper,
@@ -24,13 +24,13 @@ const ChangesInVision = memo(function ChangesInVision() {
   return (
     <>
       <PaddingLeftRightCss>
-        <DescriptionCss>
+        <TitleWrapperCss description>
           <h3>Changes in Vision</h3>
           <p>
             We chose colours that are contrasting enough for users with impaired
             vision to use the app comfortably.
           </p>
-        </DescriptionCss>
+        </TitleWrapperCss>
 
         <DesktopWrapperCss>
           <DesktopImagesWrapper id="reply">

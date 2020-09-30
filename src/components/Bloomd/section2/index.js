@@ -43,7 +43,7 @@ const BloomdSection2 = () => {
           <IphoneXFrame>
             <img src={videoPng} alt="" />
           </IphoneXFrame>
-          <em>Cancelling upcoming appointments.</em>
+          <em>Respond to requests and save them for later.</em>
         </VideoWrapperCss>
       </ContentWrapperCss>
     </BloomdSectionWrapperCss>

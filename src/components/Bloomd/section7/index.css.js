@@ -15,7 +15,7 @@ export const BloomdSectionWrapperCss = styled.div`
   }
 
   p {
-    color: ${colors.grey};
+    color: ${colors.grey4};
   }
 
   em {

@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { PaddingLeftRightCss, DescriptionCss } from '../index.css';
+import { PaddingLeftRightCss, TitleWrapperCss } from '../index.css';
 import { ScreensWrapperCss } from './index.css';
 import editProfileImagePng from './images/edit-profile-image.png';
 import goToChatsPng from './images/go-to-chats.png';
@@ -15,13 +15,13 @@ const Onboarding = memo(function Onboarding() {
   return (
     <>
       <PaddingLeftRightCss>
-        <DescriptionCss>
+        <TitleWrapperCss description>
           <h3>Getting help: onboarding</h3>
           <p>
             A tutorial takes the user through the basics in order to guide (the
             elderly) around the “look” and “feel” of the app.
           </p>
-        </DescriptionCss>
+        </TitleWrapperCss>
       </PaddingLeftRightCss>
 
       <ScreensWrapperCss ref={ref}>

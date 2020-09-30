@@ -5,6 +5,7 @@ export const colors = {
   grey: '#9B9999',
   grey2: '#F7F7F7',
   grey3: '#EFEFEF',
+  grey4: '#616A76',
   blue: '#96BCDB',
 };
 
@@ -17,5 +18,5 @@ export const screens = {
 };
 
 export const fonts = {
-  primary: 'IBM Plex Sans',
+  primary: '"IBM Plex Sans", sans-serif',
 };

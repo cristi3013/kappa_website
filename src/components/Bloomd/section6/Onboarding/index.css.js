@@ -9,9 +9,9 @@ export const ScreensWrapperCss = styled.div`
   justify-content: center;
 
   & > * {
-    width: calc((100% - ${({ children }) => children.length} * 5%) / 6);
-    padding-right: 5%;
-    max-width: 160px;
+    width: calc((100% - ${({ children }) => children.length} * 2.5%) / 6);
+    padding-right: 2.5%;
+    max-width: 170px;
 
     &:last-child {
       padding-right: 0;
@@ -26,7 +26,7 @@ export const ScreensWrapperCss = styled.div`
   @media (max-width: ${screens.xl}) {
     display: inline-flex;
     & > * {
-      width: 160px;
+      width: 170px;
       max-width: initial;
     }
   }

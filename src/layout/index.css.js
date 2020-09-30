@@ -3,7 +3,7 @@ import { screens, fonts, colors } from '../constants/theme';
 import { Link } from 'react-router-dom';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@0;1&display=swap');
   body {
     font-family: ${fonts.primary};
     background-color:${colors.black};

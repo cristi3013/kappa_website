@@ -41,7 +41,7 @@ export const TitleWrapperCss = styled.div`
   }
 
   p {
-    color: ${colors.grey};
+    color: ${colors.grey4};
   }
 
   @media (max-width: ${screens.lg}) {

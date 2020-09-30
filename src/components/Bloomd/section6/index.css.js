@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { screens, colors } from '../../../constants/theme';
 
 export const BloomdSectionWrapperCss = styled.div`
@@ -12,10 +12,12 @@ export const BloomdSectionWrapperCss = styled.div`
 
   h3 {
     font-style: italic;
+    margin: 18px 0;
   }
 
   p {
-    color: ${colors.grey};
+    color: ${colors.grey4};
+    margin-top: 0;
   }
 
   em {
@@ -38,6 +40,14 @@ export const PaddingLeftRightCss = styled.div`
 export const TitleWrapperCss = styled.div`
   margin: 0 auto;
   max-width: 648px;
+
+  ${({ description }) =>
+    description &&
+    css`
+      p {
+        max-width: 475px;
+      }
+    `}
 `;
 
 export const DescriptionCss = styled.div`
