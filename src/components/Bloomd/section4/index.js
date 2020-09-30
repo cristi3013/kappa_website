@@ -37,8 +37,12 @@ const BloomdSection4 = memo(function BloomdSection4() {
         </div>
         <div className="right">
           <div className="right-images">
-            <img src={image5Png} alt="" />
-            <img src={image6Png} alt="" />
+            <div>
+              <img src={image5Png} alt="" />
+            </div>
+            <div>
+              <img src={image6Png} alt="" />
+            </div>
           </div>
           <em>Give feedback after every chat via an accessible report form.</em>
         </div>

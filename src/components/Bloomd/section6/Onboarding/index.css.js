@@ -8,22 +8,24 @@ export const ScreensWrapperCss = styled.div`
   overflow: hidden;
   justify-content: center;
 
-  img {
-    display: block;
+  & > * {
     width: calc((100% - ${({ children }) => children.length} * 5%) / 6);
     padding-right: 5%;
     max-width: 160px;
-    height: auto;
-    flex-basis: auto;
 
     &:last-child {
       padding-right: 0;
     }
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
   @media (max-width: ${screens.xl}) {
     display: inline-flex;
-    img {
+    & > * {
       width: 160px;
       max-width: initial;
     }

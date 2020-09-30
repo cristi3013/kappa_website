@@ -25,12 +25,24 @@ const Onboarding = memo(function Onboarding() {
       </PaddingLeftRightCss>
 
       <ScreensWrapperCss ref={ref}>
-        <img src={editProfileImagePng} alt="" />
-        <img src={goToChatsPng} alt="" />
-        <img src={deletePostPng} alt="" />
-        <img src={goToRequestPng} alt="" />
-        <img src={goToHomepagePng} alt="" />
-        <img src={finishPng} alt="" />
+        <div>
+          <img src={editProfileImagePng} alt="" />
+        </div>
+        <div>
+          <img src={goToChatsPng} alt="" />
+        </div>
+        <div>
+          <img src={deletePostPng} alt="" />
+        </div>
+        <div>
+          <img src={goToRequestPng} alt="" />
+        </div>
+        <div>
+          <img src={goToHomepagePng} alt="" />
+        </div>
+        <div>
+          <img src={finishPng} alt="" />
+        </div>
       </ScreensWrapperCss>
     </>
   );

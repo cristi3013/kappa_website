@@ -108,14 +108,17 @@ export const ContentWrapperCss = styled.div`
     display: flex;
     justify-content: space-between;
 
-    img {
+    & > * {
       width: 49%;
-      height: auto;
-      flex-basis: auto;
+
+      &:first-child {
+        margin-right: 2%;
+      }
     }
 
-    img:first-child {
-      margin-right: 2%;
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
