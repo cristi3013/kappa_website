@@ -111,6 +111,7 @@ export const ContentWrapperCss = styled.div`
     img {
       width: 49%;
       height: auto;
+      flex-basis: auto;
     }
 
     img:first-child {

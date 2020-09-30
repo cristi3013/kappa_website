@@ -14,6 +14,7 @@ export const ScreensWrapperCss = styled.div`
     padding-right: 5%;
     max-width: 160px;
     height: auto;
+    flex-basis: auto;
 
     &:last-child {
       padding-right: 0;
