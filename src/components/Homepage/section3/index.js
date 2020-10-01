@@ -45,7 +45,7 @@ const ThirdSection = () => {
           </p>
           <p>
             <span>
-              HTML CSS JavaScript PHP <i>Expressions Engine</i> MySQL
+              HTML CSS JavaScript PHP <i>ExpressionEngine</i> MySQL
             </span>
           </p>
         </BlockContainerCss>
