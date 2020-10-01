@@ -57,7 +57,7 @@ export const TitleWrapperCss = styled.div`
   }
 
   @media (max-width: ${screens.md}) {
-    img {
+    .logo {
       display: none;
     }
   }

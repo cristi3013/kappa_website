@@ -87,7 +87,7 @@ export const ContentWrapperCss = styled.div`
   & > * {
     &:first-child {
       width: 40%;
-      margin-right: 65px;
+      margin-right: 20px;
       text-align: center;
 
       img {
