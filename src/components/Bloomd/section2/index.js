@@ -27,7 +27,7 @@ const BloomdSection2 = () => {
         </p>
       </InfoBlockCss>
       <ContentWrapperCss>
-        <div style={{ width: '100%', maxWidth: 650 }}>
+        <div style={{ width: '100%', maxWidth: 700 }}>
           <ImagesWrapperCss>
             <IphoneXFrame>
               <img src={image1Png} alt="" />

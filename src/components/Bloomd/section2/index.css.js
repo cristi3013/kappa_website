@@ -54,7 +54,7 @@ export const InfoBlockCss = styled.div`
 
 export const ContentWrapperCss = styled.div`
   width: 80vw;
-  max-width: 1050px;
+  max-width: 1150px;
   margin-top: 130px;
   display: flex;
   justify-content: space-between;
@@ -87,11 +87,12 @@ export const ContentWrapperCss = styled.div`
 
 export const ImagesWrapperCss = styled.div`
   display: flex;
+  justify-content: center;
 
   & > * {
     width: 40%;
     height: auto;
-    max-width: 270px;
+    max-width: 260px;
 
     &:first-child {
       margin-right: 10%;
@@ -105,7 +106,7 @@ export const ImagesWrapperCss = styled.div`
 
 export const VideoWrapperCss = styled.div`
   & > *:first-child {
-    max-width: 270px;
+    max-width: 260px;
     margin: 0 auto;
 
     @media (max-width: ${screens.sm}) {
