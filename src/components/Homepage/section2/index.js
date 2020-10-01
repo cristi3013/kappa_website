@@ -9,7 +9,8 @@ const SecondSection = () => {
 	return (
 		<SecondSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> Currently working on <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Currently working on{' '}
+				<span className="symbol">&lt;</span>
 			</h4>
 			<BlockCss>
 				<InfoCss>

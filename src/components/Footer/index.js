@@ -14,7 +14,7 @@ const footer1 = (block) => {
 	return (
 		<FooterBlockCss key={block}>
 			<FooterBlockTitleCss>
-				<span class="symbol">|</span> Who we are <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Who we are <span className="symbol">&lt;</span>
 			</FooterBlockTitleCss>
 			<FooterBlockInfoCss>
 				<h2>
@@ -41,7 +41,8 @@ const footer2 = (block) => {
 	return (
 		<FooterBlockCss key={block}>
 			<FooterBlockTitleCss>
-				<span class="symbol">|</span> Intern with us <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Intern with us{' '}
+				<span className="symbol">&lt;</span>
 			</FooterBlockTitleCss>
 			<FooterBlockInfoCss>
 				<h2>
@@ -62,7 +63,7 @@ const footer3 = (block) => {
 	return (
 		<FooterBlockCss key={block}>
 			<FooterBlockTitleCss>
-				<span class="symbol">|</span> Send us GIFs <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Send us GIFs <span className="symbol">&lt;</span>
 			</FooterBlockTitleCss>
 			<FooterBlockInfoCss>
 				<FooterBlockLinksCss>

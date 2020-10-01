@@ -18,9 +18,9 @@ const NovaSection1 = () => {
 				</p>
 				<ItemsCss>
 					<InfoBlockItemCss>
-						<h4 class="grey">
-							<span class="symbol">|</span> Responsibilities{' '}
-							<span class="symbol">&lt;</span>
+						<h4 className="grey">
+							<span className="symbol">|</span> Responsibilities{' '}
+							<span className="symbol">&lt;</span>
 						</h4>
 						<p>
 							Analysis Discovery <span>Architecture UX</span> UI <span>MVP Dev</span>{' '}
@@ -29,9 +29,9 @@ const NovaSection1 = () => {
 					</InfoBlockItemCss>
 
 					<InfoBlockItemCss>
-						<h4 class="grey">
-							<span class="symbol">|</span> Live website{' '}
-							<span class="symbol">&lt;</span>
+						<h4 className="grey">
+							<span className="symbol">|</span> Live website{' '}
+							<span className="symbol">&lt;</span>
 						</h4>
 						<p>
 							UML PHP Symfony JavaScript NodeJS ReactJS <span>Machine Learning</span>{' '}

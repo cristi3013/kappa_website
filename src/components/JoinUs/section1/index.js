@@ -5,7 +5,7 @@ const JoinUsFirstSection = () => {
 	return (
 		<JoinUsFirstSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> Join us <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Join us <span className="symbol">&lt;</span>
 			</h4>
 			<InfoBlockCss>
 				<h1>

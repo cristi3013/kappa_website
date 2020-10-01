@@ -8,7 +8,7 @@ const WhoWeAreFirstSection = () => {
 	return (
 		<WhoWeAreFirstSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> Who we are <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Who we are <span className="symbol">&lt;</span>
 			</h4>
 			<InfoBlockCss>
 				<p>Kappa came into being a few years ago in London.</p>

@@ -22,25 +22,25 @@ const BryantSection1 = () => {
 				</p>
 				<ItemsCss>
 					<InfoBlockItemCss>
-						<h4 class="grey">
-							<span class="symbol">|</span> Responsibilities{' '}
-							<span class="symbol">&lt;</span>
+						<h4 className="grey">
+							<span className="symbol">|</span> Responsibilities{' '}
+							<span className="symbol">&lt;</span>
 						</h4>
 						<p>Design Interaction Front-End SEO Copywriting</p>
 					</InfoBlockItemCss>
 
 					<InfoBlockItemCss>
-						<h4 class="grey">
-							<span class="symbol">|</span> Technologies used{' '}
-							<span class="symbol">&lt;</span>
+						<h4 className="grey">
+							<span className="symbol">|</span> Technologies used{' '}
+							<span className="symbol">&lt;</span>
 						</h4>
 						<p>HTML CSS JavaScript ReactJS Gastby JS OpenCart</p>
 					</InfoBlockItemCss>
 
 					<InfoBlockItemCss>
-						<h4 class="grey">
-							<span class="symbol">|</span> Live website{' '}
-							<span class="symbol">&lt;</span>
+						<h4 className="grey">
+							<span className="symbol">|</span> Live website{' '}
+							<span className="symbol">&lt;</span>
 						</h4>
 						<SecondaryLinkCss as="a" to="" href="http://bryant.dental" target="_blank">
 							bryant.dental

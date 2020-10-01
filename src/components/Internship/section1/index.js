@@ -15,7 +15,8 @@ const InternshipFirstSection = () => {
 	return (
 		<InternshipFirstSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> Intern with us <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Intern with us{' '}
+				<span className="symbol">&lt;</span>
 			</h4>
 			<InfoBlockCss>
 				<h2>Interested in learning to code?</h2>

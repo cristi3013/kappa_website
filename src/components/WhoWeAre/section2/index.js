@@ -12,7 +12,7 @@ const WhoWeAreSecondSection = () => {
 	return (
 		<WhoWeAreSecondSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> How we work <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> How we work <span className="symbol">&lt;</span>
 			</h4>
 			<InfoBlockCss>
 				<p>

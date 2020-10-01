@@ -65,7 +65,7 @@ const JoinUsSecondSection = () => {
 	return (
 		<JoinUsSecondSectionWrapperCss>
 			<h4>
-				<span class="symbol">|</span> Openings <span class="symbol">&lt;</span>
+				<span className="symbol">|</span> Openings <span className="symbol">&lt;</span>
 			</h4>
 
 			<BlocksCss>
@@ -76,9 +76,9 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="1"
 				>
-					<h4 class="grey">
-						<span class="symbol">|</span> Qualifications and Skills{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
@@ -103,9 +103,9 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4 class="grey">
-						<span class="symbol">|</span> Responsibilities{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>
@@ -127,8 +127,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4 class="grey">
-						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Remote Working</li>
@@ -150,9 +151,9 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="2"
 				>
-					<h4 class="grey">
-						<span class="symbol">|</span> Qualifications and Skills{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
@@ -177,9 +178,9 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4 class="grey">
-						<span class="symbol">|</span> Responsibilities{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>
@@ -201,8 +202,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4 class="grey">
-						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Remote Working</li>
@@ -224,9 +226,9 @@ const JoinUsSecondSection = () => {
 					setOpened={setOpened}
 					opened={opened}
 				>
-					<h4 class="grey">
-						<span class="symbol">|</span> Qualifications and Skills{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
@@ -251,9 +253,9 @@ const JoinUsSecondSection = () => {
 							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4 class="grey">
-						<span class="symbol">|</span> Responsibilities{' '}
-						<span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>
@@ -275,8 +277,9 @@ const JoinUsSecondSection = () => {
 						If needed, our team can provide further training to extend your skills and
 						the knowledge of mentioned technologies.
 					</p>
-					<h4 class="grey">
-						<span class="symbol">|</span> Benefits <span class="symbol">&lt;</span>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
 					</h4>
 					<ul>
 						<li>Remote Working</li>
