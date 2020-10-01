@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
 	margin:10px 0px 0px;
   }
 
-  img {
+  * {
 	image-rendering: -webkit-optimize-contrast;
   }
 `;
