@@ -15,6 +15,14 @@ export const FooterWrapperCss = styled.div`
 
 		span.symbol {
 			color: ${colors.blue};
+			margin: 0 5px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 

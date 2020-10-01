@@ -68,7 +68,7 @@ export const InfoCss = styled.div`
 			margin-bottom: 13px;
 			list-style: none;
 			position: relative;
-			padding-left: 7px;
+			padding-left: 12px;
 			&:before {
 				content: '■';
 				position: absolute;
@@ -79,7 +79,6 @@ export const InfoCss = styled.div`
 			}
 
 			span {
-				margin-left: 5px;
 				color: ${colors.white};
 			}
 		}
