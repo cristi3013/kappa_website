@@ -28,7 +28,7 @@ const BryantSection1 = () => {
 
           <InfoBlockItemCss>
             <h4>| Technologies used &lt;</h4>
-            <p>HTML CSS JavaScript ReactJS Gastby JS OpenCart</p>
+            <p>HTML CSS JavaScript ReactJS GastbyJS OpenCart</p>
           </InfoBlockItemCss>
 
           <InfoBlockItemCss>
