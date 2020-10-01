@@ -40,7 +40,9 @@ const BloomdSection6 = memo(function BloomdSection6() {
                 confusion. The menu is at the bottom of the screen, not hidden
                 behind a burger icon.
               </p>
-              <img src={image2Png} alt="" />
+              <div className="image">
+                <img src={image2Png} alt="" />
+              </div>
             </div>
           </DescriptiveNavigationWrapperCss>
         </SectionContainerCss>

@@ -24,19 +24,20 @@ export const BloomdSectionWrapperCss = styled.div`
 
 export const TitleWrapperCss = styled.div`
   display: flex;
-  align-items: center;
 
   margin: 0 auto;
   width: 50vw;
   max-width: 648px;
 
-  img {
+  .logo svg {
+    margin-top: 11px;
     margin-right: 50px;
-    width: 140px;
+    width: 130px;
     height: auto;
   }
 
   h1 {
+    margin-top: 0;
     color: ${colors.black};
   }
 
@@ -64,6 +65,7 @@ export const TitleWrapperCss = styled.div`
 
 export const ContentWrapperCss = styled.div`
   width: 80vw;
+  max-width: 1300px;
   margin-top: 130px;
   display: flex;
   justify-content: center;
@@ -135,7 +137,6 @@ export const ContentWrapperCss = styled.div`
     align-items: center;
 
     & > * {
-      /* width: 100%; */
       margin-bottom: 50px;
     }
   }

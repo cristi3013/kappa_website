@@ -2,10 +2,9 @@ import React, { memo } from 'react';
 import {
   BloomdSectionWrapperCss,
   TitleWrapperCss,
-  //   InfoBlockCss,
   ContentWrapperCss,
 } from './index.css';
-import image1Png from '../images/image4-1.png';
+import { ReactComponent as IproovLogoSvg } from '../images/iproov.svg';
 import image2Png from '../images/image4-2.png';
 import image3Png from '../images/image4-3.png';
 import image4Png from '../images/image4-4.png';
@@ -16,7 +15,9 @@ const BloomdSection4 = memo(function BloomdSection4() {
   return (
     <BloomdSectionWrapperCss>
       <TitleWrapperCss>
-        <img src={image1Png} alt="" />
+        <div className="logo">
+          <IproovLogoSvg />
+        </div>
         <div>
           <h1>A safe community</h1>
           <p>

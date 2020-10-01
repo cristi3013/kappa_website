@@ -92,6 +92,9 @@ export const DescriptiveNavigationWrapperCss = styled.div`
 
       img {
         width: 100%;
+        max-width: 375px;
+        height: 100%;
+        filter: drop-shadow(0 -1px 7px rgba(0, 0, 0, 0.15));
       }
     }
   }

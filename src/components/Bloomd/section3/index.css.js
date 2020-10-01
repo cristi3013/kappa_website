@@ -88,6 +88,7 @@ export const ContentWrapperCss = styled.div`
     &:first-child {
       width: 40%;
       margin-right: 65px;
+      text-align: center;
 
       img {
         max-width: 40%;

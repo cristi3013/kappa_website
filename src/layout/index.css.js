@@ -9,6 +9,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color:${colors.black};
 	margin:10px 0px 0px;
   }
+
+  img {
+	image-rendering: -webkit-optimize-contrast;
+  }
 `;
 
 export const LayoutsWrapperCss = styled.div`
