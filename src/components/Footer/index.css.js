@@ -6,7 +6,24 @@ export const FooterWrapperCss = styled.div`
 	flex-direction: column;
 
 	h4 {
-		color: ${colors.blue};
+		white-space: nowrap;
+		color: ${colors.white};
+
+		&.grey {
+			color: ${colors.grey};
+		}
+
+		span.symbol {
+			color: ${colors.blue};
+			margin: 0 5px;
+
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
 	}
 
 	h2 {
@@ -14,7 +31,7 @@ export const FooterWrapperCss = styled.div`
 		margin-top: 0px;
 		margin-bottom: 72px;
 		i {
-			text-decoration: underline;
+			border-bottom: 2px solid ${colors.grey};
 		}
 		@media (max-width: ${screens.lg}) {
 			margin-bottom: 50px;

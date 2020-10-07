@@ -8,11 +8,11 @@ import {
 	InfoBlockHeaderCss,
 	InfoBlockTitleCss,
 	InfoBlockContentCss,
-	IconCss
+	IconCss,
 } from './index.css';
 
 const InfoBlock = (props) => {
-	const [ show, setShow ] = useState(false);
+	const [show, setShow] = useState(false);
 	const childElement = useRef(null);
 	const headerElement = useRef(null);
 	useEffect(() => {
@@ -27,8 +27,16 @@ const InfoBlock = (props) => {
 		} else {
 			props.setOpened(props.id);
 			setShow(true);
-console.log(headerElement.current.offsetHeight)
-			setTimeout(()=>window.scrollTo({ top: headerElement.current.offsetTop-headerElement.current.offsetHeight/2 }),500);
+			console.log(headerElement.current.offsetHeight);
+			setTimeout(
+				() =>
+					window.scrollTo({
+						top:
+							headerElement.current.offsetTop -
+							headerElement.current.offsetHeight / 2,
+					}),
+				500
+			);
 		}
 	};
 
@@ -41,7 +49,10 @@ console.log(headerElement.current.offsetHeight)
 					<p>{props.subtitle}</p>
 				</InfoBlockTitleCss>
 			</InfoBlockHeaderCss>
-			<InfoBlockContentCss show={show} childrenHeight={childElement.current && childElement.current.scrollHeight}>
+			<InfoBlockContentCss
+				show={show}
+				childrenHeight={childElement.current && childElement.current.scrollHeight}
+			>
 				<div ref={childElement}>{props.children}</div>
 			</InfoBlockContentCss>
 		</InfoBlockCss>
@@ -49,11 +60,13 @@ console.log(headerElement.current.offsetHeight)
 };
 
 const JoinUsSecondSection = () => {
-	const [ opened, setOpened ] = useState(0);
+	const [opened, setOpened] = useState(0);
 
 	return (
 		<JoinUsSecondSectionWrapperCss>
-			<h4>| Openings &lt;</h4>
+			<h4>
+				<span className="symbol">|</span> Openings <span className="symbol">&lt;</span>
+			</h4>
 
 			<BlocksCss>
 				<InfoBlock
@@ -63,33 +76,46 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="1"
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
-						<li>PHP - Must be very comfortable with it and have strong knowledge of this language;</li>
+						<li>
+							PHP - Must be very comfortable with it and have strong knowledge of this
+							language;
+						</li>
 						<li>Know at least one PHP MVC Framework;</li>
 						<li>
-							Ideally, this framework is Laravel (a big plus, two pluses actually, we really need a
-							Laravel guy), or Symfony (just a small plus);
+							Ideally, this framework is Laravel (a big plus, two pluses actually, we
+							really need a Laravel guy), or Symfony (just a small plus);
 						</li>
 						<li>
-							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need to train you in
-							Laravel most likely);
+							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need
+							to train you in Laravel most likely);
 						</li>
 						<li>Have knowledge of SQL, specifically MySQL or PostgreSQL;</li>
 						<li>Have experience with Version Control (Git);</li>
 						<li>
-							Have some experience with Bash and Unix environments (generally we use Ubuntu 16.04 or
-							later).
+							Have some experience with Bash and Unix environments (generally we use
+							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
-						<li>Good knowledge of English language, as we are an international team;</li>
+						<li>
+							Good knowledge of English language, as we are an international team;
+						</li>
 						<li>Supporting and troubleshooting existing client websites;</li>
 						<li>Preparing technical documentation and test plans;</li>
-						<li>Understanding the importance of maintainable code and coding standards;</li>
+						<li>
+							Understanding the importance of maintainable code and coding standards;
+						</li>
 						<li>Ability to be a team player and work independently too;</li>
 						<li>Willingness to learn and self-improve through feedback;</li>
 						<li>Strong ability to communicate via visual and verbal media;</li>
@@ -98,10 +124,13 @@ const JoinUsSecondSection = () => {
 						<li>A can-do attitude towards work and a strong work ethic.</li>
 					</ul>
 					<p>
-						If needed, our team can provide further training to extend your skills and the knowledge of
-						mentioned technologies.
+						If needed, our team can provide further training to extend your skills and
+						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>
@@ -122,33 +151,46 @@ const JoinUsSecondSection = () => {
 					opened={opened}
 					id="2"
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
-						<li>PHP - Must be very comfortable with it and have strong knowledge of this language;</li>
+						<li>
+							PHP - Must be very comfortable with it and have strong knowledge of this
+							language;
+						</li>
 						<li>Know at least one PHP MVC Framework;</li>
 						<li>
-							Ideally, this framework is Laravel (a big plus, two pluses actually, we really need a
-							Laravel guy), or Symfony (just a small plus);
+							Ideally, this framework is Laravel (a big plus, two pluses actually, we
+							really need a Laravel guy), or Symfony (just a small plus);
 						</li>
 						<li>
-							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need to train you in
-							Laravel most likely);
+							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need
+							to train you in Laravel most likely);
 						</li>
 						<li>Have knowledge of SQL, specifically MySQL or PostgreSQL;</li>
 						<li>Have experience with Version Control (Git);</li>
 						<li>
-							Have some experience with Bash and Unix environments (generally we use Ubuntu 16.04 or
-							later).
+							Have some experience with Bash and Unix environments (generally we use
+							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
-						<li>Good knowledge of English language, as we are an international team;</li>
+						<li>
+							Good knowledge of English language, as we are an international team;
+						</li>
 						<li>Supporting and troubleshooting existing client websites;</li>
 						<li>Preparing technical documentation and test plans;</li>
-						<li>Understanding the importance of maintainable code and coding standards;</li>
+						<li>
+							Understanding the importance of maintainable code and coding standards;
+						</li>
 						<li>Ability to be a team player and work independently too;</li>
 						<li>Willingness to learn and self-improve through feedback;</li>
 						<li>Strong ability to communicate via visual and verbal media;</li>
@@ -157,10 +199,13 @@ const JoinUsSecondSection = () => {
 						<li>A can-do attitude towards work and a strong work ethic.</li>
 					</ul>
 					<p>
-						If needed, our team can provide further training to extend your skills and the knowledge of
-						mentioned technologies.
+						If needed, our team can provide further training to extend your skills and
+						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>
@@ -181,33 +226,46 @@ const JoinUsSecondSection = () => {
 					setOpened={setOpened}
 					opened={opened}
 				>
-					<h4>| Qualifications and Skills &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Qualifications and Skills{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Have a good understanding of HTML / CSS;</li>
 						<li>Know a bit of JavaScript (and jQuery);</li>
-						<li>PHP - Must be very comfortable with it and have strong knowledge of this language;</li>
+						<li>
+							PHP - Must be very comfortable with it and have strong knowledge of this
+							language;
+						</li>
 						<li>Know at least one PHP MVC Framework;</li>
 						<li>
-							Ideally, this framework is Laravel (a big plus, two pluses actually, we really need a
-							Laravel guy), or Symfony (just a small plus);
+							Ideally, this framework is Laravel (a big plus, two pluses actually, we
+							really need a Laravel guy), or Symfony (just a small plus);
 						</li>
 						<li>
-							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need to train you in
-							Laravel most likely);
+							Other frameworks like CakePHP, Zend, CodeIgniter are ok (but we’ll need
+							to train you in Laravel most likely);
 						</li>
 						<li>Have knowledge of SQL, specifically MySQL or PostgreSQL;</li>
 						<li>Have experience with Version Control (Git);</li>
 						<li>
-							Have some experience with Bash and Unix environments (generally we use Ubuntu 16.04 or
-							later).
+							Have some experience with Bash and Unix environments (generally we use
+							Ubuntu 16.04 or later).
 						</li>
 					</ul>
-					<h4>| Responsibilities &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Responsibilities{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
-						<li>Good knowledge of English language, as we are an international team;</li>
+						<li>
+							Good knowledge of English language, as we are an international team;
+						</li>
 						<li>Supporting and troubleshooting existing client websites;</li>
 						<li>Preparing technical documentation and test plans;</li>
-						<li>Understanding the importance of maintainable code and coding standards;</li>
+						<li>
+							Understanding the importance of maintainable code and coding standards;
+						</li>
 						<li>Ability to be a team player and work independently too;</li>
 						<li>Willingness to learn and self-improve through feedback;</li>
 						<li>Strong ability to communicate via visual and verbal media;</li>
@@ -216,10 +274,13 @@ const JoinUsSecondSection = () => {
 						<li>A can-do attitude towards work and a strong work ethic.</li>
 					</ul>
 					<p>
-						If needed, our team can provide further training to extend your skills and the knowledge of
-						mentioned technologies.
+						If needed, our team can provide further training to extend your skills and
+						the knowledge of mentioned technologies.
 					</p>
-					<h4>| Benefits &lt;</h4>
+					<h4 className="grey">
+						<span className="symbol">|</span> Benefits{' '}
+						<span className="symbol">&lt;</span>
+					</h4>
 					<ul>
 						<li>Remote Working</li>
 						<li>Excellent Learning Opportunities</li>

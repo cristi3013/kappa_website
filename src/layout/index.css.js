@@ -35,7 +35,7 @@ export const LayoutsWrapperCss = styled.div`
 	a,
 	li,
 	nav {
-		color:${colors.white};
+		color: ${colors.white};
 	}
 
 	h1 {
@@ -80,11 +80,21 @@ export const LayoutsWrapperCss = styled.div`
 	}
 
 	h4 {
+		white-space: nowrap;
 		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;
 		line-height: 23px;
-		color:${colors.blue};
+		color: ${colors.white};
+
+		&.grey {
+			color: ${colors.grey};
+		}
+
+		span.symbol {
+			color: ${colors.blue};
+		}
+
 		@media (max-width: ${screens.lg}) {
 			font-style: italic;
 			font-weight: normal;
@@ -108,16 +118,13 @@ export const LayoutsWrapperCss = styled.div`
 	}
 
 	li {
-		font-style: italic;
 		font-weight: normal;
 		font-size: 18px;
-		line-height: 27px;
+		line-height: 28px;
 		letter-spacing: 0.03em;
 		@media (max-width: ${screens.lg}) {
-			font-style: normal;
 			font-weight: normal;
 			font-size: 16px;
-			line-height: 27px;
 		}
 	}
 
@@ -126,21 +133,20 @@ export const LayoutsWrapperCss = styled.div`
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 23px;
-	
-		ul{
-			display:flex;
-			li{
-				margin:0px 21px;
+
+		ul {
+			display: flex;
+			li {
+				margin: 0px 21px;
 				font-style: normal;
 				font-weight: 500;
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 23px;
 			}
 		}
 		@media (max-width: ${screens.lg}) {
 			font-style: normal;
 			font-weight: 500;
-			font-size: 16px;
 			line-height: 21px;
 		}
 	}
@@ -157,8 +163,6 @@ export const LayoutsWrapperCss = styled.div`
 			line-height: 23px;
 		}
 	}
-
-	
 `;
 
 export const PrimaryLinkCss = styled(Link)`
@@ -167,7 +171,7 @@ export const PrimaryLinkCss = styled(Link)`
 	font-size: 18px;
 	line-height: 23px;
 	letter-spacing: 0.03em;
-	text-decoration:none;
+	text-decoration: none;
 	width: fit-content;
 	color: ${colors.white};
 	display: inline-block;
@@ -190,7 +194,6 @@ export const PrimaryLinkCss = styled(Link)`
 		left: 0;
 		bottom: 0;
 		height: 2px;
-		padding-bottom: 1px;
 		background: ${colors.blue};
 	}
 
@@ -205,73 +208,60 @@ export const PrimaryLinkCss = styled(Link)`
 `;
 
 export const SecondaryLinkCss = styled(PrimaryLinkCss)`
-	
-
 	&:after {
-		
 		background: ${colors.grey};
 	}
-
-	
 `;
 
 export const PrimaryLinkBgCss = styled(PrimaryLinkCss)`
-	
 	&:after {
-
 		width: 100%;
 		right: 0;
 		left: 0;
 		bottom: 0;
-		top:0;
+		top: 0;
 		height: 0px;
 		background: ${colors.blue};
-		z-index:-1;
+		z-index: -1;
 	}
 
 	&:before {
-		content:'';
+		content: '';
 		width: 100%;
 		right: 0;
 		left: 0;
 		bottom: 0;
-		top:auto;
+		top: auto;
 		height: 2px;
 		background: ${colors.blue};
-		position:absolute;
-		
+		position: absolute;
+
 		transition: all 0.3s 0.5s linear;
-		}
+	}
 
 	&:hover {
 		cursor: pointer;
-		color:${colors.black};
+		color: ${colors.black};
 		&:after {
-			width:100%;
+			width: 100%;
 			height: 100%;
 			top: auto;
 			bottom: 0;
-			left:0;
-			right:0;
+			left: 0;
+			right: 0;
 		}
 
 		&:before {
-		height:0px;
-		opacity:0.5;
-		transition: all 0.1s 0.3s linear;
+			height: 0px;
+			opacity: 0.5;
+			transition: all 0.1s 0.3s linear;
 		}
 	}
-
-	
 `;
 
 export const SecondaryLinkBgCss = styled(PrimaryLinkBgCss)`
-	
-
-	&:before,&:after {
-		
+	&:before,
+	&:after {
 		background: ${colors.grey};
 	}
-
-	
 `;

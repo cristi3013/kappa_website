@@ -5,7 +5,7 @@ export const BryantSectionWrapperCss = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-top: 200px;
+	padding-top: 150px;
 
 	justify-content: center;
 	align-items: center;
@@ -16,7 +16,7 @@ export const BryantSectionWrapperCss = styled.div`
 
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;
-		padding: 50px 0px 25px;
+		padding: 85px 0px 25px;
 		width: auto;
 	}
 `;
