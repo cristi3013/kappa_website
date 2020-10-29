@@ -4,9 +4,8 @@ import { screens, fonts, colors } from '../../../constants/theme';
 export const InternshipFirstSectionWrapperCss = styled.div`
   display: flex;
   padding-left: 8.33vw;
-  padding-top: 200px;
-  padding-bottom: 150px;
-
+  padding-top: 100px;
+  height:650px;
   align-items: flex-start;
 
   h4 {
@@ -25,6 +24,7 @@ export const InternshipFirstSectionWrapperCss = styled.div`
 `;
 
 export const InfoBlockCss = styled.div`
+  
   width: 50vw;
   @media (max-width: ${screens.lg}) {
     width: 100%;
@@ -37,38 +37,6 @@ export const InfoBlockCss = styled.div`
       border-bottom: 2px solid ${colors.blue};
       text-decoration: none;
     }
-  }
-`;
-
-export const ItemsCss = styled.div`
-  margin: 140px 0px;
-`;
-
-export const InfoBlockItemCss = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-  img {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 50px;
-  }
-
-  h1 {
-    margin: 0px 0px 5px;
-  }
-  .container {
-    position: relative;
-  }
-  .mask {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    maxwidth: 100%;
-    height: 84%;
   }
 `;
 export const PrimaryLinkCss = styled.div`
@@ -116,3 +84,34 @@ export const PrimaryLinkCss = styled.div`
     text-decoration: none;
   }
 `;
+export const ItemsCss = styled.div`
+  margin: 140px 0px;
+`;
+
+export const InfoBlockItemCss = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    margin: 0px 0px 5px;
+  }
+  .container {
+    position: relative;
+    bottom:100px;
+  }
+  .mask {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    maxwidth:100%;
+  }
+`;
+

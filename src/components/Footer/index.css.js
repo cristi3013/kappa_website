@@ -42,6 +42,7 @@ export const FooterWrapperCss = styled.div`
 export const FooterBlockCss = styled.div`
 	display: flex;
 	margin-bottom: 154px;
+	margin-top:5%;
 
 	@media (max-width: ${screens.lg}) {
 		flex-direction: column;
