@@ -60,10 +60,96 @@ export const InfoBlockCss = styled.div`
     position:relative;
   }
 
-  .paragraph{
+  .info{
     position:absolute;
     top:70px;
   }
+
+  .title{
+    font-size: 32px;
+  }
+  .firstParagraph{
+    display: block;
+    font-size: 28px;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+
+  }
+
+  .numbers{
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .linesOfCode{
+
+  }
+  .tasksDone{
+
+  }
+
+  .developers{
+    
+  }
+  .nrLinesOfCode{
+    font-size:32px;
+  }
+  .nrTasksDone{
+    font-size:32px;
+  }
+  .nrDevs{
+    font-size:32px;
+  }
+
+  .descLinesOfCode{
+    color:#9694A7; 
+    font-style:italic; 
+    font-size:18px;
+    line-height: 10%;
+  }
+
+  .descTasks{
+    color:#9694A7; 
+    font-style:italic; 
+    font-size:18px;
+    line-height: 10%;
+
+  }
+
+  .descDevs{
+    color:#9694A7; 
+    font-style:italic; 
+    font-size:18px;
+    line-height: 10%;
+
+  }
+  .descDevs2{
+    color:#9694A7; 
+    font-style:italic; 
+    font-size:18px;
+    line-height: 10%;
+  }
+
+
+  .secondParagraph{
+
+    display: block;
+    color:white;
+    font-size: 28px;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    line-height:100%;
+  }
+
+  .performanceStyled {
+    color:#9694A7; 
+    font-style:italic; 
+    font-size:28px;
+   }
 
 `;
 export const ItemsCss = styled.div`
