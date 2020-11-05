@@ -111,7 +111,6 @@ export const InfoBlockItemCss = styled.div`
     right: 0;
     top: 0;
     left: 0;
-    maxwidth:100%;
   }
 `;
 

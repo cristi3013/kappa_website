@@ -42,7 +42,7 @@ const BryantSection1 = () => {
 							<span className="symbol">|</span> Live website{' '}
 							<span className="symbol">&lt;</span>
 						</h4>
-						<SecondaryLinkCss as="a" to="" href="http://bryant.dental" target="_blank">
+						<SecondaryLinkCss as="a" to="" href="https://bryant.dental" target="_blank">
 							bryant.dental
 						</SecondaryLinkCss>
 					</InfoBlockItemCss>

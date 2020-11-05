@@ -26,8 +26,8 @@ const InternshipSecondSection = () => {
             <h1 className="title">We honour engineering.</h1>
        
             <div className="info">
-                <p className="firstParagraph">Our developers are our heroes: resourceful, highly<br></br>
-                skilled, energetic, and full of validated potential.</p>
+                <h2 className="firstParagraph">Our developers are our heroes: resourceful, highly<br></br>
+                skilled, energetic, and full of validated potential.</h2>
 
 
             {/* se suprapuun pe partea de mobil cand e prea ingust, de rezolvat */}
@@ -36,24 +36,24 @@ const InternshipSecondSection = () => {
                 <div className="numbers">
                 
                     <div className="linesOfCode">
-                        <p className="nrLinesOfCode">53,421</p>
+                        <h1 className="nrLinesOfCode">53,421</h1>
                         <p className="descLinesOfCode">lines of code</p>
                     </div>
 
                     <div className="tasksDone">
-                        <p className="nrTasksDone">228</p>
+                        <h1 className="nrTasksDone">228</h1>
                         <p className="descTasks">tasks done</p>
                     </div>
 
                     <div className="developers">
-                        <p className="nrDevs">0</p>
+                        <h1 className="nrDevs">0</h1>
                         <p className="descDevs">developers were hurt</p>
                         <p className="descDevs2">in the process</p>
                     </div>
 
                 </div>
 
-                <div className="secondParagraph">Our team dynamics are similar to a sports team: a<br></br> <span className="performanceStyled">performance-oriented collective</span>  built on trust and<br></br> skill. We’re the coach, you’re the player, and ahead<br></br> is the goal.</div>
+                <h2 className="secondParagraph">Our team dynamics are similar to a sports team: a<br></br> <span className="performanceStyled">performance-oriented collective</span>  built on trust and<br></br> skill. We’re the coach, you’re the player, and ahead<br></br> is the goal.</h2>
             
             
             </div>

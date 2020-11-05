@@ -12,7 +12,7 @@ const LayoutPath = ({ component: Component, ...rest }) => {
         <>
           <Header project={rest.project} />
           <Component {...matchProps} />
-          <Footer blocks={rest.blocks} />
+          {/* <Footer blocks={rest.blocks} /> */}
         </>
       )}
     />

@@ -5,7 +5,7 @@ export const InternshipThirdSectionWrapperCss = styled.div`
 display: flex;
   padding-left: 8.33vw;
   align-items: flex-start;
-  padding-top: 50px;
+  padding-top: 200px;
 
   h4 {
     width: 16.66vw;
@@ -21,36 +21,47 @@ display: flex;
     padding: 50px 25px 25px;
   }
 
-  .paragraphTitle{
-    font-size:32px;
-  }
 
   .paragraphText{
-    font-size:18px;
     color:#9694A7;
+    padding-bottom:150px;
   }
 
   .paragraphStyled{
     color:#F5F5F5; 
     font-style:italic; 
-    font-size:18px;
   }
 
-  .parentContainer{
-    position:absolute;
-    margin-left:0px;
-  }
-  .gifContainer{
+  .armyGifContainer{
     position:relative;
+    padding-top:150px;
   }
+
   .armyMask{
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    top: 0;
-    left: 0;
-    maxwidth:100%;
+  display:block;
+  position: absolute;
+  margin-bottom:100px;
+  right:0;
+  top:150px;
+  left:0;
   }
+
+  .cap{
+    position: absolute;
+    bottom:0;
+    right:0px;
+    top:42px;
+    left:-50px;
+  }
+
+  .book{
+    position: absolute;
+    bottom:0;
+    right:0;
+    top:340px;
+    left:267px;
+  }
+
 `;
 
 export const InfoBlockCss = styled.div`
@@ -58,55 +69,77 @@ export const InfoBlockCss = styled.div`
 
 `;
 
-export const ItemsCss = styled.div``;
+export const ItemsCss = styled.div`
+`;
 
 export const InfoBlockItemCss=styled.div`
 
-.parentContainer{
-  position:absolute;
-  margin-left:320px;
-}
-.gifContainer{
+display:flex;
+flex-direction: column;
+.kGifContainer{
   position:relative;
-  margin-top:40px;
-}
-.mask{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 0;
-  left: 0;
-  maxwidth:100%;
+  padding:0;
+  margin:0;
+  left:325px;
 }
 
-.vrGoogles{
-position:absolute;
-bottom: 200px;
-right: 0;
-top: 0px;
-left: 120px;
-maxwidth:100%;
+.kMask {
+  display:block;
+  position: absolute;
+  bottom:0;
+  right:0;
+  top:0;
+  left:0;
+ 
+}
+
+.vrGoogles {
+  position: absolute;
+  bottom:0;
+  right:0;
+  top:-40px;
+  left:120px;
 }
 
 .vrController1{
   position:absolute;
-  bottom: 0px;
-  right: 0px;
-  top: 135px;
+  bottom:0;
+  right:190px;
+  top:140px;
   left:-110px;
-  maxwidth:100%;
-
 }
 
 .vrController2{
   position:absolute;
-  bottom: 0px;
-  right: 0px;
-  top: 125px;
-  left:210px;
-  maxwidth:100%;
+  bottom:0;
+  right:0;
+  top:140px;
+  left:190px;
 }
 
+.paragraph{
+  position:relative;
+  padding-top:210px;
+  padding-left:100px;
+}
 
+.paragraphText{
+  padding:0;
+}
 
+.paragraphText{
+  color: #9694A7;
+}
+
+.paragraphStyled{
+    color:#F5F5F5; 
+    font-style:italic; 
+  }
+
+.paragraph2{
+  position:absolute;
+  padding-top:110px;
+  margin-left:-350px;
+  
+}
 `;

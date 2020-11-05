@@ -64,13 +64,9 @@ export const InfoBlockCss = styled.div`
     position:absolute;
     top:70px;
   }
-
-  .title{
-    font-size: 32px;
-  }
+  
   .firstParagraph{
     display: block;
-    font-size: 28px;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
     margin-left: 0;
@@ -83,37 +79,15 @@ export const InfoBlockCss = styled.div`
     justify-content: space-between;
   }
 
-  .linesOfCode{
-
-  }
-  .tasksDone{
-
-  }
-
-  .developers{
-    
-  }
-  .nrLinesOfCode{
-    font-size:32px;
-  }
-  .nrTasksDone{
-    font-size:32px;
-  }
-  .nrDevs{
-    font-size:32px;
-  }
-
   .descLinesOfCode{
     color:#9694A7; 
     font-style:italic; 
-    font-size:18px;
     line-height: 10%;
   }
 
   .descTasks{
     color:#9694A7; 
     font-style:italic; 
-    font-size:18px;
     line-height: 10%;
 
   }
@@ -121,14 +95,12 @@ export const InfoBlockCss = styled.div`
   .descDevs{
     color:#9694A7; 
     font-style:italic; 
-    font-size:18px;
     line-height: 10%;
 
   }
   .descDevs2{
     color:#9694A7; 
     font-style:italic; 
-    font-size:18px;
     line-height: 10%;
   }
 
@@ -148,7 +120,6 @@ export const InfoBlockCss = styled.div`
   .performanceStyled {
     color:#9694A7; 
     font-style:italic; 
-    font-size:28px;
    }
 
 `;
