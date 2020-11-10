@@ -17,6 +17,9 @@ import aMask1 from './images/amask1.png'
 import book from './images/book.png'
 import cap from './images/cap.png'
 
+//max-width:1440px;
+//margin: auto 0;
+
 // TODO:Fix the svg icons for the gifs and animate them
 
 const InternshipThirdSection = () => {

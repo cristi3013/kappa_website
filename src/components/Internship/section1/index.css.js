@@ -3,7 +3,8 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipFirstSectionWrapperCss = styled.div`
     display: flex;
-    padding-left: 300px;
+    max-width: 1440px;
+    margin: auto;
     padding-top: 100px;
     align-items: flex-start;
 

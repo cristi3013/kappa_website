@@ -4,9 +4,8 @@ import { screens, fonts, colors } from '../../../constants/theme'
 export const InternshipThirdSectionWrapperCss = styled.div`
     position: relative;
     height: 1400px;
-    /* display: flex; */
-    padding-left: 300px;
-    /* align-items: flex-start; */
+    max-width: 1440px;
+    margin: auto;
 
     h4 {
         width: 320px;

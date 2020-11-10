@@ -7,7 +7,10 @@ export const InternshipFourthSectionWrapperCss = styled.div`
     align-items: center;
     flex-wrap: wrap;
     padding: 75px 0;
-    background: #1f1f25;
+    background: ${colors.dark_grey};
+
+    max-width: 1440px;
+    margin: auto;
 `
 
 export const CardWrapperCss = styled.div`
