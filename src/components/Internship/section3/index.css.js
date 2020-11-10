@@ -3,9 +3,9 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipThirdSectionWrapperCss = styled.div`
     position: relative;
-    height: 1400px;
     max-width: 1440px;
     margin: auto;
+    bottom: 140px;
 
     h4 {
         width: 320px;
@@ -28,117 +28,143 @@ export const InfoBlockCss = styled.div`
         margin-top: 0px;
     }
 `
-export const ItemsCss = styled.div``
+
 export const InfoBlockItemCss = styled.div`
-    display: flex;
-    p.paragraph1 {
-        line-height: 30px;
-        color: gray;
-        font-style: normal;
-        margin-top: 0;
-        width: 650px;
+    .section {
+        display: flex;
+        margin-bottom: 200px;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+        display: flex;
+        justify-content: start;
+        padding-left: 15px;
     }
 
-    .styledParagraph1 {
+    .box1 {
+        flex: 1;
+        width: 55%;
+        padding-left: 0px;
+    }
+
+    .box1 p {
+        color: gray;
+        margin-top: 0;
+    }
+
+    .box .styledParagraph1 {
         font-style: italic;
         color: white;
+    }
+    .box2 {
+        flex: 1;
+        width: 45%;
     }
 
     .gifSection1 {
         position: relative;
-        width: 500px;
+        margin-top: -120px;
+        margin-left: 100px;
     }
 
     .kGif {
         position: absolute;
-        padding-left: 200px;
     }
-
     .kMask {
         position: absolute;
-        padding-left: 200px;
+        margin: 0;
+        padding: 0;
     }
 
     .vrGoogles {
         position: absolute;
-        padding-left: 300px;
+        bottom: 30px;
+        left: 120px;
     }
 
     .vrController1 {
         position: absolute;
-        padding-top: 120px;
-        padding-left: 90px;
+        top: 130px;
+        left: -110px;
     }
+
     .vrController2 {
         position: absolute;
-        padding-top: 120px;
-        padding-left: 400px;
+        top: 130px;
+        left: 200px;
     }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        display: flex;
+        margin-bottom: 150px;
+    }
+    .box3 {
+        max-width: 50%;
+        margin-left: 50px;
+    }
+
+    .gifSection2 {
+        position: relative;
+        margin-top: 100px;
+    }
+
     .armyGif {
         position: absolute;
-        margin-top: 200px;
     }
 
-    .aMask1 {
+    .armyMask {
         position: absolute;
-        margin-top: 200px;
-    }
-`
-
-export const InfoBlockItem2Css = styled.div`
-    .armyGif {
-        position: absolute;
-        margin-top: 300px;
+        margin: 0;
+        padding: 0;
     }
 
-    .aMask1 {
+    .book {
         position: absolute;
-        margin-top: 300px;
+        top: 190px;
+        left: 280px;
+    }
+    .cap {
+        position: absolute;
+        top: -100px;
+        left: -60px;
     }
 
     .title2 {
-        position: absolute;
-        margin-top: 240px;
-        margin-left: 560px;
+        margin-bottom: 44px;
     }
-
     .paragraph2 {
-        position: absolute;
-        margin-top: 320px;
-        margin-left: 560px;
-        width: 520px;
         color: gray;
-        line-height: 30px;
+        line-height: 32px;
+        margin-bottom: 50px;
     }
 
     .paragraph3 {
-        position: absolute;
-        margin-top: 440px;
-        margin-left: 560px;
-        width: 520px;
-        line-height: 30px;
         color: gray;
+        line-height: 32px;
     }
 
     .styledParagraph2 {
-        color: white;
         font-style: italic;
+        color: white;
     }
-`
 
-export const InfoBlockItem3Css = styled.div`
     .title3 {
-        position: absolute;
-        margin-top: 675px;
-        margin-left: 112px;
+        margin-bottom: 30px;
     }
 
     .paragraph4 {
-        position: absolute;
-        margin-top: 737px;
-        margin-left: 112px;
-        width: 520px;
-        line-height: 30px;
         color: gray;
+        line-height: 32px;
+    }
+
+    .styledParagraph3 {
+        font-style: italic;
+        color: white;
     }
 `

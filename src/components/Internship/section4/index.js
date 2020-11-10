@@ -44,6 +44,8 @@ const InternshipFourthSection = () => {
         },
     ]
 
+    //de pus fiecare cards, alea cu poza si alea fara poza in divuri si vazut cum se impart cu .slice si chain cu map
+
     return (
         <InternshipFourthSectionWrapperCss>
             {cards.slice(0, 2).map((card) => {
