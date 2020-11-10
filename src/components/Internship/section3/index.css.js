@@ -2,6 +2,8 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipThirdSectionWrapperCss = styled.div`
+    position: relative;
+    height: 1400px;
     /* display: flex; */
     padding-left: 300px;
     /* align-items: flex-start; */

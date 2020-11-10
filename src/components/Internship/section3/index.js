@@ -14,6 +14,10 @@ import vrController1 from './images/vrController1.png'
 import vrController2 from './images/vrController2.png'
 import armyGif from './images/army.gif'
 import aMask1 from './images/amask1.png'
+import book from './images/book.png'
+import cap from './images/cap.png'
+
+// TODO:Fix the svg icons for the gifs and animate them
 
 const InternshipThirdSection = () => {
     return (
@@ -78,6 +82,9 @@ const InternshipThirdSection = () => {
                                 className="aMask1"
                                 alt="army_mask"
                             ></img>
+
+                            <img src={book} alt="book"></img>
+                            <img src={cap} alt="cap"></img>
                         </div>
                         <h1 className="title2">A bootcamp for the best</h1>
                         <p className="paragraph2">

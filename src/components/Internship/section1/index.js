@@ -28,8 +28,8 @@ const InternshipFirstSection = () => {
                 <ItemsCss>
                     <InfoBlockItemCss>
                         <div className="container">
-                            <img src={gif1} />
-                            <img src={mask} className="mask" />
+                            <img src={gif1} alt="gif1" />
+                            <img src={mask} className="mask" alt="mask" />
                         </div>
                     </InfoBlockItemCss>
                 </ItemsCss>
