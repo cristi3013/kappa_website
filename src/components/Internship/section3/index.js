@@ -1,79 +1,123 @@
-import React from 'react';
-import{InternshipThirdSectionWrapperCss, InfoBlockCss, InfoBlockItemCss, ItemsCss} from './index.css'
-
-import kgif from './images/k.gif';
-import army from './images/army.gif';
-import kmask from './images/kmask.png';
-import amask from './images/amask1.png';
-import vrGoogles from './images/vrGoogles.png';
-import vrController1 from './images/vrController1.png';
-import vrController2 from './images/vrController2.png';
-import cap from './images/cap.png'
-import book from './images/book.png'
-
+import React from 'react'
+import {
+    InternshipThirdSectionWrapperCss,
+    InfoBlockCss,
+    InfoBlockItemCss,
+    InfoBlockItem2Css,
+    InfoBlockItem3Css,
+    ItemsCss,
+} from './index.css'
+import kGif from './images/k.gif'
+import kMask from './images/kmask.png'
+import vrGoogles from './images/vrGoogles.png'
+import vrController1 from './images/vrController1.png'
+import vrController2 from './images/vrController2.png'
+import armyGif from './images/army.gif'
+import aMask1 from './images/amask1.png'
 
 const InternshipThirdSection = () => {
-    return(
-    <InternshipThirdSectionWrapperCss>
-    
-    <div className="textContainer">
-        <div className="sectionTitle">
+    return (
+        <InternshipThirdSectionWrapperCss>
             <h4>
-                <span className='symbol'>|</span> This is the Kappa bootcamp{' '}
-                <span className='symbol'>&lt;</span>
+                <span className="symbol">|</span> This is the Kappa bootcamp{' '}
+                <span className="symbol">&lt;</span>
             </h4>
-        </div>
+            <InfoBlockCss>
+                <h1 className="title">You are the future</h1>
 
-        <div className="paragraph">
-            <h1 className="paragraphTitle">You are the future</h1>
-            <p className="paragraphText">We know how crucial the <span className="paragraphStyled">next generation of developers </span> is for our<br></br>own future. That’s why we invest in tomorrow’s engineers to<br></br>nurture capable and indispensable professionals.</p>
-        </div>
+                <ItemsCss>
+                    <InfoBlockItemCss>
+                        <p className="paragraph1">
+                            We know how crucial the{' '}
+                            <span className="styledParagraph1">
+                                next generation of developers
+                            </span>{' '}
+                            is for our own future. That’s why we invest in
+                            tomorrow’s engineers to nurture capable and
+                            indispensable professionals.
+                        </p>
 
+                        <div className="gifSection1">
+                            <img
+                                src={kGif}
+                                className="kGif"
+                                alt="kappa_gif"
+                            ></img>
+                            <img
+                                src={kMask}
+                                className="kMask"
+                                alt="kappa_mask"
+                            ></img>
+                            <img
+                                src={vrGoogles}
+                                className="vrGoogles"
+                                alt="vr_googles"
+                            ></img>
+                            <img
+                                src={vrController1}
+                                className="vrController1"
+                                alt="vr_controller_1"
+                            ></img>
+                            <img
+                                src={vrController2}
+                                className="vrController2"
+                                alt="vr_controller_2"
+                            ></img>
+                        </div>
+                    </InfoBlockItemCss>
+                    <InfoBlockItem2Css>
+                        <div className="gifSection2">
+                            <img
+                                src={armyGif}
+                                className="armyGif"
+                                alt="army_gif"
+                            ></img>
 
-        <div className="armyGifContainer">
-            <img src={army} className="armyGif"></img>
-            <img src={amask} className="armyMask"></img>
-            <img src={cap} className="cap"></img>
-            <img src={book} className="book"></img>
-        </div>
-    </div>
+                            <img
+                                src={aMask1}
+                                className="aMask1"
+                                alt="army_mask"
+                            ></img>
+                        </div>
+                        <h1 className="title2">A bootcamp for the best</h1>
+                        <p className="paragraph2">
+                            Performance doesn’t come about lightly, but with
+                            ownership over your own work and motivation to be
+                            the best. We have a system put in place to
+                            facilitate your growth like nowhere else.{' '}
+                        </p>
 
-    
-    <InfoBlockCss>
-        
-        <ItemsCss>
-            
-        <InfoBlockItemCss>
-        
-        <div className="kGifContainer">
-            <img src={kgif} className="kGif"></img>
-            <img src={kmask} className="kMask"></img>
-            <img src={vrGoogles} className="vrGoogles"></img>
-            <img src={vrController1} className="vrController1"></img>
-            <img src={vrController2} className="vrController2"></img>
-        </div>
-        
-        </InfoBlockItemCss>
+                        <p className="paragraph3">
+                            Our internship program has been refined over the
+                            years and became{' '}
+                            <span className="styledParagraph2">
+                                a fulfilling experience
+                            </span>{' '}
+                            for students or graduates. From training to project
+                            tasks - everything’s cherrypicked and revised by our
+                            senior developers to ensure you’re getting the most
+                            out of it.
+                        </p>
+                    </InfoBlockItem2Css>
 
-        <InfoBlockItemCss>
-        <div className="paragraph">
-            <h1 className="paragraphTitle">A bootcamp for the best</h1>
-            <p className="paragraphText">Performance doesn’t come about lightly, but with ownership over<br></br> your own work and motivation to be the best. We have a system<br></br>put in place to facilitate your growth like nowhere else.<br></br><br></br><br></br> Our internship program has been refined over the years and<br></br>became <span className="paragraphStyled">a fulfilling experience</span>  for students or graduates.<br></br>From training to project tasks - everything’s cherrypicked and<br></br> revised by our senior developers to ensure you’re getting the most<br></br> out of it. </p>
-        </div>
-        </InfoBlockItemCss>
-
-        <InfoBlockItemCss>
-        <div className="paragraph2">
-            <h1 className="paragraphTitle2">Intense and diverse training</h1>
-            <p className="paragraphText">We believe in diversity as a catalyst for rapid personal and <br></br> professional growth. A young developer should experience as <br></br> many different challenges as possible in order to acquire multiple <br></br> skills during a shorter period of time. You’ll be working on various <br></br> real-life projects that will intensely <span className="paragraphStyled">test your limits.</span></p>
-        </div>
-        </InfoBlockItemCss>
-
-        </ItemsCss>     
-        </InfoBlockCss>
+                    <InfoBlockItem3Css>
+                        <h1 className="title3">Intense and diverse training</h1>
+                        <p className="paragraph4">
+                            We believe in diversity as a catalyst for rapid
+                            personal and professional growth. A young developer
+                            should experience as many different challenges as
+                            possible in order to acquire multiple skills during
+                            a shorter period of time. You’ll be working on
+                            various real-life projects that will intensely{' '}
+                            <span className="styledParagraph3">
+                                test your limits.
+                            </span>
+                        </p>
+                    </InfoBlockItem3Css>
+                </ItemsCss>
+            </InfoBlockCss>
         </InternshipThirdSectionWrapperCss>
-    );
-};
+    )
+}
 
-
-export default InternshipThirdSection;
+export default InternshipThirdSection

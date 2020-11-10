@@ -16,6 +16,13 @@
     "react-scripts": "3.2.0",
     "styled-components": "^4.4.1"
   },
+
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",

@@ -1,145 +1,143 @@
-import styled from 'styled-components';
-import {screens, fonts, colors} from '../../../constants/theme';
+import styled from 'styled-components/macro'
+import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipThirdSectionWrapperCss = styled.div`
-display: flex;
-  padding-left: 8.33vw;
-  align-items: flex-start;
-  padding-top: 200px;
+    /* display: flex; */
+    padding-left: 300px;
+    /* align-items: flex-start; */
 
-  h4 {
-    width: 16.66vw;
-    margin-right: 8.33vw;
-    @media (max-width: ${screens.lg}) {
-      width: 100%;
-      margin-right: 0px;
+    h4 {
+        width: 320px;
+        margin-right: 160px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        @media (max-width: ${screens.lg}) {
+            width: 100%;
+            margin-right: 0px;
+        }
     }
-  }
 
-  @media (max-width: ${screens.lg}) {
-    flex-direction: column;
-    padding: 50px 25px 25px;
-  }
-
-
-  .paragraphText{
-    color:#9694A7;
-    padding-bottom:150px;
-  }
-
-  .paragraphStyled{
-    color:#F5F5F5; 
-    font-style:italic; 
-  }
-
-  .armyGifContainer{
-    position:relative;
-    padding-top:150px;
-  }
-
-  .armyMask{
-  display:block;
-  position: absolute;
-  margin-bottom:100px;
-  right:0;
-  top:150px;
-  left:0;
-  }
-
-  .cap{
-    position: absolute;
-    bottom:0;
-    right:0px;
-    top:42px;
-    left:-50px;
-  }
-
-  .book{
-    position: absolute;
-    bottom:0;
-    right:0;
-    top:340px;
-    left:267px;
-  }
-
-`;
-
+    @media (max-width: ${screens.lg}) {
+        flex-direction: column;
+        padding: 50px 25px 25px;
+    }
+`
 export const InfoBlockCss = styled.div`
+    h1.title {
+        margin-top: 0px;
+    }
+`
+export const ItemsCss = styled.div``
+export const InfoBlockItemCss = styled.div`
+    display: flex;
+    p.paragraph1 {
+        line-height: 30px;
+        color: gray;
+        font-style: normal;
+        margin-top: 0;
+        width: 650px;
+    }
 
+    .styledParagraph1 {
+        font-style: italic;
+        color: white;
+    }
 
-`;
+    .gifSection1 {
+        position: relative;
+        width: 500px;
+    }
 
-export const ItemsCss = styled.div`
-`;
+    .kGif {
+        position: absolute;
+        padding-left: 200px;
+    }
 
-export const InfoBlockItemCss=styled.div`
+    .kMask {
+        position: absolute;
+        padding-left: 200px;
+    }
 
-display:flex;
-flex-direction: column;
-.kGifContainer{
-  position:relative;
-  padding:0;
-  margin:0;
-  left:325px;
-}
+    .vrGoogles {
+        position: absolute;
+        padding-left: 300px;
+    }
 
-.kMask {
-  display:block;
-  position: absolute;
-  bottom:0;
-  right:0;
-  top:0;
-  left:0;
- 
-}
+    .vrController1 {
+        position: absolute;
+        padding-top: 120px;
+        padding-left: 90px;
+    }
+    .vrController2 {
+        position: absolute;
+        padding-top: 120px;
+        padding-left: 400px;
+    }
+    .armyGif {
+        position: absolute;
+        margin-top: 200px;
+    }
 
-.vrGoogles {
-  position: absolute;
-  bottom:0;
-  right:0;
-  top:-40px;
-  left:120px;
-}
+    .aMask1 {
+        position: absolute;
+        margin-top: 200px;
+    }
+`
 
-.vrController1{
-  position:absolute;
-  bottom:0;
-  right:190px;
-  top:140px;
-  left:-110px;
-}
+export const InfoBlockItem2Css = styled.div`
+    .armyGif {
+        position: absolute;
+        margin-top: 300px;
+    }
 
-.vrController2{
-  position:absolute;
-  bottom:0;
-  right:0;
-  top:140px;
-  left:190px;
-}
+    .aMask1 {
+        position: absolute;
+        margin-top: 300px;
+    }
 
-.paragraph{
-  position:relative;
-  padding-top:210px;
-  padding-left:100px;
-}
+    .title2 {
+        position: absolute;
+        margin-top: 240px;
+        margin-left: 560px;
+    }
 
-.paragraphText{
-  padding:0;
-}
+    .paragraph2 {
+        position: absolute;
+        margin-top: 320px;
+        margin-left: 560px;
+        width: 520px;
+        color: gray;
+        line-height: 30px;
+    }
 
-.paragraphText{
-  color: #9694A7;
-}
+    .paragraph3 {
+        position: absolute;
+        margin-top: 440px;
+        margin-left: 560px;
+        width: 520px;
+        line-height: 30px;
+        color: gray;
+    }
 
-.paragraphStyled{
-    color:#F5F5F5; 
-    font-style:italic; 
-  }
+    .styledParagraph2 {
+        color: white;
+        font-style: italic;
+    }
+`
 
-.paragraph2{
-  position:absolute;
-  padding-top:110px;
-  margin-left:-350px;
-  
-}
-`;
+export const InfoBlockItem3Css = styled.div`
+    .title3 {
+        position: absolute;
+        margin-top: 675px;
+        margin-left: 112px;
+    }
+
+    .paragraph4 {
+        position: absolute;
+        margin-top: 737px;
+        margin-left: 112px;
+        width: 520px;
+        line-height: 30px;
+        color: gray;
+    }
+`
