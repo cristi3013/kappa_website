@@ -4,8 +4,12 @@ import { screens, fonts, colors } from '../../../constants/theme'
 export const InternshipFourthSectionWrapperCss = styled.div`
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; */
+
     padding: 75px 0;
     background: ${colors.dark_grey};
 
@@ -14,6 +18,12 @@ export const InternshipFourthSectionWrapperCss = styled.div`
 `
 
 export const CardWrapperCss = styled.div`
+    /* display: inline-grid;
+
+    grid-column-gap: 100px;
+    grid-row-gap: 30px;
+    grid-gap: 30px; */
+    margin: 23px;
     width: 30%;
     background: black;
 `

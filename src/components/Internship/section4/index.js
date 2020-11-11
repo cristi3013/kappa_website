@@ -48,17 +48,19 @@ const InternshipFourthSection = () => {
 
     return (
         <InternshipFourthSectionWrapperCss>
-            {cards.slice(0, 2).map((card) => {
+            {/* {cards.slice(0, 3).map((card) => {
                 return <Card cardInfo={card} /> //div1
-            })}
+            })} */}
 
-            {cards.slice(3, 5).map((card) => {
+            {/* {cards.slice(3, 5).map((card) => {
                 return <Card cardInfo={card} /> //div2
+            })} */}
+
+            {cards.map((card) => {
+                return <Card cardInfo={card} />
             })}
         </InternshipFourthSectionWrapperCss>
     )
 }
 
 export default InternshipFourthSection
-
-//
