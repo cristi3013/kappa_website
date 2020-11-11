@@ -4,25 +4,17 @@ import { screens, fonts, colors } from '../../../constants/theme'
 export const InternshipFourthSectionWrapperCss = styled.div`
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; */
 
     padding: 75px 0;
     background: ${colors.dark_grey};
 
     max-width: 1440px;
     margin: auto;
+    margin-bottom: 130px;
 `
 
 export const CardWrapperCss = styled.div`
-    /* display: inline-grid;
-
-    grid-column-gap: 100px;
-    grid-row-gap: 30px;
-    grid-gap: 30px; */
     margin: 23px;
     width: 30%;
     background: black;
@@ -51,7 +43,11 @@ export const TextCss = styled.div`
     color: gray;
 `
 
-export const PrimaryLinks = styled.div`
+export const TextSectionCss = styled.div`
+    margin-top: 70px;
+`
+
+export const PrimaryLinks = styled.style`
     font-style: italic;
     font-weight: normal;
     font-size: 18px;
@@ -94,5 +90,9 @@ export const PrimaryLinks = styled.div`
 
     a {
         text-decoration: none;
+    }
+
+    p {
+        margin: 0;
     }
 `

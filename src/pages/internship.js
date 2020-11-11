@@ -4,6 +4,8 @@ import {
     Section2,
     Section3,
     Section4,
+    Section5,
+    Section6,
 } from '../components/Internship'
 
 const Internship = () => {
@@ -13,6 +15,8 @@ const Internship = () => {
             <Section2 />
             <Section3 />
             <Section4 />
+            <Section5 />
+            <Section6 />
         </>
     )
 }

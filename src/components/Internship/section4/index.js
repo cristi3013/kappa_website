@@ -1,5 +1,9 @@
 import React from 'react'
-import { InternshipFourthSectionWrapperCss } from './index.css'
+import {
+    InternshipFourthSectionWrapperCss,
+    TextSectionCss,
+    PrimaryLinks,
+} from './index.css'
 import Card from './Card'
 import bryant from './images/bryant.png'
 import aura from './images/aura.png'
@@ -44,21 +48,18 @@ const InternshipFourthSection = () => {
         },
     ]
 
-    //de pus fiecare cards, alea cu poza si alea fara poza in divuri si vazut cum se impart cu .slice si chain cu map
-
     return (
         <InternshipFourthSectionWrapperCss>
-            {/* {cards.slice(0, 3).map((card) => {
-                return <Card cardInfo={card} /> //div1
-            })} */}
-
-            {/* {cards.slice(3, 5).map((card) => {
-                return <Card cardInfo={card} /> //div2
-            })} */}
-
             {cards.map((card) => {
                 return <Card cardInfo={card} />
             })}
+
+            <TextSectionCss>
+                <h1>Put your name on it</h1>
+                <PrimaryLinks>
+                    <p>Participate in incoming projects</p>
+                </PrimaryLinks>
+            </TextSectionCss>
         </InternshipFourthSectionWrapperCss>
     )
 }
