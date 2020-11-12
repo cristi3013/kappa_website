@@ -2,11 +2,8 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipSection6WrapperCss = styled.div`
-    display: flex;
     max-width: 1440px;
     margin: auto;
-    align-items: flex-start;
-
     h4 {
         width: 320px;
         margin-top: 10px;
@@ -21,8 +18,70 @@ export const InternshipSection6WrapperCss = styled.div`
         flex-direction: column;
         padding: 50px 25px 25px;
     }
+`
+export const TitleSectionCss = styled.h1`
+    position: relative;
+    margin-top: -60px;
+    text-align: center;
+`
+export const CardSectionCss = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 
-    h1 {
-        margin: 0;
+    padding: 75px 0;
+
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 130px;
+`
+export const CardWrapperCss = styled.div`
+    margin: 23px;
+    width: 15%;
+    background: #1f1f25;
+    transition: 0.3s;
+
+    .image {
+        visibility: hidden;
     }
+
+    .wrapper {
+        height: 250px;
+        transition: all 1s ease-out;
+    }
+
+    :hover .image {
+        visibility: visible;
+        transition: all 1s ease-out;
+    }
+
+    :hover .wrapper {
+        background-color: #737589;
+    }
+
+    :hover .title {
+        color: white;
+        transition: all 1s ease-out;
+    }
+`
+export const ImageWrapperCss = styled.div`
+    padding-top: 30px;
+    height: 60px;
+    img {
+        width: 50%;
+        height: 100%;
+    }
+    text-align: center;
+`
+
+export const TextWrapperCss = styled.div`
+    padding: 30px 30px 0px 30px;
+`
+export const TitleCss = styled.p`
+    margin: 0 0 22px;
+    font-style: italic !important;
+    font-weight: normal;
+    line-height: 35px;
+    text-align: center;
+    color: gray !important;
 `
