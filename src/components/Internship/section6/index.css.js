@@ -46,7 +46,7 @@ export const CardWrapperCss = styled.div`
     }
 
     .wrapper {
-        height: 250px;
+        height: 280px;
         transition: all 1s ease-out;
     }
 
@@ -62,6 +62,15 @@ export const CardWrapperCss = styled.div`
     :hover .title {
         color: white;
         transition: all 1s ease-out;
+    }
+
+    .expanded {
+        top: 10px;
+        right: 102px;
+        bottom: 102px;
+        left: 10px;
+        line-height: 400px;
+        z-index: 9999;
     }
 `
 export const ImageWrapperCss = styled.div`
@@ -85,3 +94,5 @@ export const TitleCss = styled.p`
     text-align: center;
     color: gray !important;
 `
+
+export const TextCss = styled.p``

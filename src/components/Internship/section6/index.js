@@ -55,6 +55,12 @@ const InternshipSection6 = () => {
         },
     ]
 
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].onClick = function () {
+            this.toggleClass('expanded')
+        }
+    }
+
     return (
         <InternshipSection6WrapperCss>
             <h4>

@@ -5,11 +5,17 @@ import {
     ImageWrapperCss,
     TextWrapperCss,
     TitleCss,
+    TextCss,
 } from './index.css'
 
 const Card = ({ cardInfo }) => {
-    const { image, title } = cardInfo
+    const { image, title, text } = cardInfo
 
+    // var cardExpand = doocument.querySelector(".wrapper");
+
+    // function expand(){
+    //     cardExpand.
+    // }
     return (
         <CardWrapperCss>
             <div className="wrapper">
@@ -18,11 +24,16 @@ const Card = ({ cardInfo }) => {
                         <img src={image} className="image" alt=""></img>
                     </ImageWrapperCss>
                 )}
-                <TextWrapperCss>
-                    <TitleCss>
-                        <div className="title">{title}</div>
-                    </TitleCss>
-                </TextWrapperCss>
+                <div className="textWrapper">
+                    <TextWrapperCss>
+                        <TitleCss>
+                            <div className="title">{title}</div>
+                        </TitleCss>
+                        <TextCss>
+                            <div className="text">{text}</div>
+                        </TextCss>
+                    </TextWrapperCss>
+                </div>
             </div>
         </CardWrapperCss>
     )
