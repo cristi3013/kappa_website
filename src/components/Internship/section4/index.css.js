@@ -11,6 +11,7 @@ export const InternshipFourthSectionWrapperCss = styled.div`
 
     max-width: 1440px;
     margin: auto;
+
     margin-bottom: 130px;
 `
 

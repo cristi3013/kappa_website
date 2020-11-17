@@ -2,168 +2,209 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const InternshipThirdSectionWrapperCss = styled.div`
-    position: relative;
     max-width: 1440px;
     margin: auto;
-    bottom: 140px;
-
-    h4 {
-        width: 320px;
-        margin-right: 160px;
-        margin-top: 0;
-        margin-bottom: 40px;
-        @media (max-width: ${screens.lg}) {
-            width: 100%;
-            margin-right: 0px;
-        }
-    }
-
-    @media (max-width: ${screens.lg}) {
-        flex-direction: column;
-        padding: 50px 25px 25px;
-    }
+    margin-bottom: 200px;
 `
+
 export const InfoBlockCss = styled.div`
-    h1.title {
-        margin-top: 0px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-`
+    .container1 {
+        display: flex;
+        justify-content: space-around;
 
-export const InfoBlockItemCss = styled.div`
-    .section {
-        display: flex;
-        margin-bottom: 200px;
+        margin-bottom: 230px;
     }
+
     .box {
-        width: 100%;
-        height: 100%;
-        margin: 5px;
-        display: flex;
-        justify-content: start;
-        padding-left: 15px;
+        flex-wrap: wrap;
     }
+
+    /* BOX 1 */
 
     .box1 {
-        flex: 1;
-        width: 55%;
-        padding-left: 0px;
+        flex: 2;
+        margin-top: 70px;
     }
 
-    .box1 p {
-        color: gray;
-        margin-top: 0;
-    }
-
-    .box .styledParagraph1 {
-        font-style: italic;
+    .box1 h4 {
         color: white;
-    }
-    .box2 {
-        flex: 1;
-        width: 45%;
-    }
-
-    .gifSection1 {
-        position: relative;
-        margin-top: -120px;
-        margin-left: 100px;
+        font-style: italic;
+        font-weight: lighter;
+        font-family: IBM Plex Sans;
+        margin-bottom: 40px;
     }
 
-    .kGif {
-        position: absolute;
-    }
-    .kMask {
-        position: absolute;
-        margin: 0;
-        padding: 0;
+    .box1 .symbol {
+        font-style: italic;
+        color: #7481f4;
     }
 
-    .vrGoogles {
-        position: absolute;
-        bottom: 30px;
-        left: 120px;
-    }
-
-    .vrController1 {
-        position: absolute;
-        top: 130px;
-        left: -110px;
-    }
-
-    .vrController2 {
-        position: absolute;
-        top: 130px;
-        left: 200px;
-    }
-
-    .section2 {
-        display: flex;
-        flex-direction: column;
-    }
-    .wrapper {
-        display: flex;
-        margin-bottom: 150px;
-    }
-    .box3 {
-        max-width: 50%;
-        margin-left: 50px;
-    }
-
-    .gifSection2 {
-        position: relative;
-        margin-top: 100px;
-    }
-
-    .armyGif {
-        position: absolute;
-    }
-
-    .armyMask {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-    }
-
-    .book {
-        position: absolute;
-        top: 190px;
-        left: 280px;
-    }
-    .cap {
-        position: absolute;
-        top: -100px;
-        left: -60px;
-    }
-
-    .title2 {
-        margin-bottom: 44px;
-    }
-    .paragraph2 {
-        color: gray;
-        line-height: 32px;
+    .box1 .title {
+        font-family: IBM Plex Sans;
+        color: white;
+        font-weight: lighter;
         margin-bottom: 50px;
     }
 
-    .paragraph3 {
-        color: gray;
+    .box1 .paragraph1 {
+        font-family: IBM Plex Sans;
+        color: #9694a7;
+        font-weight: lighter;
+        width: 60%;
         line-height: 32px;
+        font-size: 18px;
     }
 
-    .styledParagraph2 {
+    .box1 .styledParagraph {
         font-style: italic;
         color: white;
     }
 
-    .title3 {
-        margin-bottom: 30px;
+    /* BOX 2 */
+
+    .box2 {
+        flex: 1;
     }
 
-    .paragraph4 {
-        color: gray;
+    .box2 .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box2 .gifContainer1 {
+        position: relative;
+    }
+
+    .box2 .kMask {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .box2 .vrGoogles {
+        position: absolute;
+        bottom: 70%;
+        left: 25%;
+    }
+
+    .box2 .vrController1 {
+        position: absolute;
+        top: 55%;
+        right: 90%;
+    }
+
+    .box2 .vrController2 {
+        position: absolute;
+        top: 55%;
+        left: 45%;
+    }
+
+    /* CONTAINER 2 */
+
+    /* BOX 3 */
+
+    .container2 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 140px;
+    }
+
+    .box3 {
+        flex: 1;
+        height: 100px;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .box3 .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .box3 .gifContainer2 {
+        position: relative;
+    }
+
+    .box3 .aMask {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .box3 .book {
+        position: absolute;
+        top: 85%;
+        left: 40%;
+    }
+
+    .box3 .cap {
+        position: absolute;
+        bottom: 60%;
+        right: 85%;
+    }
+
+    /* BOX 4 */
+
+    .box4 {
+        flex: 1;
+    }
+
+    .box4 .title2 {
+        font-family: IBM Plex Sans;
+        font-weight: lighter;
+        color: white;
+        margin-bottom: 35px;
+    }
+
+    .box4 p {
+        font-family: IBM Plex Sans;
+        font-weight: lighter;
+        color: #9694a7;
+        font-size: 18px;
         line-height: 32px;
     }
 
-    .styledParagraph3 {
+    .box4 .paragraph2 {
+        margin-bottom: 45px;
+    }
+
+    .box4 .styledParagraph2 {
+        font-style: italic;
+        color: white;
+    }
+
+    /* OUTSIDE CONTAINER */
+
+    /* BOX 5 */
+
+    .box5 {
+        flex: 1 100%;
+        height: 100%;
+        width: 40%;
+        margin-left: 25%;
+    }
+
+    .box5 .title3 {
+        font-family: IBM Plex Sans;
+        font-weight: lighter;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .box5 p {
+        font-family: IBM Plex Sans;
+        font-weight: lighter;
+        color: #9694a7;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .box5 .styledParagraph3 {
         font-style: italic;
         color: white;
     }

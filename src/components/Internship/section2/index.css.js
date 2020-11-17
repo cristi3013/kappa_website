@@ -5,7 +5,7 @@ export const InternshipSecondSectionWrapperCss = styled.div`
     display: flex;
     max-width: 1440px;
     margin: auto;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     align-items: flex-start;
 
     h4 {
@@ -70,8 +70,7 @@ export const InfoBlockCss = styled.div`
     }
 
     .info {
-        position: absolute;
-        top: 70px;
+        margin-top: 70px;
     }
 
     .firstParagraph {
