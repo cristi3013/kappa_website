@@ -1,6 +1,10 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
+
 export const InternshipThirdSectionWrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
@@ -15,8 +19,7 @@ export const InfoBlockCss = styled.div`
     }
     .container1 {
         display: flex;
-        justify-content: space-around;
-
+        justify-content: space-between;
         margin-bottom: 230px;
     }
 
@@ -28,7 +31,7 @@ export const InfoBlockCss = styled.div`
 
     .box1 {
         flex: 2;
-        margin-top: 70px;
+        margin-top: 50px;
     }
 
     .box1 h4 {
@@ -36,7 +39,6 @@ export const InfoBlockCss = styled.div`
         font-style: italic;
         font-weight: lighter;
         font-family: IBM Plex Sans;
-        margin-bottom: 40px;
     }
 
     .box1 .symbol {
@@ -48,7 +50,7 @@ export const InfoBlockCss = styled.div`
         font-family: IBM Plex Sans;
         color: white;
         font-weight: lighter;
-        margin-bottom: 50px;
+        margin-top: 30px;
     }
 
     .box1 .paragraph1 {
@@ -58,6 +60,7 @@ export const InfoBlockCss = styled.div`
         width: 60%;
         line-height: 32px;
         font-size: 18px;
+        margin-top: 40px;
     }
 
     .box1 .styledParagraph {
@@ -78,6 +81,7 @@ export const InfoBlockCss = styled.div`
 
     .box2 .gifContainer1 {
         position: relative;
+        transform: scale(1.15);
     }
 
     .box2 .kMask {
@@ -106,18 +110,15 @@ export const InfoBlockCss = styled.div`
 
     /* CONTAINER 2 */
 
-    /* BOX 3 */
-
     .container2 {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         margin-bottom: 140px;
     }
+    /* BOX 3 */
 
     .box3 {
-        flex: 1;
-        height: 100px;
-        width: 100%;
+        flex: 0.48;
         margin-top: 80px;
     }
 
@@ -152,6 +153,7 @@ export const InfoBlockCss = styled.div`
 
     .box4 {
         flex: 1;
+        max-width: 500px;
     }
 
     .box4 .title2 {
@@ -186,7 +188,7 @@ export const InfoBlockCss = styled.div`
         flex: 1 100%;
         height: 100%;
         width: 40%;
-        margin-left: 25%;
+        margin-left: 5%;
     }
 
     .box5 .title3 {

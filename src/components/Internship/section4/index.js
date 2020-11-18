@@ -3,6 +3,8 @@ import {
     InternshipFourthSectionWrapperCss,
     TextSectionCss,
     PrimaryLinks,
+    BackgroundSection,
+    SectionWrapper,
 } from './index.css'
 import Card from './Card'
 import bryant from './images/bryant.png'
@@ -49,18 +51,22 @@ const InternshipFourthSection = () => {
     ]
 
     return (
-        <InternshipFourthSectionWrapperCss>
-            {cards.map((card) => {
-                return <Card cardInfo={card} />
-            })}
+        <BackgroundSection>
+            <SectionWrapper>
+                <InternshipFourthSectionWrapperCss>
+                    {cards.map((card) => {
+                        return <Card cardInfo={card} />
+                    })}
 
-            <TextSectionCss>
-                <h1>Put your name on it</h1>
-                <PrimaryLinks>
-                    <p>Participate in incoming projects</p>
-                </PrimaryLinks>
-            </TextSectionCss>
-        </InternshipFourthSectionWrapperCss>
+                    <TextSectionCss>
+                        <h1>Put your name on it</h1>
+                        <PrimaryLinks>
+                            <p>Participate in incoming projects</p>
+                        </PrimaryLinks>
+                    </TextSectionCss>
+                </InternshipFourthSectionWrapperCss>
+            </SectionWrapper>
+        </BackgroundSection>
     )
 }
 

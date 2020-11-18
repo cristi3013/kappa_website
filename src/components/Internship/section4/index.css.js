@@ -1,23 +1,28 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const BackgroundSection = styled.div`
+    background: ${colors.dark_grey};
+`
+
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
+
 export const InternshipFourthSectionWrapperCss = styled.div`
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 
     padding: 75px 0;
-    background: ${colors.dark_grey};
-
     max-width: 1440px;
     margin: auto;
-
     margin-bottom: 130px;
 `
 
 export const CardWrapperCss = styled.div`
     margin: 23px;
-    width: 30%;
+    width: 25%;
     background: black;
 `
 export const ImageWrapperCss = styled.div`
@@ -46,6 +51,7 @@ export const TextCss = styled.div`
 
 export const TextSectionCss = styled.div`
     margin-top: 70px;
+    margin-left: 40%;
 `
 
 export const PrimaryLinks = styled.style`

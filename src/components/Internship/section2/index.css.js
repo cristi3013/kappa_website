@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
 export const InternshipSecondSectionWrapperCss = styled.div`
     display: flex;
     max-width: 1440px;
     margin: auto;
-    margin-bottom: 100px;
     align-items: flex-start;
 
     h4 {
@@ -85,6 +87,7 @@ export const InfoBlockCss = styled.div`
         display: flex;
         justify-content: space-between;
         margin-bottom: 105px;
+        max-width: 670px;
     }
 
     .descLinesOfCode {

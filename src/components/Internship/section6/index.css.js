@@ -1,13 +1,16 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const SectionWrapper = styled.div`
+    margin-top: 185px;
+    margin-left: 120px;
+`
+
 export const InternshipSection6WrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
     h4 {
         width: 320px;
-        margin-top: 10px;
-        margin-right: 160px;
         @media (max-width: ${screens.lg}) {
             width: 100%;
             margin-right: 0px;
@@ -22,7 +25,7 @@ export const InternshipSection6WrapperCss = styled.div`
 export const TitleSectionCss = styled.h1`
     position: relative;
     margin-top: -60px;
-    text-align: center;
+    margin-left: 480px;
 `
 export const CardSectionCss = styled.div`
     display: flex;
@@ -30,7 +33,6 @@ export const CardSectionCss = styled.div`
     flex-wrap: wrap;
 
     padding: 75px 0;
-
     max-width: 1440px;
     margin: auto;
     margin-bottom: 130px;
@@ -40,6 +42,7 @@ export const CardWrapperCss = styled.div`
     width: 15%;
     background: #1f1f25;
     transition: 0.3s;
+    word-break: all;
 
     .image {
         visibility: hidden;
@@ -62,15 +65,6 @@ export const CardWrapperCss = styled.div`
     :hover .title {
         color: white;
         transition: all 1s ease-out;
-    }
-
-    .expanded {
-        top: 10px;
-        right: 102px;
-        bottom: 102px;
-        left: 10px;
-        line-height: 400px;
-        z-index: 9999;
     }
 `
 export const ImageWrapperCss = styled.div`

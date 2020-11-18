@@ -2,13 +2,16 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 import eye from './images/eye.png'
 
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
+
 export const InternshipSection8WrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
 
     .title {
-        margin-top: -8px;
-        margin-left: 470px;
+        margin-left: 300px;
     }
     @media (max-width: ${screens.lg}) {
         flex-direction: column;
@@ -17,21 +20,25 @@ export const InternshipSection8WrapperCss = styled.div`
 `
 
 export const CardSectionCss = styled.div`
-    display: flex;
+    /* display: flex;
     justify-content: space-space-around;
     flex-wrap: wrap;
-    align-items: center;
-    margin-left: 200px;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35%);
+    grid-row-gap: 200px;
+    margin-left: 290px;
     margin-top: 0px;
 `
 export const CardWrapperCss = styled.div`
-    margin: 100px;
-    margin-bottom: 0px;
-    width: 20%;
-    background: black;
+    height: 400px;
+    margin: 15px;
+    /* margin-bottom: 0px; */
+    /* width: 20%; */
 `
 export const ImageWrapperCss = styled.div`
-    height: 300px;
+    height: 400px;
     position: relative;
     img {
         width: 100%;

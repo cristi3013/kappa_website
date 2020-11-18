@@ -1,5 +1,9 @@
 import React from 'react'
-import { InternshipSection8WrapperCss, CardSectionCss } from './index.css'
+import {
+    InternshipSection8WrapperCss,
+    CardSectionCss,
+    SectionWrapper,
+} from './index.css'
 import Card from './Card'
 import photo from './images/1.png'
 import photo2 from './images/2.png'
@@ -41,14 +45,16 @@ const InternshipSection8 = () => {
     ]
 
     return (
-        <InternshipSection8WrapperCss>
-            <h1 className="title">Meet our interns</h1>
-            <CardSectionCss>
-                {cards.map((card) => {
-                    return <Card cardInfo={card} />
-                })}
-            </CardSectionCss>
-        </InternshipSection8WrapperCss>
+        <SectionWrapper>
+            <InternshipSection8WrapperCss>
+                <h1 className="title">Meet our interns</h1>
+                <CardSectionCss>
+                    {cards.map((card) => {
+                        return <Card cardInfo={card} />
+                    })}
+                </CardSectionCss>
+            </InternshipSection8WrapperCss>
+        </SectionWrapper>
     )
 }
 

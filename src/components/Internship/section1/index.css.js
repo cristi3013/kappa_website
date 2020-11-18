@@ -1,6 +1,10 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
+
 export const InternshipFirstSectionWrapperCss = styled.div`
     display: flex;
     max-width: 1440px;

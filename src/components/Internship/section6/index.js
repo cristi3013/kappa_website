@@ -3,6 +3,7 @@ import {
     InternshipSection6WrapperCss,
     CardSectionCss,
     TitleSectionCss,
+    SectionWrapper,
 } from './index.css'
 import Card from './Card'
 import advancedMarkup from './images/advancedMarkup.svg'
@@ -55,23 +56,23 @@ const InternshipSection6 = () => {
         },
     ]
 
-    for (var i = 0; i < cards.length; i++) {
-        cards[i].onClick = function () {
-            this.toggleClass('expanded')
-        }
-    }
-
     return (
-        <InternshipSection6WrapperCss>
-            <TitleSectionCss>
-                <h1 className="title1">Things you will learn</h1>
-            </TitleSectionCss>
-            <CardSectionCss>
-                {cards.map((card) => {
-                    return <Card cardInfo={card} />
-                })}
-            </CardSectionCss>
-        </InternshipSection6WrapperCss>
+        <SectionWrapper>
+            <InternshipSection6WrapperCss>
+                <h4>
+                    <span className="symbol">|</span> Curriculum{' '}
+                    <span className="symbol">&lt;</span>
+                </h4>
+                <TitleSectionCss>
+                    <h1 className="title1">Things you will learn</h1>
+                </TitleSectionCss>
+                <CardSectionCss>
+                    {cards.map((card) => {
+                        return <Card cardInfo={card} />
+                    })}
+                </CardSectionCss>
+            </InternshipSection6WrapperCss>
+        </SectionWrapper>
     )
 }
 

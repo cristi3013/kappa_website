@@ -1,12 +1,14 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
+export const SectionWrapper = styled.div`
+    margin-left: 120px;
+`
+
 export const InternshipSection7WrapperCss = styled.div`
-    display: flex;
     max-width: 1440px;
     margin: auto;
     margin-bottom: 200px;
-    align-items: flex-start;
 
     h4 {
         width: 320px;
@@ -26,9 +28,23 @@ export const InternshipSection7WrapperCss = styled.div`
 `
 
 export const InfoBlockCss = styled.div`
-    .title {
-        margin-top: -8px;
-        margin-bottom: 50px;
+    display: flex;
+
+    .titleWrapper {
+        max-width: 300px;
+    }
+
+    .codeWrapper {
+        flex: 2;
+        height: 100%;
+    }
+
+    .codeWrapper .title {
+        margin-top: 0;
+    }
+
+    .codeWrapper .text {
+        margin-top: 50px;
     }
 
     p {
