@@ -44,7 +44,7 @@ const InternshipThirdSection = () => {
                         </div>
 
                         <div className="box2 box">
-                            {/* <div className="gifContainer1">
+                            <div className="gifContainer1">
                                 <img src={kGif} className="kGif" alt="" />
                                 <img src={kMask} className="kMask" alt="" />
                                 <img
@@ -62,7 +62,7 @@ const InternshipThirdSection = () => {
                                     className="vrController2"
                                     alt=""
                                 />
-                            </div> */}
+                            </div>
                         </div>
                     </div>
 
