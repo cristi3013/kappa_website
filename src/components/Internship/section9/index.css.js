@@ -18,14 +18,13 @@ export const InfoBlockCss = styled.div`
 
     .header {
         display: flex;
-        justify-content: space-between;
-        margin-left: 120px;
-        max-width: 1280px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
         margin-top: 100px;
-    }
-
-    .box {
-        flex: wrap;
     }
 
     /* HEADER CONTAINER */
@@ -40,8 +39,6 @@ export const InfoBlockCss = styled.div`
     .box1 h4 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
         width: 100%;
     }
 
@@ -58,21 +55,17 @@ export const InfoBlockCss = styled.div`
 
     .box2 .title {
         color: white;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
     }
 
     .box3 {
         margin-top: 40px;
         max-width: 700px;
-        margin-left: 31%;
+        margin-left: 26%;
     }
 
     .box3 .firstParagraph {
         color: #9694a7;
         line-height: 32px;
-        font-family: IBM Plex Sans;
-        /* font-weight: lighter; */
     }
     .box4 {
         position: relative;
@@ -83,6 +76,7 @@ export const InfoBlockCss = styled.div`
 
     .box4 .gifContainer {
         position: relative;
+        flex-wrap: wrap;
     }
 
     .box4 .gifContainer img {
@@ -130,15 +124,19 @@ export const InfoBlockCss = styled.div`
         right: 53%;
     }
 
+    .box4 {
+        transform: scale(0.9);
+        margin-left: 23.6%;
+    }
+
     .box5 {
         max-width: 700px;
-        margin-left: 31%;
+        margin-left: 26%;
         margin-top: 60px;
     }
 
     .box5 .secondParagraph {
         color: #9694a7;
         line-height: 32px;
-        font-family: IBM Plex Sans;
     }
 `

@@ -72,21 +72,21 @@ const InternshipSection10 = () => {
                                 </div>
                                 <div className="box4 box">
                                     <h1>
-                                        <span className="symbol">|</span>{' '}
+                                        <span className="symbol">| </span>
                                         team_work
                                         <span className="symbol">&lt;</span>
                                     </h1>
                                 </div>
                                 <div className="box5 box">
                                     <h1>
-                                        <span className="symbol">|</span>{' '}
+                                        <span className="symbol">| </span>
                                         efficient_communication
                                         <span className="symbol">&lt;</span>
                                     </h1>
                                 </div>
                                 <div className="box6 box">
                                     <h1>
-                                        <span className="symbol">|</span>{' '}
+                                        <span className="symbol">| </span>
                                         fast_learning_techniques
                                         <span className="symbol">&lt;</span>
                                     </h1>

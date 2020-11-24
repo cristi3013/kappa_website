@@ -24,6 +24,7 @@ export const InfoBlockCss = styled.div`
     .firstContainer {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 250px;
     }
 
     .box {
@@ -61,18 +62,13 @@ export const InfoBlockCss = styled.div`
     }
 
     .box2 .title {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: white;
         margin-bottom: 35px;
         max-width: 600px;
     }
 
     .box2 .firstParagraph {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: #9694a7;
-        font-size: 18px;
         line-height: 32px;
         max-width: 450px;
     }
@@ -80,10 +76,9 @@ export const InfoBlockCss = styled.div`
     .textBar {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        margin-top: 250px;
-        flex: wrap;
+        flex-wrap: wrap;
         width: 100%;
         height: auto;
     }
@@ -94,26 +89,17 @@ export const InfoBlockCss = styled.div`
         width: 100%;
         height: auto;
     }
-    .box3 img {
-    }
+
     .box4 h1 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
     }
     .box5 h1 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
     }
     .box6 h1 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
-    }
-    .box7 img {
     }
 `

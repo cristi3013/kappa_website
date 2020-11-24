@@ -30,15 +30,13 @@ export const InfoBlockCss = styled.div`
     /* BOX 1 */
 
     .box1 {
-        flex: 2;
+        flex: 1.3;
         margin-top: 50px;
     }
 
     .box1 h4 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
     }
 
     .box1 .symbol {
@@ -47,19 +45,14 @@ export const InfoBlockCss = styled.div`
     }
 
     .box1 .title {
-        font-family: IBM Plex Sans;
         color: white;
-        font-weight: lighter;
         margin-top: 30px;
     }
 
     .box1 .paragraph1 {
-        font-family: IBM Plex Sans;
         color: #9694a7;
-        font-weight: lighter;
-        width: 60%;
+        max-width: 700px;
         line-height: 32px;
-        font-size: 18px;
         margin-top: 40px;
     }
 
@@ -81,45 +74,68 @@ export const InfoBlockCss = styled.div`
 
     .box2 .gifContainer1 {
         position: relative;
-        transform: scale(1.15);
+        transform: scale(0.8);
+    }
+
+    .box2 .kGif {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transform: scale(0.7);
     }
 
     .box2 .kMask {
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
+        height: auto;
+        transform: scale(0.71);
     }
 
     .box2 .vrGoogles {
         position: absolute;
-        bottom: 70%;
-        left: 25%;
+        margin-top: -10%;
+        margin-left: 20%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.3);
     }
 
     .box2 .vrController1 {
         position: absolute;
-        top: 55%;
-        right: 90%;
+        margin-top: 20%;
+        margin-left: -40%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.3);
     }
 
     .box2 .vrController2 {
         position: absolute;
-        top: 55%;
-        left: 45%;
+        margin-top: 22%;
+        margin-left: 40%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.3);
     }
 
     /* CONTAINER 2 */
 
     .container2 {
         display: flex;
-        justify-content: flex-start;
+
+        margin-top: 300px;
         margin-bottom: 140px;
     }
     /* BOX 3 */
 
     .box3 {
         flex: 0.48;
-        margin-top: 80px;
+        margin-top: -50px;
+        padding-right: 200px;
     }
 
     .box3 .img {
@@ -129,24 +145,42 @@ export const InfoBlockCss = styled.div`
 
     .box3 .gifContainer2 {
         position: relative;
+        transform: scale(1.3);
     }
 
+    .box3 .armyGif {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        transform: scale(0.5);
+    }
     .box3 .aMask {
         position: absolute;
-        top: 0;
-        left: 0;
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        transform: scale(0.51);
     }
 
     .box3 .book {
         position: absolute;
-        top: 85%;
-        left: 40%;
+        margin-top: 17%;
+        margin-left: 25%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.2);
     }
 
     .box3 .cap {
         position: absolute;
-        bottom: 60%;
-        right: 85%;
+        margin-top: -34%;
+        margin-left: -22%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.27);
     }
 
     /* BOX 4 */
@@ -157,17 +191,12 @@ export const InfoBlockCss = styled.div`
     }
 
     .box4 .title2 {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: white;
         margin-bottom: 35px;
     }
 
     .box4 p {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: #9694a7;
-        font-size: 18px;
         line-height: 32px;
     }
 
@@ -192,17 +221,12 @@ export const InfoBlockCss = styled.div`
     }
 
     .box5 .title3 {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: white;
         margin-bottom: 40px;
     }
 
     .box5 p {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: #9694a7;
-        font-size: 18px;
         line-height: 32px;
     }
 

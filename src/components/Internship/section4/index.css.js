@@ -24,6 +24,11 @@ export const CardWrapperCss = styled.div`
     margin: 23px;
     width: 25%;
     background: black;
+
+    @media (max-width: ${screens.lg}) {
+        width: 100%;
+        margin-left: -50px;
+    }
 `
 export const ImageWrapperCss = styled.div`
     height: 300px;
@@ -52,6 +57,10 @@ export const TextCss = styled.div`
 export const TextSectionCss = styled.div`
     margin-top: 70px;
     margin-left: 40%;
+    @media (max-width: ${screens.lg}) {
+        width: 100%;
+        margin-left: -50px;
+    }
 `
 
 export const PrimaryLinks = styled.style`

@@ -33,8 +33,6 @@ export const InfoBlockCss = styled.div`
     .box1 h4 {
         color: white;
         font-style: italic;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
     }
 
     .box1 .symbol {
@@ -49,8 +47,6 @@ export const InfoBlockCss = styled.div`
 
     .box2 .title {
         color: white;
-        font-weight: lighter;
-        font-family: IBM Plex Sans;
         max-width: 600px;
     }
     .box3 {
@@ -58,7 +54,7 @@ export const InfoBlockCss = styled.div`
         width: 100%;
         margin-bottom: 150px;
         padding-left: 24%;
-        margin-top: 30px;
+        margin-top: 70px;
     }
 `
 

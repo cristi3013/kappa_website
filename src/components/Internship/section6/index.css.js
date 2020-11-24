@@ -2,7 +2,7 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
-    margin-top: 185px;
+    margin-top: 500px;
     margin-left: 120px;
 `
 
@@ -25,7 +25,12 @@ export const InternshipSection6WrapperCss = styled.div`
 export const TitleSectionCss = styled.h1`
     position: relative;
     margin-top: -60px;
-    margin-left: 480px;
+    padding-left: 400px;
+    @media (max-width: ${screens.lg}) {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 `
 export const CardSectionCss = styled.div`
     display: flex;
@@ -65,6 +70,11 @@ export const CardWrapperCss = styled.div`
     :hover .title {
         color: white;
         transition: all 1s ease-out;
+    }
+
+    @media (max-width: ${screens.lg}) {
+        width: 100%;
+        margin-left: -30px;
     }
 `
 export const ImageWrapperCss = styled.div`

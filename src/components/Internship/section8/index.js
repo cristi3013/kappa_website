@@ -28,16 +28,16 @@ const InternshipSection8 = () => {
         },
 
         {
-            image: null,
-            button: null,
+            image: 'photo',
+            button: 'Watch',
             name: 'Tiko Giorgadze',
             languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
             status: 'live',
         },
 
         {
-            image: null,
-            button: null,
+            image: 'photo',
+            button: 'Watch',
             name: 'Micheile Henderson',
             languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
             status: 'live',

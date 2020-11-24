@@ -78,8 +78,6 @@ export const InfoBlockCss = styled.div`
     }
 
     .box2 .title {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: white;
         margin-bottom: 35px;
 
@@ -87,8 +85,6 @@ export const InfoBlockCss = styled.div`
     }
 
     .box2 .firstParagraph {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: #9694a7;
         font-size: 18px;
         line-height: 32px;
@@ -96,8 +92,6 @@ export const InfoBlockCss = styled.div`
     }
 
     .box2 .secondParagraph {
-        font-family: IBM Plex Sans;
-        font-weight: lighter;
         color: #9694a7;
         font-size: 18px;
         line-height: 32px;

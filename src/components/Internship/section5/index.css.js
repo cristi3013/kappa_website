@@ -8,20 +8,7 @@ export const SectionWrapper = styled.div`
 export const InternshipSection5WrapperCss = styled.div`
     display: flex;
     max-width: 1440px;
-    height: 800px;
-
     margin: auto;
-    align-items: flex-start;
-
-    h4 {
-        width: 320px;
-        margin-top: 0;
-        margin-right: 160px;
-        @media (max-width: ${screens.lg}) {
-            width: 100%;
-            margin-right: 0px;
-        }
-    }
 
     @media (max-width: ${screens.lg}) {
         flex-direction: column;
@@ -30,65 +17,126 @@ export const InternshipSection5WrapperCss = styled.div`
 `
 
 export const InfoBlockCss = styled.div`
-    width: 648px;
-    .firstParagraph {
-        margin-top: 0;
-        line-height: 32px;
-        color: gray;
-        margin-bottom: 137px;
+    /* global styles */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
-    .styledParagraph {
-        font-style: italic;
+    .container {
+        display: flex;
+    }
+
+    .box {
+        flex-wrap: wrap;
+    }
+
+    .box1 {
+        flex: 0.7;
+    }
+
+    .box1 h4 {
         color: white;
+        font-style: italic;
     }
 
-    .gifSection {
+    .box1 .symbol {
+        font-style: italic;
+        color: #7481f4;
+    }
+
+    .box2 {
+        flex: 1;
+    }
+
+    .box2 .firstParagraph {
+        color: #9694a7;
+        max-width: 900px;
+        margin-bottom: 150px;
+    }
+
+    .box3 {
+        width: 100%;
+    }
+
+    .box3 .gifContainer {
         position: relative;
-        padding-left: 180px;
+        padding-left: 60%;
+        transform: scale(0.9);
     }
 
-    .portalGif {
+    .box3 .gifPortal {
         position: absolute;
+        top: 0px;
+        width: 100%;
+        height: auto;
+        margin-top: -35%;
+        margin-left: -39%;
+        transform: scale(0.3);
     }
 
-    .portalMask {
+    .box3 .portalMask {
         position: absolute;
+        width: 100%;
+        height: auto;
+        margin-top: -35%;
+        margin-left: -39%;
+        transform: scale(0.31);
     }
 
-    .documentHand {
+    .box3 .mug {
         position: absolute;
-        top: -40px;
-        left: 30px;
+        margin-left: -40%;
+        margin-top: -27%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.1);
     }
 
-    .document {
+    .box3 .mugHand {
         position: absolute;
-        top: 65px;
-        left: 155px;
+        margin-left: -57%;
+        margin-top: -5%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.24);
     }
 
-    .mugHand {
-        top: 190px;
-        left: 30px;
+    .box3 .keyboard {
         position: absolute;
+        margin-left: -29%;
+        margin-top: -32%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.2);
     }
 
-    .mug {
-        top: 130px;
-        right: 270px;
+    .box3 .keyboardHand {
         position: absolute;
+        margin-left: -20%;
+        margin-top: -60%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.2);
     }
 
-    .keyboardHand {
+    .box3 .document {
         position: absolute;
-        bottom: -110px;
-        right: 20px;
+        margin-left: -53%;
+        margin-top: -47%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.1);
     }
 
-    .keyboard {
+    .box3 .documentHand {
         position: absolute;
-        top: 20px;
-        left: 300px;
+        margin-left: -61.5%;
+        margin-top: -33%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.22);
     }
 `

@@ -29,6 +29,7 @@ export const InternshipSection7WrapperCss = styled.div`
 
 export const InfoBlockCss = styled.div`
     display: flex;
+    flex-wrap: wrap;
 
     .titleWrapper {
         max-width: 300px;
@@ -37,6 +38,7 @@ export const InfoBlockCss = styled.div`
     .codeWrapper {
         flex: 2;
         height: 100%;
+        padding-left: 5%;
     }
 
     .codeWrapper .title {
@@ -238,5 +240,12 @@ export const InfoBlockCss = styled.div`
 
     .w48 {
         color: #84c667;
+    }
+
+    @media (max-width: ${screens.lg}) {
+        .codeWrapper {
+            width: 100%;
+            padding-right: 30px;
+        }
     }
 `

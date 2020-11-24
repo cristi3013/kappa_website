@@ -4,6 +4,7 @@ import eye from './images/eye.png'
 
 export const SectionWrapper = styled.div`
     margin-left: 120px;
+    margin-bottom: 350px;
 `
 
 export const InternshipSection8WrapperCss = styled.div`
@@ -11,7 +12,7 @@ export const InternshipSection8WrapperCss = styled.div`
     margin: auto;
 
     .title {
-        margin-left: 300px;
+        padding-left: 26%;
     }
     @media (max-width: ${screens.lg}) {
         flex-direction: column;
@@ -20,22 +21,19 @@ export const InternshipSection8WrapperCss = styled.div`
 `
 
 export const CardSectionCss = styled.div`
-    /* display: flex;
-    justify-content: space-space-around;
-    flex-wrap: wrap;
-    align-items: center; */
-
     display: grid;
-    grid-template-columns: repeat(auto-fit, 35%);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-row-gap: 200px;
-    margin-left: 290px;
-    margin-top: 0px;
+    margin-left: 25%;
+    max-width: 700px;
 `
 export const CardWrapperCss = styled.div`
     height: 400px;
     margin: 15px;
-    /* margin-bottom: 0px; */
-    /* width: 20%; */
+    @media (max-width: ${screens.lg}) {
+        width: 100%;
+        margin-left: -50px;
+    }
 `
 export const ImageWrapperCss = styled.div`
     height: 400px;

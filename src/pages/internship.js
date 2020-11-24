@@ -26,17 +26,17 @@ const Internship = () => {
             {/* lateral scroll mediu pe K */}
             <Section3 />
 
+            {/* Lateral mic aici cand se face shrink maxim */}
             <Section4 />
 
             {/* lateral scroll mare pe toata sectiunea*/}
             <Section5 />
 
-            {/* lateral scroll mediu ceva la carduri */}
             <Section6 />
 
             <Section7 />
 
-            {/* lateral scroll mediu ceva la carduri cand se shrinkuiesc */}
+            {/* de vazut daca le pot face sa nu isi mai dea shrink la card atat de mult */}
             <Section8 />
 
             <Section9 />

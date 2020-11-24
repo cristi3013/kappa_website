@@ -34,8 +34,8 @@ const InternshipThirdSection = () => {
                             <p className="paragraph1">
                                 We know how crucial the
                                 <span className="styledParagraph">
-                                    <span>&nbsp; </span> next generation of
-                                    developers<span>&nbsp; </span>
+                                    <span>&nbsp;</span>next generation of
+                                    developers<span>&nbsp;</span>
                                 </span>{' '}
                                 is for our own future. That’s why we invest in
                                 tomorrow’s engineers to nurture capable and
@@ -88,9 +88,9 @@ const InternshipThirdSection = () => {
                                 Our internship program has been refined over the
                                 years and became
                                 <span className="styledParagraph2">
-                                    <span>&nbsp; </span>a fulfilling experience{' '}
-                                    <span>&nbsp; </span>
-                                </span>{' '}
+                                    <span>&nbsp;</span>a fulfilling experience
+                                    <span>&nbsp;</span>
+                                </span>
                                 for students or graduates. From training to
                                 project tasks - everything’s cherrypicked and
                                 revised by our senior developers to ensure
@@ -108,7 +108,7 @@ const InternshipThirdSection = () => {
                             a shorter period of time. You’ll be working on
                             various real-life projects that will intensely
                             <span className="styledParagraph3">
-                                <span>&nbsp; </span>test your limits.
+                                <span>&nbsp;</span>test your limits.
                             </span>
                         </p>
                     </div>
