@@ -16,10 +16,10 @@ const InternshipSection12 = () => {
         <SectionWrapper>
             <InternshipSection12WrapperCss>
                 <InfoBlockCss>
-                    <div class="firstContainer">
-                        <div class="box1 box">
-                            <h2 class="title">But wait, there's more...</h2>
-                            <p class="firstParagraph">
+                    <div className="firstContainer">
+                        <div className="box1 box">
+                            <h2 className="title">But wait, there's more...</h2>
+                            <p className="firstParagraph">
                                 We’ll forge you into desirable and indispensable
                                 professionals. Let us show you around our secret
                                 stash of HR tips and tricks.
@@ -27,12 +27,12 @@ const InternshipSection12 = () => {
                         </div>
                     </div>
 
-                    <div class="secondContainer">
-                        <div class="box2 box">
+                    <div className="secondContainer">
+                        <div className="box2 box">
                             <h4>
-                                <span class="symbol">|</span>You may walk away
-                                with:
-                                <span class="symbol">&lt;</span>
+                                <span className="symbol">|</span>You may walk
+                                away with:
+                                <span className="symbol">&lt;</span>
                             </h4>
                             <ul>
                                 <li>Where to look for jobs;</li>
@@ -56,12 +56,16 @@ const InternshipSection12 = () => {
                                 <li>Freelancing versus full-time job;</li>
                             </ul>
                         </div>
-                        <div class="box3 box">
-                            <div class="gifWrapper">
-                                <img src={aGif} class="aGif" alt="" />
-                                <img src={aMask} class="aMask" alt="" />
-                                <img src={upSphere} class="upSphere" alt="" />
-                                <img src={soap} class="soap" alt="" />
+                        <div className="box3 box">
+                            <div className="gifWrapper">
+                                <img src={aGif} className="aGif" alt="" />
+                                <img src={aMask} className="aMask" alt="" />
+                                <img
+                                    src={upSphere}
+                                    className="upSphere"
+                                    alt=""
+                                />
+                                <img src={soap} className="soap" alt="" />
                             </div>
                         </div>
                     </div>

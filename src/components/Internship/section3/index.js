@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import {
     InternshipThirdSectionWrapperCss,
     InfoBlockCss,
@@ -17,6 +18,16 @@ import cap from './images/cap.png'
 // TODO:Fix the svg icons for the gifs and animate them -> toate elementele intr-un div si dupa mutat div-ul
 
 const InternshipThirdSection = () => {
+    const [offsetY, setOffsetY] = useState(0)
+    const handleScroll = () => setOffsetY(window.pageYOffset)
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll)
+        console.log(offsetY)
+
+        return () => window.removeEventListener('scroll', handleScroll)
+    }, [])
+
     return (
         <SectionWrapper>
             <InternshipThirdSectionWrapperCss>
@@ -51,6 +62,11 @@ const InternshipThirdSection = () => {
                                     src={vrGoogles}
                                     className="vrGoogles"
                                     alt=""
+                                    style={{
+                                        transfrom: `translateY(${
+                                            offsetY * 0.5
+                                        }px)`,
+                                    }}
                                 />
                                 <img
                                     src={vrController1}
