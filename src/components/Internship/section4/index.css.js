@@ -6,7 +6,7 @@ export const BackgroundSection = styled.div`
 `
 
 export const SectionWrapper = styled.div`
-    margin-left: 120px;
+    margin-left: 0px;
 `
 
 export const InternshipFourthSectionWrapperCss = styled.div`

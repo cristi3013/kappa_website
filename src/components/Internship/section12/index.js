@@ -30,9 +30,9 @@ const InternshipSection12 = () => {
                     <div className="secondContainer">
                         <div className="box2 box">
                             <h4>
-                                <span className="symbol">|</span>You may walk
+                                <span className="symbol">|</span> You may walk
                                 away with:
-                                <span className="symbol">&lt;</span>
+                                <span className="symbol"> &lt;</span>
                             </h4>
                             <ul>
                                 <li>Where to look for jobs;</li>

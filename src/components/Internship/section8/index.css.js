@@ -91,7 +91,7 @@ export const StatusWrapperCss = styled.div`
         border-radius: 2px;
         color: white;
         font-style: italic;
-        font-size: 18px;
+        font-size: 16px;
         text-align: left;
         outline: none;
     }

@@ -3,7 +3,7 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
     margin-top: 500px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
 `
 
 export const InternshipSection6WrapperCss = styled.div`

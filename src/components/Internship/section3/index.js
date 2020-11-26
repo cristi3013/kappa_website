@@ -37,7 +37,7 @@ const InternshipThirdSection = () => {
                             <h4>
                                 <span className="symbol">|</span> This is the
                                 Kappa bootcamp
-                                <span className="symbol">&lt;</span>
+                                <span className="symbol"> &lt;</span>
                             </h4>
 
                             <h1 className="title">You are the future</h1>
