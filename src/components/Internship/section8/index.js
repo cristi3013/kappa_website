@@ -5,42 +5,35 @@ import {
     SectionWrapper,
 } from './index.css'
 import Card from './Card'
-import photo from './images/1.png'
-import photo2 from './images/2.png'
+import photo from './images/cristi.png'
+import photo2 from './images/andrei.png'
+import photo3 from './images/albert.png'
 import watchButton from './images/watchButton.png'
 
 const InternshipSection8 = () => {
     const cards = [
         {
             image: photo,
-            button: 'Watch',
-            name: 'Ilona Panych',
-            languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
-            status: null,
+            button: null,
+            name: 'Cristi Vasile',
+            languages: 'HTML   CSS   JavaScript   ReactJS   ',
+            status: 'live',
         },
 
         {
             image: photo2,
+            button: null,
+            name: 'Andrei Chihalau',
+            languages: 'HTML   CSS   JavaScript   ReactJS    ',
+            status: 'live',
+        },
+
+        {
+            image: photo3,
             button: 'Watch',
-            name: 'Phillip Martin',
-            languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
+            name: 'Albert Luta',
+            languages: 'Typescript   HTML   CSS   JavaScript   ReactJS    ',
             status: null,
-        },
-
-        {
-            image: 'photo',
-            button: 'Watch',
-            name: 'Tiko Giorgadze',
-            languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
-            status: 'live',
-        },
-
-        {
-            image: 'photo',
-            button: 'Watch',
-            name: 'Micheile Henderson',
-            languages: 'Typescript   ReactJs   PHP   Laravel   MySQL   ',
-            status: 'live',
         },
     ]
 

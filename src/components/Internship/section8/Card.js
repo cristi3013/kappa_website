@@ -2,6 +2,7 @@ import React from 'react'
 import {
     CardWrapperCss,
     ImageWrapperCss,
+    ButtonWrapperCss,
     TextWrapperCss,
     NameCss,
     LanguagesCss,
@@ -16,7 +17,11 @@ const Card = ({ cardInfo }) => {
             {image && (
                 <ImageWrapperCss>
                     <img src={image} className="photo" alt=""></img>
-                    <button>{button}</button>
+                    {button && (
+                        <ButtonWrapperCss>
+                            <span>{button}</span>
+                        </ButtonWrapperCss>
+                    )}
                 </ImageWrapperCss>
             )}
             <TextWrapperCss>

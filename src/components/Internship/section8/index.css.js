@@ -23,7 +23,7 @@ export const InternshipSection8WrapperCss = styled.div`
 export const CardSectionCss = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-row-gap: 200px;
+    grid-row-gap: 150px;
     margin-left: 25%;
     max-width: 700px;
 `
@@ -36,30 +36,36 @@ export const CardWrapperCss = styled.div`
     }
 `
 export const ImageWrapperCss = styled.div`
-    height: 400px;
+    height: 320px;
     position: relative;
+    background-color: #e5e5e5;
     img {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
-    button {
-        position: absolute;
-        width: 99px;
-        height: 27px;
-        left: 32px;
-        bottom: 17px;
-        background-color: #616a76;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        font-style: italic;
-        font-size: 18px;
-        text-align: left;
-        background-image: url(${eye});
-        background-position: right;
-        background-repeat: no-repeat;
-        outline: none;
-    }
+`
+
+export const ButtonWrapperCss = styled.div`
+    position: absolute;
+    width: 99px;
+    height: 27px;
+    left: 32px;
+    bottom: 17px;
+    background-color: #616a76;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-style: italic;
+    font-size: 18px;
+    text-align: left;
+    background-image: url(${eye});
+    background-position: right;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 `
 export const TextWrapperCss = styled.div`
     background-color: #1f1f25;

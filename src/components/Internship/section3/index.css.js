@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
@@ -101,7 +101,19 @@ export const InfoBlockCss = styled.div`
         margin-left: 20%;
         width: 100%;
         height: auto;
-        transform: scale(0.3);
+        transform: scale(0.4);
+    }
+
+    @keyframes play {
+        from {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
 
     .box2 .vrController1 {
@@ -110,7 +122,7 @@ export const InfoBlockCss = styled.div`
         margin-left: -40%;
         width: 100%;
         height: auto;
-        transform: scale(0.3);
+        transform: scale(0.4);
     }
 
     .box2 .vrController2 {
@@ -119,7 +131,7 @@ export const InfoBlockCss = styled.div`
         margin-left: 40%;
         width: 100%;
         height: auto;
-        transform: scale(0.3);
+        transform: scale(0.4);
     }
 
     /* CONTAINER 2 */
@@ -234,4 +246,35 @@ export const InfoBlockCss = styled.div`
         font-style: italic;
         color: white;
     }
+`
+const downAnimation = keyframes`
+    from {
+        transform: translateY(-100px);
+        opacity:0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+`
+
+export const DownAnimation = styled.div`
+    animation: ${downAnimation} 2s ease-out;
+`
+
+const upAnimation = keyframes`
+from{
+    transform: translateY(100px);
+    opacity:0;
+}
+
+to{
+    transform:translateY(0);
+    opacity:1;
+}`
+
+export const UpAnimation = styled.div`
+    animation: ${upAnimation} 2s ease-out;
 `

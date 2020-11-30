@@ -3,7 +3,9 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
     margin-top: 500px;
-    /* margin-left: 120px; */
+    @media (max-width: ${screens.lg}) {
+        margin-left: 120px;
+    }
 `
 
 export const InternshipSection6WrapperCss = styled.div`
@@ -48,6 +50,7 @@ export const CardWrapperCss = styled.div`
     background: #1f1f25;
     transition: 0.3s;
     word-break: all;
+    cursor: pointer;
 
     .image {
         visibility: hidden;

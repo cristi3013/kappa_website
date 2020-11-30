@@ -4,6 +4,8 @@ import {
     InternshipThirdSectionWrapperCss,
     InfoBlockCss,
     SectionWrapper,
+    DownAnimation,
+    UpAnimation,
 } from './index.css'
 import kGif from './images/k.gif'
 import kMask from './images/kmask.png'
@@ -14,20 +16,14 @@ import armyGif from './images/army.gif'
 import aMask1 from './images/amask1.png'
 import book from './images/book.png'
 import cap from './images/cap.png'
-
-// TODO:Fix the svg icons for the gifs and animate them -> toate elementele intr-un div si dupa mutat div-ul
+import { useInView } from 'react-intersection-observer'
 
 const InternshipThirdSection = () => {
-    const [offsetY, setOffsetY] = useState(0)
-    const handleScroll = () => setOffsetY(window.pageYOffset)
+    const [ref, inView] = useInView({
+        threshold: 0.52,
+    })
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll)
-        console.log(offsetY)
-
-        return () => window.removeEventListener('scroll', handleScroll)
-    }, [])
-
+    console.log(inView)
     return (
         <SectionWrapper>
             <InternshipThirdSectionWrapperCss>
@@ -58,26 +54,44 @@ const InternshipThirdSection = () => {
                             <div className="gifContainer1">
                                 <img src={kGif} className="kGif" alt="" />
                                 <img src={kMask} className="kMask" alt="" />
-                                <img
-                                    src={vrGoogles}
-                                    className="vrGoogles"
-                                    alt=""
-                                    style={{
-                                        transfrom: `translateY(${
-                                            offsetY * 0.5
-                                        }px)`,
-                                    }}
-                                />
-                                <img
-                                    src={vrController1}
-                                    className="vrController1"
-                                    alt=""
-                                />
-                                <img
-                                    src={vrController2}
-                                    className="vrController2"
-                                    alt=""
-                                />
+                                <DownAnimation>
+                                    <img
+                                        src={vrGoogles}
+                                        className="vrGoogles"
+                                        alt=""
+                                        ref={ref}
+                                        style={{
+                                            opacity: inView ? 1 : 0,
+                                            transition: '0.5s ease-out',
+                                        }}
+                                    />
+                                </DownAnimation>
+
+                                <UpAnimation>
+                                    <img
+                                        src={vrController1}
+                                        className="vrController1"
+                                        alt=""
+                                        ref={ref}
+                                        style={{
+                                            opacity: inView ? 1 : 0,
+                                            transition: '0.5s ease-out',
+                                        }}
+                                    />
+                                </UpAnimation>
+
+                                <UpAnimation>
+                                    <img
+                                        src={vrController2}
+                                        className="vrController2"
+                                        alt=""
+                                        ref={ref}
+                                        style={{
+                                            opacity: inView ? 1 : 0,
+                                            transition: '0.5s ease-out',
+                                        }}
+                                    />
+                                </UpAnimation>
                             </div>
                         </div>
                     </div>

@@ -7,6 +7,9 @@ export const BackgroundSection = styled.div`
 
 export const SectionWrapper = styled.div`
     margin-left: 0px;
+    @media (max-width: ${screens.lg}) {
+        margin-left: 120px;
+    }
 `
 
 export const InternshipFourthSectionWrapperCss = styled.div`
