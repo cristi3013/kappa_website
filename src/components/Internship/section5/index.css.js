@@ -1,8 +1,9 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
     margin-left: 120px;
+    margin-bottom: 500px;
 `
 
 export const InternshipSection5WrapperCss = styled.div`
@@ -58,13 +59,21 @@ export const InfoBlockCss = styled.div`
     }
 
     .box3 {
+        height: auto;
+        width: 100%;
+    }
+
+    .box3 .img {
+        height: 100%;
         width: 100%;
     }
 
     .box3 .gifContainer {
         position: relative;
-        padding-left: 60%;
-        transform: scale(0.9);
+        width: 100%;
+        height: auto;
+        margin-left: 50%;
+        transform: scale(1);
     }
 
     .box3 .gifPortal {
@@ -86,28 +95,27 @@ export const InfoBlockCss = styled.div`
         transform: scale(0.31);
     }
 
+    .box3 .mugHand {
+        position: absolute;
+        margin-left: -60%;
+        margin-top: 2%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.24);
+    }
     .box3 .mug {
         position: absolute;
-        margin-left: -40%;
-        margin-top: -27%;
+        margin-left: -50%;
+        margin-top: -21%;
         width: 100%;
         height: auto;
         transform: scale(0.1);
     }
 
-    .box3 .mugHand {
-        position: absolute;
-        margin-left: -57%;
-        margin-top: -5%;
-        width: 100%;
-        height: auto;
-        transform: scale(0.24);
-    }
-
     .box3 .keyboard {
         position: absolute;
-        margin-left: -29%;
-        margin-top: -32%;
+        margin-left: -23%;
+        margin-top: -39%;
         width: 100%;
         height: auto;
         transform: scale(0.2);
@@ -115,17 +123,17 @@ export const InfoBlockCss = styled.div`
 
     .box3 .keyboardHand {
         position: absolute;
-        margin-left: -20%;
+        margin-left: -15%;
         margin-top: -60%;
         width: 100%;
         height: auto;
-        transform: scale(0.2);
+        transform: scale(0.25);
     }
 
     .box3 .document {
         position: absolute;
-        margin-left: -53%;
-        margin-top: -47%;
+        margin-left: -57%;
+        margin-top: -49%;
         width: 100%;
         height: auto;
         transform: scale(0.1);
@@ -133,10 +141,77 @@ export const InfoBlockCss = styled.div`
 
     .box3 .documentHand {
         position: absolute;
-        margin-left: -61.5%;
-        margin-top: -33%;
+        margin-left: -65%;
+        margin-top: -35%;
         width: 100%;
         height: auto;
         transform: scale(0.22);
     }
+`
+
+const mugHandAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(30px, -30px)
+}`
+export const MugHandAnimationCss = styled.div`
+    animation: ${mugHandAnimation} 1.5s forwards;
+`
+
+const mugAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(80px, -80px)
+}`
+export const MugAnimationCss = styled.div`
+    animation: ${mugAnimation} 2.5s forwards;
+`
+
+const keyboardHandAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(-30px, 30px)
+}`
+export const KeyboardHandAnimationCss = styled.div`
+    animation: ${keyboardHandAnimation} 1.5s forwards;
+`
+
+const keyboardAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(-100px, 80px)
+}`
+export const KeyboardAnimationCss = styled.div`
+    animation: ${keyboardAnimation} 2.5s forwards;
+`
+
+const documentHandAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(40px, 40px )
+}`
+
+export const DocumentHandAnimationCss = styled.div`
+    animation: ${documentHandAnimation} 2s forwards;
+`
+
+const documentAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(70px, 60px )
+}`
+export const DocumentAnimationCss = styled.div`
+    animation: ${documentAnimation} 2.5s forwards;
 `

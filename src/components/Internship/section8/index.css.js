@@ -1,6 +1,7 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 import eye from './images/eye.png'
+import gif1 from './images/gif1.gif'
 
 export const SectionWrapper = styled.div`
     margin-left: 120px;
@@ -35,13 +36,37 @@ export const CardWrapperCss = styled.div`
         margin-left: -50px;
     }
 `
+const imgAnimation = keyframes`
+0%{
+    opacity:1;
+}
+100%{
+    opacity:0;
+}`
 export const ImageWrapperCss = styled.div`
     height: 320px;
     position: relative;
     background-color: #e5e5e5;
+
+    max-width: 321px;
+    max-height: 323px;
+
     img {
         width: 100%;
-        height: auto;
+        min-height: 321px;
+    }
+    img:hover {
+        animation: ${imgAnimation} 1s forwards;
+    }
+`
+
+export const GifWrapperCss = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+        width: 100%;
+        height: 100%;
     }
 `
 

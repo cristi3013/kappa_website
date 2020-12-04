@@ -4,6 +4,8 @@ import {
     InternshipSection11WrapperCss,
     InfoBlockCss,
     SectionWrapper,
+    DownAnimation,
+    UpAnimation,
 } from './index.css'
 
 import pGif from './images/p2.gif'
@@ -11,7 +13,32 @@ import planets from './images/planets.png'
 import stars from './images/stars.png'
 import pMask from './images/pMask.png'
 
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null)
+    const [visible, setVisible] = React.useState(false)
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setVisible(entry.isIntersecting)
+        }, options)
+
+        if (ref) {
+            observer.observe(ref)
+        }
+
+        return () => {
+            if (ref) {
+                observer.unobserve(ref)
+            }
+        }
+    }, [ref, options])
+
+    return [setRef, visible]
+}
+
 const InternshipSection11 = () => {
+    const [setRef, visible] = useOnScreen({ threshold: 0.2 })
+
     return (
         <SectionWrapper>
             <InternshipSection11WrapperCss>
@@ -22,8 +49,43 @@ const InternshipSection11 = () => {
                             <div className="gifWrapper">
                                 <img src={pGif} className="pGif" alt="" />
                                 <img src={pMask} className="pMask" alt="" />
-                                <img src={planets} className="planets" alt="" />
-                                <img src={stars} className="stars" alt="" />
+                                {visible ? (
+                                    <DownAnimation>
+                                        <img
+                                            src={stars}
+                                            className="stars"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </DownAnimation>
+                                ) : (
+                                    <img
+                                        src={stars}
+                                        className="stars"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
+
+                                {visible ? (
+                                    <UpAnimation>
+                                        <img
+                                            src={planets}
+                                            className="planets"
+                                            alt=""
+                                            ref={setRef}
+                                            style={{}}
+                                        />
+                                    </UpAnimation>
+                                ) : (
+                                    <img
+                                        src={planets}
+                                        className="planets"
+                                        alt=""
+                                        ref={setRef}
+                                        style={{}}
+                                    />
+                                )}
                             </div>
                         </div>
                         <div className="box2 box">

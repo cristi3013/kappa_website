@@ -2,7 +2,6 @@ import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
-    margin-top: 500px;
     @media (max-width: ${screens.lg}) {
         margin-left: 120px;
     }

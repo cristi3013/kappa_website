@@ -8,15 +8,23 @@ import {
     LanguagesCss,
     StatusWrapperCss,
     PrimaryLinks,
+    GifWrapperCss,
 } from './index.css'
 const Card = ({ cardInfo }) => {
-    const { image, button, name, languages, status } = cardInfo
+    const { image, gif, button, name, languages, status } = cardInfo
 
     return (
         <CardWrapperCss>
             {image && (
                 <ImageWrapperCss>
-                    <img src={image} className="photo" alt=""></img>
+                    <div className="avatarImage">
+                        <img src={image} className="photo" alt=""></img>
+                    </div>
+                    {gif && (
+                        <GifWrapperCss>
+                            <img src={gif} className="gif" alt=""></img>
+                        </GifWrapperCss>
+                    )}
                     {button && (
                         <ButtonWrapperCss>
                             <span>{button}</span>

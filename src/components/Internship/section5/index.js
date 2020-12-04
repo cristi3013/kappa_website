@@ -3,6 +3,12 @@ import {
     InternshipSection5WrapperCss,
     InfoBlockCss,
     SectionWrapper,
+    MugHandAnimationCss,
+    MugAnimationCss,
+    KeyboardHandAnimationCss,
+    KeyboardAnimationCss,
+    DocumentHandAnimationCss,
+    DocumentAnimationCss,
 } from './index.css'
 
 import portal from './images/portal.gif'
@@ -14,7 +20,32 @@ import keyboard from './images/keyboard.png'
 import mugHand from './images/mugHand.png'
 import mug from './images/mug.png'
 
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null)
+    const [visible, setVisible] = React.useState(false)
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setVisible(entry.isIntersecting)
+        }, options)
+
+        if (ref) {
+            observer.observe(ref)
+        }
+
+        return () => {
+            if (ref) {
+                observer.unobserve(ref)
+            }
+        }
+    }, [ref, options])
+
+    return [setRef, visible]
+}
+
 const InternshipSection5 = () => {
+    const [setRef, visible] = useOnScreen({ threshold: 0.4 })
+
     return (
         <SectionWrapper>
             <InternshipSection5WrapperCss>
@@ -50,20 +81,113 @@ const InternshipSection5 = () => {
                                 className="portalMask"
                                 alt=""
                             />
-                            <img src={mug} className="mug" alt="" />
-                            <img src={mugHand} className="mugHand" alt="" />
-                            <img src={keyboard} className="keyboard" alt="" />
-                            <img
-                                src={keyboardHand}
-                                className="keyboardHand"
-                                alt=""
-                            />
-                            <img src={document} className="document" alt="" />
-                            <img
-                                src={documentHand}
-                                className="documentHand"
-                                alt=""
-                            />
+
+                            {visible ? (
+                                <MugHandAnimationCss>
+                                    <img
+                                        src={mugHand}
+                                        className="mugHand"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </MugHandAnimationCss>
+                            ) : (
+                                <img
+                                    src={mugHand}
+                                    className="mugHand"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <MugAnimationCss>
+                                    <img
+                                        src={mug}
+                                        className="mug"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </MugAnimationCss>
+                            ) : (
+                                <img
+                                    src={mug}
+                                    className="mug"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <KeyboardHandAnimationCss>
+                                    <img
+                                        src={keyboardHand}
+                                        className="keyboardHand"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </KeyboardHandAnimationCss>
+                            ) : (
+                                <img
+                                    src={keyboardHand}
+                                    className="keyboardHand"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+                            {visible ? (
+                                <KeyboardAnimationCss>
+                                    <img
+                                        src={keyboard}
+                                        className="keyboard"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </KeyboardAnimationCss>
+                            ) : (
+                                <img
+                                    src={keyboard}
+                                    className="keyboard"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <DocumentAnimationCss>
+                                    <img
+                                        src={document}
+                                        className="document"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </DocumentAnimationCss>
+                            ) : (
+                                <img
+                                    src={document}
+                                    className="document"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <DocumentHandAnimationCss>
+                                    <img
+                                        src={documentHand}
+                                        className="documentHand"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </DocumentHandAnimationCss>
+                            ) : (
+                                <img
+                                    src={documentHand}
+                                    className="documentHand"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
                         </div>
                     </div>
                 </InfoBlockCss>

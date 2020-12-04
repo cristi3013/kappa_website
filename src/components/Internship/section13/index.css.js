@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
@@ -30,7 +30,7 @@ export const InternshipSection13WrapperCss = styled.div`
 
 export const BlocksCss = styled.div`
     margin-left: 5%;
-
+    line-height: 0px;
     .questionsTitle {
         margin-left: -60px;
         margin-bottom: 50px;
@@ -105,7 +105,7 @@ export const InfoBlockContentCss = styled.div`
         props.show ? props.childrenHeight + 50 + 'px' : '0px'};
     transition: all 0.3s;
 
-    margin-bottom: 78px;
+    margin-bottom: 30px;
 
     ul {
         padding: 0px;

@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
@@ -72,6 +72,7 @@ export const InfoBlockCss = styled.div`
         max-width: 700px;
         margin-left: 31%;
         margin-top: 100px;
+        height: 400px;
     }
 
     .box4 .gifContainer {
@@ -80,48 +81,43 @@ export const InfoBlockCss = styled.div`
     }
 
     .box4 .gifContainer img {
+        position: absolute;
         width: 100%;
         height: auto;
     }
 
     .box4 .covidGif {
+        position: absolute;
         width: 100%;
         height: auto;
     }
 
     .box4 .toolbar {
         position: absolute;
-        right: 0%;
-        bottom: 102%;
+        transform: translateY(-40px) translateX(-5px);
         width: 100%;
         height: auto;
     }
 
     .box4 .avatar {
         position: absolute;
-        transform: scale(0.3);
-        width: 100%;
 
-        top: 10%;
-        left: 38%;
+        transform: scale(0.3) rotate(5deg) translateY(120px) translateX(770px);
+        width: 100%;
     }
 
     .box4 .web {
         position: absolute;
-        transform: scale(0.06);
-        top: 45%;
-        right: 35%;
-        bottom: 102%;
+        transform: scale(0.06) translateY(2800px) translateX(-4000px);
         width: 100%;
+        height: auto;
     }
 
     .box4 .mic {
         position: absolute;
-        transform: scale(0.06);
+        transform: scale(0.09) translateY(-330px) translateX(-4000px)
+            rotate(0deg);
         width: 100%;
-
-        top: -20%;
-        right: 53%;
     }
 
     .box4 {
@@ -139,4 +135,47 @@ export const InfoBlockCss = styled.div`
         color: #9694a7;
         line-height: 32px;
     }
+`
+const toolbarAnimation = keyframes`
+0%{
+    transform: rotate(0deg);
+}
+100%{
+    transform:rotate(2.15deg);
+}`
+export const ToolbarAnimationCss = styled.div`
+    animation: ${toolbarAnimation} 1s forwards;
+`
+
+const avatarAnimation = keyframes`
+0%{
+    transform: rotate(0deg)
+}
+100%{
+    transform: rotate(-5deg)
+}`
+export const AvatarAnimationCss = styled.div`
+    animation: ${avatarAnimation} 1s forwards;
+`
+
+const micAnimation = keyframes`
+0%{
+    transform: translateX(0px);
+}
+100%{
+    transform: translateX(60px) translateY(25px);
+}`
+export const MicAnimationCss = styled.div`
+    animation: ${micAnimation} 2s forwards;
+`
+
+const webAnimation = keyframes`
+0%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(-50px);
+}`
+export const WebAnimationCss = styled.div`
+    animation: ${webAnimation} 2s forwards;
 `

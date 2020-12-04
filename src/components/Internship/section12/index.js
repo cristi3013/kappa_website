@@ -4,6 +4,8 @@ import {
     InternshipSection12WrapperCss,
     InfoBlockCss,
     SectionWrapper,
+    DownAnimation,
+    UpAnimation,
 } from './index.css'
 
 import aMask from './images/amask1.png'
@@ -11,7 +13,32 @@ import aGif from './images/a2.gif'
 import upSphere from './images/upSphere.png'
 import soap from './images/soap.png'
 
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null)
+    const [visible, setVisible] = React.useState(false)
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setVisible(entry.isIntersecting)
+        }, options)
+
+        if (ref) {
+            observer.observe(ref)
+        }
+
+        return () => {
+            if (ref) {
+                observer.unobserve(ref)
+            }
+        }
+    }, [ref, options])
+
+    return [setRef, visible]
+}
+
 const InternshipSection12 = () => {
+    const [setRef, visible] = useOnScreen({ threshold: 0.2 })
+
     return (
         <SectionWrapper>
             <InternshipSection12WrapperCss>
@@ -60,12 +87,44 @@ const InternshipSection12 = () => {
                             <div className="gifWrapper">
                                 <img src={aGif} className="aGif" alt="" />
                                 <img src={aMask} className="aMask" alt="" />
-                                <img
-                                    src={upSphere}
-                                    className="upSphere"
-                                    alt=""
-                                />
-                                <img src={soap} className="soap" alt="" />
+
+                                {visible ? (
+                                    <DownAnimation>
+                                        <img
+                                            src={upSphere}
+                                            className="upSphere"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </DownAnimation>
+                                ) : (
+                                    <img
+                                        src={upSphere}
+                                        className="upSphere"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
+
+                                {visible ? (
+                                    <UpAnimation>
+                                        <img
+                                            src={soap}
+                                            className="soap"
+                                            alt=""
+                                            ref={setRef}
+                                            style={{}}
+                                        />
+                                    </UpAnimation>
+                                ) : (
+                                    <img
+                                        src={soap}
+                                        className="soap"
+                                        alt=""
+                                        ref={setRef}
+                                        style={{}}
+                                    />
+                                )}
                             </div>
                         </div>
                     </div>

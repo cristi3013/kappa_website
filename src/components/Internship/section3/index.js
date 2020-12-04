@@ -16,14 +16,33 @@ import armyGif from './images/army.gif'
 import aMask1 from './images/amask1.png'
 import book from './images/book.png'
 import cap from './images/cap.png'
-import { useInView } from 'react-intersection-observer'
+
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null)
+    const [visible, setVisible] = React.useState(false)
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setVisible(entry.isIntersecting)
+        }, options)
+
+        if (ref) {
+            observer.observe(ref)
+        }
+
+        return () => {
+            if (ref) {
+                observer.unobserve(ref)
+            }
+        }
+    }, [ref, options])
+
+    return [setRef, visible]
+}
 
 const InternshipThirdSection = () => {
-    const [ref, inView] = useInView({
-        threshold: 0.52,
-    })
+    const [setRef, visible] = useOnScreen({ threshold: 0.4 })
 
-    console.log(inView)
     return (
         <SectionWrapper>
             <InternshipThirdSectionWrapperCss>
@@ -54,44 +73,64 @@ const InternshipThirdSection = () => {
                             <div className="gifContainer1">
                                 <img src={kGif} className="kGif" alt="" />
                                 <img src={kMask} className="kMask" alt="" />
-                                <DownAnimation>
+
+                                {visible ? (
+                                    <DownAnimation>
+                                        <img
+                                            src={vrGoogles}
+                                            className="vrGoogles"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </DownAnimation>
+                                ) : (
                                     <img
                                         src={vrGoogles}
                                         className="vrGoogles"
                                         alt=""
-                                        ref={ref}
-                                        style={{
-                                            opacity: inView ? 1 : 0,
-                                            transition: '0.5s ease-out',
-                                        }}
+                                        ref={setRef}
                                     />
-                                </DownAnimation>
+                                )}
 
-                                <UpAnimation>
+                                {visible ? (
+                                    <UpAnimation>
+                                        <img
+                                            src={vrController1}
+                                            className="vrController1"
+                                            alt=""
+                                            ref={setRef}
+                                            style={{}}
+                                        />
+                                    </UpAnimation>
+                                ) : (
                                     <img
                                         src={vrController1}
                                         className="vrController1"
                                         alt=""
-                                        ref={ref}
-                                        style={{
-                                            opacity: inView ? 1 : 0,
-                                            transition: '0.5s ease-out',
-                                        }}
+                                        ref={setRef}
+                                        style={{}}
                                     />
-                                </UpAnimation>
+                                )}
 
-                                <UpAnimation>
+                                {visible ? (
+                                    <UpAnimation>
+                                        <img
+                                            src={vrController2}
+                                            className="vrController2"
+                                            alt=""
+                                            ref={setRef}
+                                            style={{}}
+                                        />
+                                    </UpAnimation>
+                                ) : (
                                     <img
                                         src={vrController2}
                                         className="vrController2"
                                         alt=""
-                                        ref={ref}
-                                        style={{
-                                            opacity: inView ? 1 : 0,
-                                            transition: '0.5s ease-out',
-                                        }}
+                                        ref={setRef}
+                                        style={{}}
                                     />
-                                </UpAnimation>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -101,8 +140,41 @@ const InternshipThirdSection = () => {
                             <div className="gifContainer2">
                                 <img src={armyGif} className="armyGif" alt="" />
                                 <img src={aMask1} className="aMask" alt="" />
-                                <img src={book} className="book" alt="" />
-                                <img src={cap} className="cap" alt="" />
+
+                                {visible ? (
+                                    <UpAnimation>
+                                        <img
+                                            src={book}
+                                            className="book"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </UpAnimation>
+                                ) : (
+                                    <img
+                                        src={book}
+                                        className="book"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
+                                {visible ? (
+                                    <DownAnimation>
+                                        <img
+                                            src={cap}
+                                            className="cap"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </DownAnimation>
+                                ) : (
+                                    <img
+                                        src={cap}
+                                        className="cap"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
                             </div>
                         </div>
 

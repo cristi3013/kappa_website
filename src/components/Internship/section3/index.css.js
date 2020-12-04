@@ -97,28 +97,16 @@ export const InfoBlockCss = styled.div`
 
     .box2 .vrGoogles {
         position: absolute;
-        margin-top: -10%;
+        margin-top: -35%;
         margin-left: 20%;
         width: 100%;
         height: auto;
         transform: scale(0.4);
     }
 
-    @keyframes play {
-        from {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        to {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
     .box2 .vrController1 {
         position: absolute;
-        margin-top: 20%;
+        margin-top: 35%;
         margin-left: -40%;
         width: 100%;
         height: auto;
@@ -127,7 +115,7 @@ export const InfoBlockCss = styled.div`
 
     .box2 .vrController2 {
         position: absolute;
-        margin-top: 22%;
+        margin-top: 35%;
         margin-left: 40%;
         width: 100%;
         height: auto;
@@ -179,7 +167,7 @@ export const InfoBlockCss = styled.div`
 
     .box3 .book {
         position: absolute;
-        margin-top: 17%;
+        margin-top: 35%;
         margin-left: 25%;
         width: 100%;
         height: auto;
@@ -188,7 +176,7 @@ export const InfoBlockCss = styled.div`
 
     .box3 .cap {
         position: absolute;
-        margin-top: -34%;
+        margin-top: -56%;
         margin-left: -22%;
         width: 100%;
         height: auto;
@@ -249,32 +237,28 @@ export const InfoBlockCss = styled.div`
 `
 const downAnimation = keyframes`
     from {
-        transform: translateY(-100px);
-        opacity:0;
+        transform: translateY(0px);
     }
 
     to {
-        transform: translateY(0px);
-        opacity: 1;
+        transform: translateY(150px);
     }
 
 `
 
 export const DownAnimation = styled.div`
-    animation: ${downAnimation} 2s ease-out;
+    animation: ${downAnimation} 2.5s forwards;
 `
 
 const upAnimation = keyframes`
 from{
-    transform: translateY(100px);
-    opacity:0;
+    transform: translateY(0px);
 }
 
 to{
-    transform:translateY(0);
-    opacity:1;
+    transform:translateY(-100px);
 }`
 
 export const UpAnimation = styled.div`
-    animation: ${upAnimation} 2s ease-out;
+    animation: ${upAnimation} 2.5s forwards;
 `

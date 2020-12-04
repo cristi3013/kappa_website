@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
@@ -61,7 +61,7 @@ export const InfoBlockCss = styled.div`
         position: absolute;
         width: 100%;
         transform: scale(0.3);
-        margin-top: 26%;
+        margin-top: 45%;
         right: 51%;
     }
 
@@ -69,7 +69,7 @@ export const InfoBlockCss = styled.div`
         position: absolute;
         width: 100%;
         transform: scale(0.2);
-        margin-top: -80%;
+        margin-top: -100%;
         left: 40%;
     }
 
@@ -98,4 +98,32 @@ export const InfoBlockCss = styled.div`
         max-width: 550px;
         margin-top: 30px;
     }
+`
+
+const downAnimation = keyframes`
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(150px);
+    }
+
+`
+
+export const DownAnimation = styled.div`
+    animation: ${downAnimation} 2.5s forwards;
+`
+
+const upAnimation = keyframes`
+from{
+    transform: translateY(0px);
+}
+
+to{
+    transform:translateY(-100px);
+}`
+
+export const UpAnimation = styled.div`
+    animation: ${upAnimation} 2.5s forwards;
 `

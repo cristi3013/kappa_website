@@ -1,4 +1,4 @@
-import styled from 'styled-components/macro'
+import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const BackgroundSection = styled.div`
@@ -13,7 +13,16 @@ export const InternshipSection10WrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
 `
+const textBarAnimation = keyframes`
 
+    from{
+        transform: translate3d(400px,0,0)
+    }
+    to{
+        transform: translate3d(-1440px,0,0)
+    }
+}
+`
 export const InfoBlockCss = styled.div`
     .sectionWrapper {
         padding-top: 100px;
@@ -81,6 +90,8 @@ export const InfoBlockCss = styled.div`
         flex-wrap: wrap;
         width: 100%;
         height: auto;
+
+        animation: ${textBarAnimation} 10s linear infinite reverse;
     }
 
     .symbol {

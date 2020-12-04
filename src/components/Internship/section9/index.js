@@ -4,6 +4,10 @@ import {
     InternshipSection9WrapperCss,
     InfoBlockCss,
     SectionWrapper,
+    ToolbarAnimationCss,
+    AvatarAnimationCss,
+    MicAnimationCss,
+    WebAnimationCss,
 } from './index.css'
 
 import covidGif from './images/covid.gif'
@@ -12,7 +16,32 @@ import mic from './images/mic.png'
 import web from './images/web.png'
 import toolbar from './images/toolbar.png'
 
+function useOnScreen(options) {
+    const [ref, setRef] = React.useState(null)
+    const [visible, setVisible] = React.useState(false)
+
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            setVisible(entry.isIntersecting)
+        }, options)
+
+        if (ref) {
+            observer.observe(ref)
+        }
+
+        return () => {
+            if (ref) {
+                observer.unobserve(ref)
+            }
+        }
+    }, [ref, options])
+
+    return [setRef, visible]
+}
+
 const InternshipSection9 = () => {
+    const [setRef, visible] = useOnScreen({ threshold: 1 })
+
     return (
         <SectionWrapper>
             <InternshipSection9WrapperCss>
@@ -44,10 +73,78 @@ const InternshipSection9 = () => {
 
                         <div className="box4 box">
                             <img src={covidGif} className="covidGif" alt="" />
-                            <img src={toolbar} className="toolbar" alt="" />
-                            <img src={avatar} className="avatar" alt="" />
-                            <img src={mic} className="mic" alt="" />
-                            <img src={web} className="web" alt="" />
+
+                            {visible ? (
+                                <ToolbarAnimationCss>
+                                    <img
+                                        src={toolbar}
+                                        className="toolbar"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </ToolbarAnimationCss>
+                            ) : (
+                                <img
+                                    src={toolbar}
+                                    className="toolbar"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <AvatarAnimationCss>
+                                    <img
+                                        src={avatar}
+                                        className="avatar"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </AvatarAnimationCss>
+                            ) : (
+                                <img
+                                    src={avatar}
+                                    className="avatar"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <MicAnimationCss>
+                                    <img
+                                        src={mic}
+                                        className="mic"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </MicAnimationCss>
+                            ) : (
+                                <img
+                                    src={mic}
+                                    className="mic"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
+
+                            {visible ? (
+                                <WebAnimationCss>
+                                    <img
+                                        src={web}
+                                        className="web"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                </WebAnimationCss>
+                            ) : (
+                                <img
+                                    src={web}
+                                    className="web"
+                                    alt=""
+                                    ref={setRef}
+                                />
+                            )}
                         </div>
                         <div className="box5 box">
                             <p className="secondParagraph">
