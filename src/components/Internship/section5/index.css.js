@@ -7,7 +7,6 @@ export const SectionWrapper = styled.div`
 `
 
 export const InternshipSection5WrapperCss = styled.div`
-    display: flex;
     max-width: 1440px;
     margin: auto;
 
@@ -28,14 +27,18 @@ export const InfoBlockCss = styled.div`
 
     .container {
         display: flex;
-    }
-
-    .box {
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
+        width: 100%;
+        height: auto;
     }
 
     .box1 {
-        flex: 0.7;
+        flex: 0.33;
+        /* background-color: red; */
+        width: 100%;
+        height: 100px;
     }
 
     .box1 h4 {
@@ -48,14 +51,37 @@ export const InfoBlockCss = styled.div`
         color: #7481f4;
     }
 
-    .box2 {
+    .boxTitle {
         flex: 1;
+        /* background-color: blue; */
+        width: 100%;
+        height: 100px;
+    }
+    .boxTitle .title {
+        color: white;
+    }
+
+    .container2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .box2 {
+        margin-top: 20px;
+        max-width: 650px;
+        margin-left: 25%;
+        /* background-color: green; */
     }
 
     .box2 .firstParagraph {
         color: #9694a7;
-        max-width: 900px;
-        margin-bottom: 150px;
+        line-height: 32px;
+    }
+
+    .box2 .styledParagraph1 {
+        font-style: italic;
+        color: white;
     }
 
     .box3 {
@@ -72,8 +98,9 @@ export const InfoBlockCss = styled.div`
         position: relative;
         width: 100%;
         height: auto;
-        margin-left: 50%;
-        transform: scale(1);
+        margin-top: 10%;
+        margin-left: 14%;
+        transform: scale(0.6);
     }
 
     .box3 .gifPortal {

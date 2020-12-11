@@ -3,6 +3,7 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const BackgroundSection = styled.div`
     background: ${colors.dark_grey};
+    overflow: hidden;
 `
 
 export const SectionWrapper = styled.div`
@@ -16,7 +17,7 @@ export const InternshipSection10WrapperCss = styled.div`
 const textBarAnimation = keyframes`
 
     from{
-        transform: translate3d(400px,0,0)
+        transform: translate3d(1440px,0,0)
     }
     to{
         transform: translate3d(-1440px,0,0)
@@ -88,10 +89,9 @@ export const InfoBlockCss = styled.div`
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        width: 100%;
+        width: 2500px;
         height: auto;
-
-        animation: ${textBarAnimation} 10s linear infinite reverse;
+        animation: ${textBarAnimation} 20s linear infinite reverse;
     }
 
     .symbol {
@@ -110,6 +110,18 @@ export const InfoBlockCss = styled.div`
         font-style: italic;
     }
     .box6 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box7 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box8 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box9 h1 {
         color: white;
         font-style: italic;
     }

@@ -91,7 +91,31 @@ const InternshipSection10 = () => {
                                         <span className="symbol">&lt;</span>
                                     </h1>
                                 </div>
+
                                 <div className="box7 box">
+                                    <h1>
+                                        <span className="symbol">| </span>
+                                        taking initiative
+                                        <span className="symbol">&lt;</span>
+                                    </h1>
+                                </div>
+
+                                <div className="box8 box">
+                                    <h1>
+                                        <span className="symbol">| </span>
+                                        self organisation
+                                        <span className="symbol">&lt;</span>
+                                    </h1>
+                                </div>
+
+                                <div className="box9 box">
+                                    <h1>
+                                        <span className="symbol">| </span>
+                                        time management
+                                        <span className="symbol">&lt;</span>
+                                    </h1>
+                                </div>
+                                <div className="box10 box">
                                     <img src={svg2} className="svg2" alt="" />
                                 </div>
                             </div>

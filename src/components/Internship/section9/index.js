@@ -40,7 +40,7 @@ function useOnScreen(options) {
 }
 
 const InternshipSection9 = () => {
-    const [setRef, visible] = useOnScreen({ threshold: 1 })
+    const [setRef, visible] = useOnScreen({ threshold: 0.4 })
 
     return (
         <SectionWrapper>

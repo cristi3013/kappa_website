@@ -27,8 +27,7 @@ const Internship = () => {
 
             <Section4 />
 
-            {/* lateral scroll mare pe toata sectiunea, de umblat la animatie incercat pozitionat cu transform: translate*/}
-            {/* <Section5 /> */}
+            <Section5 />
 
             <Section6 />
 

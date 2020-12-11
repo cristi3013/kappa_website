@@ -11,11 +11,6 @@ import {
 const Card = ({ cardInfo }) => {
     const { image, title, text } = cardInfo
 
-    // var cardExpand = doocument.querySelector(".wrapper");
-
-    // function expand(){
-    //     cardExpand.
-    // }
     return (
         <CardWrapperCss>
             <div className="wrapper">
