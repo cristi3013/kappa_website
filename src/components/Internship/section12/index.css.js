@@ -94,7 +94,7 @@ export const InfoBlockCss = styled.div`
         left: 0;
         width: 100%;
         height: auto;
-        transform: scale(0.8);
+        transform: scale(0.6);
     }
 
     .box3 .aMask {
@@ -103,7 +103,7 @@ export const InfoBlockCss = styled.div`
         left: 0;
         width: 100%;
         height: auto;
-        transform: scale(0.821);
+        transform: scale(0.621);
     }
 
     .box3 .upSphere {
@@ -111,15 +111,15 @@ export const InfoBlockCss = styled.div`
         width: 100%;
         transform: scale(0.13);
         margin-top: -50%;
-        right: 40%;
+        right: 28%;
     }
 
     .box3 .soap {
         position: absolute;
         width: 100%;
-        transform: scale(0.33);
-        margin-left: 33%;
-        margin-top: 50%;
+        transform: scale(0.3);
+        margin-left: 28%;
+        margin-top: 45%;
     }
 `
 

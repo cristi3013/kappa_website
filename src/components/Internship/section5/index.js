@@ -9,6 +9,8 @@ import {
     KeyboardAnimationCss,
     DocumentHandAnimationCss,
     DocumentAnimationCss,
+    YerzAnimationCss,
+    RaluAnimationCss,
 } from './index.css'
 
 import portal from './images/portal.gif'
@@ -19,6 +21,8 @@ import keyboardHand from './images/keyboardHand.png'
 import keyboard from './images/keyboard.png'
 import mugHand from './images/mugHand.png'
 import mug from './images/mug.png'
+import yerz from './images/yerz.svg'
+import ralu from './images/ralu.svg'
 
 function useOnScreen(options) {
     const [ref, setRef] = React.useState(null)
@@ -53,16 +57,12 @@ const InternshipSection5 = () => {
                     <div className="container">
                         <div className="box1 box">
                             <h4>
-                                <span className="symbol">|</span> Besides
+                                <span className="symbol">|</span> More than just
+                                coding
                                 <span className="symbol"> &lt;</span>
                             </h4>
                         </div>
 
-                        <div className="boxTitle box">
-                            <h1 className="title">More than just coding</h1>
-                        </div>
-                    </div>
-                    <div className="container2">
                         <div className="box2 box">
                             <p className="firstParagraph">
                                 Besides coding, you’ll gain knowledge from
@@ -81,6 +81,8 @@ const InternshipSection5 = () => {
                                 will have your name on it.
                             </p>
                         </div>
+                    </div>
+                    <div className="container2">
                         <div className="box3 box">
                             <div className="gifContainer">
                                 <img
@@ -196,6 +198,42 @@ const InternshipSection5 = () => {
                                     <img
                                         src={documentHand}
                                         className="documentHand"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
+
+                                {visible ? (
+                                    <YerzAnimationCss>
+                                        <img
+                                            src={yerz}
+                                            className="yerz"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </YerzAnimationCss>
+                                ) : (
+                                    <img
+                                        src={yerz}
+                                        className="yerz"
+                                        alt=""
+                                        ref={setRef}
+                                    />
+                                )}
+
+                                {visible ? (
+                                    <RaluAnimationCss>
+                                        <img
+                                            src={ralu}
+                                            className="ralu"
+                                            alt=""
+                                            ref={setRef}
+                                        />
+                                    </RaluAnimationCss>
+                                ) : (
+                                    <img
+                                        src={ralu}
+                                        className="ralu"
                                         alt=""
                                         ref={setRef}
                                     />

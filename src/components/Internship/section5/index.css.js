@@ -28,15 +28,13 @@ export const InfoBlockCss = styled.div`
     .container {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
         height: auto;
     }
 
     .box1 {
-        flex: 0.33;
-        /* background-color: red; */
+        flex: 0.239;
         width: 100%;
         height: 100px;
     }
@@ -51,13 +49,19 @@ export const InfoBlockCss = styled.div`
         color: #7481f4;
     }
 
-    .boxTitle {
+    .box2 {
         flex: 1;
-        /* background-color: blue; */
-        width: 100%;
-        height: 100px;
+        max-width: 650px;
     }
-    .boxTitle .title {
+
+    .box2 .firstParagraph {
+        color: #9694a7;
+        line-height: 32px;
+        font-weight: lighter;
+    }
+
+    .box2 .styledParagraph1 {
+        font-style: italic;
         color: white;
     }
 
@@ -66,22 +70,6 @@ export const InfoBlockCss = styled.div`
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
-    .box2 {
-        margin-top: 20px;
-        max-width: 650px;
-        margin-left: 25%;
-        /* background-color: green; */
-    }
-
-    .box2 .firstParagraph {
-        color: #9694a7;
-        line-height: 32px;
-    }
-
-    .box2 .styledParagraph1 {
-        font-style: italic;
-        color: white;
     }
 
     .box3 {
@@ -99,8 +87,8 @@ export const InfoBlockCss = styled.div`
         width: 100%;
         height: auto;
         margin-top: 10%;
-        margin-left: 14%;
-        transform: scale(0.6);
+        margin-left: 13.8%;
+        transform: scale(0.57);
     }
 
     .box3 .gifPortal {
@@ -110,7 +98,7 @@ export const InfoBlockCss = styled.div`
         height: auto;
         margin-top: -35%;
         margin-left: -39%;
-        transform: scale(0.3);
+        transform: scale(0.35);
     }
 
     .box3 .portalMask {
@@ -119,7 +107,7 @@ export const InfoBlockCss = styled.div`
         height: auto;
         margin-top: -35%;
         margin-left: -39%;
-        transform: scale(0.31);
+        transform: scale(0.36);
     }
 
     .box3 .mugHand {
@@ -128,7 +116,7 @@ export const InfoBlockCss = styled.div`
         margin-top: 2%;
         width: 100%;
         height: auto;
-        transform: scale(0.24);
+        transform: scale(0.29);
     }
     .box3 .mug {
         position: absolute;
@@ -136,7 +124,7 @@ export const InfoBlockCss = styled.div`
         margin-top: -21%;
         width: 100%;
         height: auto;
-        transform: scale(0.1);
+        transform: scale(0.12);
     }
 
     .box3 .keyboard {
@@ -145,7 +133,7 @@ export const InfoBlockCss = styled.div`
         margin-top: -39%;
         width: 100%;
         height: auto;
-        transform: scale(0.2);
+        transform: scale(0.22);
     }
 
     .box3 .keyboardHand {
@@ -154,7 +142,7 @@ export const InfoBlockCss = styled.div`
         margin-top: -60%;
         width: 100%;
         height: auto;
-        transform: scale(0.25);
+        transform: scale(0.3);
     }
 
     .box3 .document {
@@ -163,16 +151,34 @@ export const InfoBlockCss = styled.div`
         margin-top: -49%;
         width: 100%;
         height: auto;
-        transform: scale(0.1);
+        transform: scale(0.12);
     }
 
     .box3 .documentHand {
         position: absolute;
-        margin-left: -65%;
-        margin-top: -35%;
+        margin-left: -67%;
+        margin-top: -38%;
         width: 100%;
         height: auto;
-        transform: scale(0.22);
+        transform: scale(0.27);
+    }
+
+    .box3 .yerz {
+        position: absolute;
+        margin-left: -65%;
+        margin-top: -8%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.1);
+    }
+
+    .box3 .ralu {
+        position: absolute;
+        margin-left: -10%;
+        margin-top: -15%;
+        width: 100%;
+        height: auto;
+        transform: scale(0.1);
     }
 `
 
@@ -192,7 +198,7 @@ from{
     transform: translate(0px, 0px)
 }
 to{
-    transform: translate(80px, -80px)
+    transform: translate(120px, -130px)
 }`
 export const MugAnimationCss = styled.div`
     animation: ${mugAnimation} 2.5s forwards;
@@ -214,7 +220,7 @@ from{
     transform: translate(0px, 0px)
 }
 to{
-    transform: translate(-100px, 80px)
+    transform: translate(-130px, 80px)
 }`
 export const KeyboardAnimationCss = styled.div`
     animation: ${keyboardAnimation} 2.5s forwards;
@@ -225,7 +231,7 @@ from{
     transform: translate(0px, 0px)
 }
 to{
-    transform: translate(40px, 40px )
+    transform: translate(40px, 50px )
 }`
 
 export const DocumentHandAnimationCss = styled.div`
@@ -237,8 +243,31 @@ from{
     transform: translate(0px, 0px)
 }
 to{
-    transform: translate(70px, 60px )
+    transform: translate(130px, 70px )
 }`
 export const DocumentAnimationCss = styled.div`
     animation: ${documentAnimation} 2.5s forwards;
+`
+
+const yerzAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(130px, -50px )
+}`
+export const YerzAnimationCss = styled.div`
+    animation: ${yerzAnimation} 2.5s forwards;
+`
+
+const raluAnimation = keyframes`
+from{
+    transform: translate(0px, 0px)
+}
+to{
+    transform: translate(-140px, 20px )
+}`
+
+export const RaluAnimationCss = styled.div`
+    animation: ${raluAnimation} 2.5s forwards;
 `

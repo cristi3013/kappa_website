@@ -71,7 +71,7 @@ export const InfoBlockCss = styled.div`
         position: relative;
         max-width: 700px;
         margin-left: 31%;
-        margin-top: 100px;
+        margin-top: 90px;
         height: 400px;
     }
 
@@ -115,7 +115,7 @@ export const InfoBlockCss = styled.div`
 
     .box4 .mic {
         position: absolute;
-        transform: scale(0.09) translateY(-330px) translateX(-4000px)
+        transform: scale(0.05) translateY(-2500px) translateX(-6900px)
             rotate(0deg);
         width: 100%;
     }

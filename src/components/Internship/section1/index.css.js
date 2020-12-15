@@ -9,7 +9,7 @@ export const InternshipFirstSectionWrapperCss = styled.div`
     display: flex;
     max-width: 1440px;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 150px;
     align-items: flex-start;
 
     h4 {
@@ -58,7 +58,7 @@ export const PrimaryLinkCss = styled.div`
     display: inline-block;
 
     padding: 7px 7px 8px;
-    margin: -7px 25px 20px 0px;
+    margin: 25px 25px 40px 0px;
 
     text-align: center;
 

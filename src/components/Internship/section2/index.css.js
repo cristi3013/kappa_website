@@ -8,6 +8,7 @@ export const InternshipSecondSectionWrapperCss = styled.div`
     display: flex;
     max-width: 1440px;
     margin: auto;
+    margin-bottom: 200px;
     align-items: flex-start;
 
     h4 {
@@ -26,8 +27,12 @@ export const InternshipSecondSectionWrapperCss = styled.div`
         padding: 50px 25px 25px;
     }
 
+    .gifContainer {
+        position: relative;
+    }
     .gif {
-        margin-bottom: 200px;
+        position: absolute;
+        top: 120px;
     }
 `
 export const SecondSectionContainerCss = styled.div`
@@ -78,7 +83,7 @@ export const InfoBlockCss = styled.div`
     .firstParagraph {
         display: block;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -86,7 +91,7 @@ export const InfoBlockCss = styled.div`
     .numbers {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 105px;
+        margin-bottom: 55px;
         max-width: 670px;
     }
 

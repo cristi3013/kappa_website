@@ -40,7 +40,7 @@ const InternshipSection6 = () => {
         },
         {
             image: environments,
-            title: 'Environments, Browser Tools, APIs & Chrome Extensions',
+            title: 'Browser Tools, APIs & Chrome Extensions',
         },
         {
             image: react,
@@ -59,12 +59,19 @@ const InternshipSection6 = () => {
     return (
         <SectionWrapper>
             <InternshipSection6WrapperCss>
-                <h4>
-                    <span className="symbol">|</span> Curriculum{' '}
-                    <span className="symbol">&lt;</span>
-                </h4>
                 <TitleSectionCss>
-                    <h1 className="title1">Things you will learn</h1>
+                    <div className="container">
+                        <div className="box1 box">
+                            <h4>
+                                <span className="symbol">|</span> Curriculum{' '}
+                                <span className="symbol">&lt;</span>
+                            </h4>
+                        </div>
+
+                        <div className="box2 box">
+                            <h1 className="title1">Things you will learn</h1>
+                        </div>
+                    </div>
                 </TitleSectionCss>
                 <CardSectionCss>
                     {cards.map((card) => {

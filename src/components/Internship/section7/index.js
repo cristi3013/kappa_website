@@ -28,7 +28,6 @@ const InternshipSection7 = () => {
 
                     <div className="codeWrapper">
                         <h1 className="title">The typical day at Kappa</h1>
-                        <p className={`header ${visibility}`}>{visibility}</p>
                         <div ref={ref} className={`text ${visibility}`}>
                             <Typist
                                 cursor={{ show: false }}

@@ -5,34 +5,36 @@ import {
     SectionWrapper,
 } from './index.css'
 import Card from './Card'
-import photo from './images/cristi.png'
-import photo2 from './images/andrei.png'
-import photo3 from './images/albert.png'
-import gif1 from './images/gif1.gif'
+import cristiPreview from './images/cristiPreview.png'
+import andreiPreview from './images/andreiPreview.png'
+import albertPreview from './images/albertPreview.png'
+import albertGif from './images/albertGif.gif'
+import andreiGif from './images/andreiGif.gif'
+import cristiGif from './images/cristiGif.gif'
 
 const InternshipSection8 = () => {
     const cards = [
         {
-            image: photo,
+            image: cristiGif,
             button: null,
-            gif: null,
+            gif: cristiPreview,
             name: 'Cristi Vasile',
             languages: 'HTML   CSS   JavaScript   ReactJS   ',
             status: 'live',
         },
 
         {
-            image: photo2,
+            image: andreiGif,
             button: null,
-            gif: null,
+            gif: andreiPreview,
             name: 'Andrei Chihalau',
             languages: 'HTML   CSS   JavaScript   ReactJS    ',
             status: 'live',
         },
 
         {
-            image: gif1,
-            gif: photo3,
+            image: albertGif,
+            gif: albertPreview,
             button: 'Watch',
             name: 'Albert Luta',
             languages: 'Typescript   HTML   CSS   JavaScript   ReactJS    ',

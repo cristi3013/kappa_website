@@ -11,10 +11,10 @@ import {
 } from './index.css'
 
 import covidGif from './images/covid.gif'
-import avatar from './images/avatar.png'
-import mic from './images/mic.png'
-import web from './images/web.png'
-import toolbar from './images/toolbar.png'
+import avatar from './images/avatar.svg'
+import mic from './images/mic.svg'
+import web from './images/web.svg'
+import toolbar from './images/toolbar.svg'
 
 function useOnScreen(options) {
     const [ref, setRef] = React.useState(null)

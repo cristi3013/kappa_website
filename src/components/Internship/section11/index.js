@@ -9,8 +9,8 @@ import {
 } from './index.css'
 
 import pGif from './images/p2.gif'
-import planets from './images/planets.png'
-import stars from './images/stars.png'
+import planets from './images/planets.svg'
+import stars from './images/stars.svg'
 import pMask from './images/pMask.png'
 
 function useOnScreen(options) {

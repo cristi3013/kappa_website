@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 import eye from './images/eye.png'
-import gif1 from './images/gif1.gif'
 
 export const SectionWrapper = styled.div`
     margin-left: 120px;
@@ -56,7 +55,7 @@ export const ImageWrapperCss = styled.div`
         min-height: 321px;
     }
     img:hover {
-        animation: ${imgAnimation} 1s forwards;
+        animation: ${imgAnimation} 0.1s forwards;
     }
 `
 
@@ -66,7 +65,7 @@ export const GifWrapperCss = styled.div`
     left: 0;
     img {
         width: 100%;
-        height: 100%;
+        min-height: 321px;
     }
 `
 
@@ -111,12 +110,13 @@ export const LanguagesCss = styled.p`
 `
 export const StatusWrapperCss = styled.div`
     position: relative;
+    margin-bottom: 40px;
     button {
         position: absolute;
         width: 38px;
         height: 27px;
         left: 0px;
-        top: -10px;
+        top: -5px;
         background-color: #616a76;
         border: none;
         border-radius: 2px;

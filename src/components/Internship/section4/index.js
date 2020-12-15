@@ -5,6 +5,7 @@ import {
     PrimaryLinks,
     BackgroundSection,
     SectionWrapper,
+    CardSectionCss,
 } from './index.css'
 import Card from './Card'
 import bryant from './images/bryant.png'
@@ -54,9 +55,11 @@ const InternshipFourthSection = () => {
         <BackgroundSection>
             <SectionWrapper>
                 <InternshipFourthSectionWrapperCss>
-                    {cards.map((card) => {
-                        return <Card cardInfo={card} />
-                    })}
+                    <CardSectionCss>
+                        {cards.map((card) => {
+                            return <Card cardInfo={card} />
+                        })}
+                    </CardSectionCss>
 
                     <TextSectionCss>
                         <h1>Put your name on it</h1>

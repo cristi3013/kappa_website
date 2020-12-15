@@ -10,13 +10,6 @@ export const SectionWrapper = styled.div`
 export const InternshipSection6WrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
-    h4 {
-        width: 320px;
-        @media (max-width: ${screens.lg}) {
-            width: 100%;
-            margin-right: 0px;
-        }
-    }
 
     @media (max-width: ${screens.lg}) {
         flex-direction: column;
@@ -24,13 +17,46 @@ export const InternshipSection6WrapperCss = styled.div`
     }
 `
 export const TitleSectionCss = styled.h1`
-    position: relative;
-    margin-top: -60px;
-    padding-left: 400px;
+    margin-left: 60px;
     @media (max-width: ${screens.lg}) {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+
+    .box1 {
+        flex: 0.265;
+        width: 100%;
+        height: 100px;
+    }
+
+    .box1 h4 {
+        color: white;
+        font-style: italic;
+        padding-top: 10px;
+    }
+
+    .box1 .symbol {
+        font-style: italic;
+        color: #7481f4;
+    }
+
+    .box2 {
+        flex: 1;
+        max-width: 650px;
     }
 `
 export const CardSectionCss = styled.div`
@@ -44,7 +70,7 @@ export const CardSectionCss = styled.div`
     margin-bottom: 130px;
 `
 export const CardWrapperCss = styled.div`
-    margin: 23px;
+    margin: 13px;
     width: 15%;
     background: #1f1f25;
     transition: 0.3s;
@@ -56,7 +82,8 @@ export const CardWrapperCss = styled.div`
     }
 
     .wrapper {
-        height: 280px;
+        min-height: 220px;
+        max-height: 225px;
         transition: all 1s ease-out;
     }
 
@@ -96,7 +123,7 @@ export const TitleCss = styled.p`
     margin: 0 0 22px;
     font-style: italic !important;
     font-weight: normal;
-    line-height: 35px;
+    line-height: 30px;
     text-align: center;
     color: gray !important;
 `

@@ -10,7 +10,7 @@ import {
 import pGif from './images/p1.gif'
 import pMask from './images/pMask3.png'
 import svg1 from './images/svg1.png'
-import svg2 from './images/svg2.png'
+import svg2 from './images/svg2.svg'
 
 const InternshipSection10 = () => {
     // FUNCTIE JS PENTRU A MISCA TEXTUL, de implementat in REACT
@@ -74,21 +74,21 @@ const InternshipSection10 = () => {
                                     <h1>
                                         <span className="symbol">| </span>
                                         team_work
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
                                 <div className="box5 box">
                                     <h1>
                                         <span className="symbol">| </span>
                                         efficient_communication
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
                                 <div className="box6 box">
                                     <h1>
                                         <span className="symbol">| </span>
                                         fast_learning_techniques
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
 
@@ -96,7 +96,7 @@ const InternshipSection10 = () => {
                                     <h1>
                                         <span className="symbol">| </span>
                                         taking initiative
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
 
@@ -104,7 +104,7 @@ const InternshipSection10 = () => {
                                     <h1>
                                         <span className="symbol">| </span>
                                         self organisation
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
 
@@ -112,7 +112,7 @@ const InternshipSection10 = () => {
                                     <h1>
                                         <span className="symbol">| </span>
                                         time management
-                                        <span className="symbol">&lt;</span>
+                                        <span className="symbol"> &lt;</span>
                                     </h1>
                                 </div>
                                 <div className="box10 box">

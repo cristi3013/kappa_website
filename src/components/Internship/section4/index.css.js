@@ -13,20 +13,22 @@ export const SectionWrapper = styled.div`
 `
 
 export const InternshipFourthSectionWrapperCss = styled.div`
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
     padding: 75px 0;
     max-width: 1440px;
     margin: auto;
     margin-bottom: 130px;
 `
 
+export const CardSectionCss = styled.div`
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+`
+
 export const CardWrapperCss = styled.div`
     margin: 23px;
     width: 25%;
-    background: black;
+    background: #0e0e0e;
 
     @media (max-width: ${screens.lg}) {
         width: 100%;
@@ -46,6 +48,7 @@ export const TextWrapperCss = styled.div`
 `
 export const TitleCss = styled.h2`
     margin: 0 0 22px;
+    margin-bottom: 0;
     font-style: italic;
     font-weight: normal;
     line-height: 35px;
@@ -54,7 +57,9 @@ export const TitleCss = styled.h2`
 export const TextCss = styled.div`
     margin-bottom: 0;
     line-height: 26px;
-    color: gray;
+    color: #616a76;
+    font-weight: lighter;
+    font-size: 18px;
 `
 
 export const TextSectionCss = styled.div`
@@ -69,7 +74,7 @@ export const TextSectionCss = styled.div`
 export const PrimaryLinks = styled.style`
     font-style: italic;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 28px;
     line-height: 23px;
     letter-spacing: 0.03em;
     text-decoration: none;
@@ -113,5 +118,6 @@ export const PrimaryLinks = styled.style`
 
     p {
         margin: 0;
+        font-style: italic;
     }
 `

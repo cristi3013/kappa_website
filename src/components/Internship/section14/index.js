@@ -16,7 +16,7 @@ const InternshipSection14 = () => {
                         <div className="box1 box">
                             <h4>
                                 <span className="symbol">|</span>Intern with us
-                                <span className="symbol">&lt;</span>
+                                <span className="symbol"> &lt;</span>
                             </h4>
                         </div>
 
