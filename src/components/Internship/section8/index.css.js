@@ -43,16 +43,15 @@ const imgAnimation = keyframes`
     opacity:0;
 }`
 export const ImageWrapperCss = styled.div`
-    height: 320px;
+    height: 312px;
     position: relative;
     background-color: #e5e5e5;
 
     max-width: 321px;
-    max-height: 323px;
+    max-height: 321px;
 
-    img {
+    .photo img {
         width: 100%;
-        min-height: 321px;
     }
     img:hover {
         animation: ${imgAnimation} 0.1s forwards;
@@ -63,7 +62,8 @@ export const GifWrapperCss = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    img {
+
+    .gif img {
         width: 100%;
         min-height: 321px;
     }

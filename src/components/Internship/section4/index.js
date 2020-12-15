@@ -8,9 +8,9 @@ import {
     CardSectionCss,
 } from './index.css'
 import Card from './Card'
-import bryant from './images/bryant.png'
-import aura from './images/aura.png'
-import bloomd from './images/bloomd.png'
+import bryant from './images/1.png'
+import aura from './images/2.png'
+import bloomd from './images/3.png'
 const InternshipFourthSection = () => {
     const cards = [
         {

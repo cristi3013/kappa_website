@@ -36,10 +36,10 @@ export const CardWrapperCss = styled.div`
     }
 `
 export const ImageWrapperCss = styled.div`
-    height: 300px;
+    height: 350px;
     img {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 `
 

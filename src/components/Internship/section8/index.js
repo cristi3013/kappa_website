@@ -5,8 +5,8 @@ import {
     SectionWrapper,
 } from './index.css'
 import Card from './Card'
-import cristiPreview from './images/cristiPreview.png'
-import andreiPreview from './images/andreiPreview.png'
+import cristiPreview from './images/previewCristi.png'
+import andreiPreview from './images/previewAndrei.png'
 import albertPreview from './images/albertPreview.png'
 import albertGif from './images/albertGif.gif'
 import andreiGif from './images/andreiGif.gif'
