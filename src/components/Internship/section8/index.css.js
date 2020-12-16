@@ -92,8 +92,10 @@ export const ButtonWrapperCss = styled.div`
     padding-bottom: 3px;
 `
 export const TextWrapperCss = styled.div`
+    position: relative;
     background-color: #1f1f25;
     padding: 30px;
+    min-width: 260px;
 `
 export const NameCss = styled.h2`
     margin: 0 0 22px;

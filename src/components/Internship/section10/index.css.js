@@ -3,7 +3,49 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const BackgroundSection = styled.div`
     background: ${colors.dark_grey};
-    overflow: hidden;
+    /* overflow: hidden; */
+    .textBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        width: 2500px;
+        padding-bottom: 100px;
+    }
+
+    .symbol {
+        font-style: italic;
+        color: #7481f4;
+        width: 100%;
+        height: auto;
+    }
+
+    .box4 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box5 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box6 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box7 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box8 h1 {
+        color: white;
+        font-style: italic;
+    }
+    .box9 h1 {
+        color: white;
+        font-style: italic;
+    }
 `
 
 export const SectionWrapper = styled.div`
@@ -14,16 +56,7 @@ export const InternshipSection10WrapperCss = styled.div`
     max-width: 1440px;
     margin: auto;
 `
-const textBarAnimation = keyframes`
 
-    from{
-        transform: translate3d(1440px,0,0)
-    }
-    to{
-        transform: translate3d(-1440px,0,0)
-    }
-}
-`
 export const InfoBlockCss = styled.div`
     .sectionWrapper {
         padding-top: 100px;
@@ -81,48 +114,5 @@ export const InfoBlockCss = styled.div`
         color: #9694a7;
         line-height: 32px;
         max-width: 450px;
-    }
-
-    .textBar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 2500px;
-        height: auto;
-        animation: ${textBarAnimation} 20s linear infinite reverse;
-    }
-
-    .symbol {
-        font-style: italic;
-        color: #7481f4;
-        width: 100%;
-        height: auto;
-    }
-
-    .box4 h1 {
-        color: white;
-        font-style: italic;
-    }
-    .box5 h1 {
-        color: white;
-        font-style: italic;
-    }
-    .box6 h1 {
-        color: white;
-        font-style: italic;
-    }
-    .box7 h1 {
-        color: white;
-        font-style: italic;
-    }
-    .box8 h1 {
-        color: white;
-        font-style: italic;
-    }
-    .box9 h1 {
-        color: white;
-        font-style: italic;
     }
 `

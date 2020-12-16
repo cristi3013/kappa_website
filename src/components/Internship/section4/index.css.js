@@ -36,10 +36,16 @@ export const CardWrapperCss = styled.div`
     }
 `
 export const ImageWrapperCss = styled.div`
-    height: 350px;
+    max-height: 350px;
     img {
         width: 100%;
         height: auto;
+    }
+    @media (max-width: ${screens.lg}) {
+        img {
+            max-height: 350px;
+            width: 100%;
+        }
     }
 `
 
