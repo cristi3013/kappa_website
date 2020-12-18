@@ -4,6 +4,7 @@ import {
     CardSectionCss,
     SectionWrapper,
 } from './index.css'
+
 import Card from './Card'
 import cristiPreview from './images/previewCristi.png'
 import andreiPreview from './images/previewAndrei.png'

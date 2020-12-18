@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     CardWrapperCss,
     ImageWrapperCss,
@@ -10,9 +10,13 @@ import {
     PrimaryLinks,
     GifWrapperCss,
 } from './index.css'
+
+import 'node_modules/react-modal-video/scss/modal-video.scss'
+import ModalVideo from 'react-modal-video'
+
 const Card = ({ cardInfo }) => {
     const { image, gif, button, name, languages, status } = cardInfo
-
+    const [isOpen, setOpen] = useState(false)
     return (
         <CardWrapperCss>
             {image && (
@@ -27,7 +31,19 @@ const Card = ({ cardInfo }) => {
                     )}
                     {button && (
                         <ButtonWrapperCss>
-                            <span>{button}</span>
+                            <ModalVideo
+                                channel="youtube"
+                                autoplay
+                                isOpen={isOpen}
+                                videoId="L61p2uyiMSo"
+                                onClose={() => setOpen(false)}
+                            />
+                            <span
+                                className="btn-primary"
+                                onClick={() => setOpen(true)}
+                            >
+                                {button}
+                            </span>
                         </ButtonWrapperCss>
                     )}
                 </ImageWrapperCss>

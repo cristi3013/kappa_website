@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
+import { css } from 'styled-components'
 
 export const SectionWrapper = styled.div`
     @media (max-width: ${screens.lg}) {
@@ -70,6 +71,7 @@ export const CardSectionCss = styled.div`
     margin-bottom: 130px;
 `
 export const CardWrapperCss = styled.div`
+    position: relative;
     margin: 13px;
     width: 15%;
     background: #1f1f25;
@@ -84,7 +86,7 @@ export const CardWrapperCss = styled.div`
     .wrapper {
         min-height: 220px;
         max-height: 225px;
-        transition: all 1s ease-out;
+        /* transition: all 1s ease-out; */
     }
 
     :hover .image {
@@ -128,4 +130,35 @@ export const TitleCss = styled.p`
     color: gray !important;
 `
 
-export const TextCss = styled.p``
+export const TextCss = styled.p`
+    position: absolute;
+    left: 5%;
+    color: #9694a7 !important;
+`
+
+export const ExpandCss = styled.div`
+    position: absolute;
+    top: 0;
+    resize: both;
+    margin: 0 auto;
+
+    background: #0e0e0e;
+    border: 3px solid #9694a7;
+    opacity: 0;
+
+    pointer-events: none;
+    transition: all 0.1s linear;
+    width: 300px;
+    height: 50px;
+    left: 0;
+    ${(props) =>
+        props.isOpen &&
+        css`
+            opacity: 1;
+            pointer-events: all;
+            width: 440px;
+            height: 460px;
+            left: -100px;
+            z-index: 1000;
+        `}
+`
