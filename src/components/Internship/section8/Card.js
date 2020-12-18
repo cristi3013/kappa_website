@@ -33,10 +33,10 @@ const Card = ({ cardInfo }) => {
                     {button && (
                         <ButtonWrapperCss>
                             <ModalVideo
-                                channel="custom"
+                                channel="youtube"
                                 autoplay
                                 isOpen={isOpen}
-                                videoId="./images/Albert_Luta.mp4"
+                                videoId="Knw1iUxHwhk"
                                 onClose={() => setOpen(false)}
                             />
                             <span
