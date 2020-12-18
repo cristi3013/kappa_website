@@ -11,7 +11,7 @@ import {
     GifWrapperCss,
 } from './index.css'
 
-import 'node_modules/react-modal-video/scss/modal-video.scss'
+// @import 'node_modules/react-modal-video/scss/modal-video.scss'
 import ModalVideo from 'react-modal-video'
 
 const Card = ({ cardInfo }) => {
@@ -29,13 +29,14 @@ const Card = ({ cardInfo }) => {
                             <img src={gif} className="gif" alt=""></img>
                         </GifWrapperCss>
                     )}
+
                     {button && (
                         <ButtonWrapperCss>
                             <ModalVideo
-                                channel="youtube"
+                                channel="custom"
                                 autoplay
                                 isOpen={isOpen}
-                                videoId="L61p2uyiMSo"
+                                videoId="./images/Albert_Luta.mp4"
                                 onClose={() => setOpen(false)}
                             />
                             <span
