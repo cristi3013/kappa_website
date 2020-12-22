@@ -18,7 +18,7 @@ export const InternshipSection6WrapperCss = styled.div`
     }
 `
 export const TitleSectionCss = styled.h1`
-    margin-left: 60px;
+    margin-left: 125px;
     @media (max-width: ${screens.lg}) {
         width: 100%;
         margin: 0;
