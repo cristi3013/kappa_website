@@ -61,14 +61,31 @@ export const TitleSectionCss = styled.h1`
     }
 `
 export const CardSectionCss = styled.div`
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 10000;
     padding: 75px 0;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: auto;
-    margin-bottom: 130px;
+    padding-bottom: 250px;
 `
 export const CardWrapperCss = styled.div`
     position: relative;
@@ -86,7 +103,6 @@ export const CardWrapperCss = styled.div`
     .wrapper {
         min-height: 220px;
         max-height: 225px;
-        /* transition: all 1s ease-out; */
     }
 
     :hover .image {
@@ -132,6 +148,8 @@ export const TitleCss = styled.p`
 
 export const TextCss = styled.p`
     position: absolute;
+    width: 100%;
+    height: 250px;
     left: 5%;
     color: #9694a7 !important;
 `
@@ -161,4 +179,57 @@ export const ExpandCss = styled.div`
             left: -100px;
             z-index: 1000;
         `}
+`
+
+export const PrimaryLinks = styled.style`
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    width: fit-content;
+    color: ${colors.white};
+    display: inline-block;
+
+    padding: 115px 7px 8px;
+    margin: -7px 25px 20px 0px;
+    margin-left: 35%;
+    margin-top: 25%;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+    &:after {
+        position: absolute;
+        transition: all 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        content: '';
+        width: 100%;
+        right: auto;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        background: ${colors.blue};
+    }
+
+    &:hover {
+        cursor: pointer;
+        &:after {
+            width: 0%;
+            right: 0;
+            left: auto;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+        font-style: italic;
+    }
 `

@@ -52,7 +52,7 @@ export const ImageWrapperCss = styled.div`
 export const TextWrapperCss = styled.div`
     padding: 30px;
 `
-export const TitleCss = styled.h2`
+export const TitleCss = styled.h3`
     margin: 0 0 22px;
     margin-bottom: 0;
     font-style: italic;
@@ -78,7 +78,7 @@ export const TextSectionCss = styled.div`
 `
 
 export const PrimaryLinks = styled.style`
-    font-style: italic;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-weight: normal;
     font-size: 28px;
     line-height: 23px;
@@ -88,7 +88,7 @@ export const PrimaryLinks = styled.style`
     color: ${colors.white};
     display: inline-block;
 
-    padding: 7px 7px 8px;
+    padding: 30px 7px 8px;
     margin: -7px 25px 20px 0px;
 
     text-align: center;

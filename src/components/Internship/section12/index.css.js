@@ -2,7 +2,8 @@ import styled, { keyframes } from 'styled-components/macro'
 import { screens, fonts, colors } from '../../../constants/theme'
 
 export const SectionWrapper = styled.div`
-    margin-top: 180px;
+    margin-top: 270px;
+    margin-bottom: 250px;
     margin-left: 120px;
 `
 

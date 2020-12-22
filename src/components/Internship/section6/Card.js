@@ -7,6 +7,7 @@ import {
     TitleCss,
     TextCss,
     ExpandCss,
+    PrimaryLinks,
 } from './index.css'
 
 const Card = ({ cardInfo }) => {
@@ -50,6 +51,9 @@ const Card = ({ cardInfo }) => {
                             <div className="text">{text2}</div>
                             <div className="text">{text3}</div>
                         </TextCss>
+                        <PrimaryLinks>
+                            <p>Learn now</p>
+                        </PrimaryLinks>
                     </ExpandCss>
                 </div>
             </div>

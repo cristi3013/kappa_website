@@ -15,24 +15,6 @@ import { animate } from 'framer-motion'
 import Ticker from 'react-ticker'
 
 const InternshipSection10 = () => {
-    // FUNCTIE JS PENTRU A MISCA TEXTUL, de implementat in REACT
-    // var move = document.querySelector('#animatedBar')
-
-    // var xPos = 0
-
-    // function animate() {
-    //     xPos += 3.5
-
-    //     move.style.transform = `translate3d(${xPos}px, 0, 0)`
-
-    //     if (Math.abs(xPos) >= 1500) {
-    //         xPos = -1440
-    //     }
-
-    //     requestAnimationFrame(animate)
-    // }
-    // animate()
-
     return (
         <BackgroundSection>
             <SectionWrapper>

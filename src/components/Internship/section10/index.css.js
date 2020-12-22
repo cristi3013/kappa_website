@@ -3,7 +3,6 @@ import { screens, fonts, colors } from '../../../constants/theme'
 
 export const BackgroundSection = styled.div`
     background: ${colors.dark_grey};
-    /* overflow: hidden; */
     .textBar {
         display: flex;
         flex-direction: row;
@@ -13,6 +12,8 @@ export const BackgroundSection = styled.div`
         height: auto;
         width: 2500px;
         padding-bottom: 100px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-style: normal;
     }
 
     .symbol {

@@ -66,7 +66,7 @@ const InternshipSection13 = () => {
                 <BlocksCss>
                     <h1 className="questionsTitle">Got Questions?</h1>
                     <InfoBlock
-                        title="How long does the internship last"
+                        title="How long does the partnership last"
                         setOpened={setOpened}
                         opened={opened}
                         id="1"

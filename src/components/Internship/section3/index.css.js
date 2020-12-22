@@ -128,7 +128,7 @@ export const InfoBlockCss = styled.div`
         display: flex;
 
         margin-top: 300px;
-        margin-bottom: 140px;
+        margin-bottom: 190px;
     }
     /* BOX 3 */
 
@@ -218,6 +218,7 @@ export const InfoBlockCss = styled.div`
         height: 100%;
         width: 40%;
         margin-left: 5%;
+        margin-top: ;
     }
 
     .box5 .title3 {

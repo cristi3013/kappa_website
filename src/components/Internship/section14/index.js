@@ -21,10 +21,10 @@ const InternshipSection14 = () => {
                         </div>
 
                         <div className="box2 box">
-                            <h1 className="title">
+                            <h2 className="title">
                                 Want to pursue a programming career? Tell us
                                 your story, we’re great listeners:
-                            </h1>
+                            </h2>
                         </div>
                     </div>
                     <div className="box3 box">

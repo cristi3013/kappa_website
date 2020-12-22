@@ -55,6 +55,7 @@ export const InfoBlockCss = styled.div`
         left: 0;
         width: 100%;
         height: auto;
+        transform: scale(1.01);
     }
 
     .box1 .planets {

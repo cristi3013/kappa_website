@@ -22,14 +22,16 @@ export const InternshipSection8WrapperCss = styled.div`
 
 export const CardSectionCss = styled.div`
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-row-gap: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+    grid-row-gap: 130px;
+
     margin-left: 25%;
     max-width: 700px;
 `
 export const CardWrapperCss = styled.div`
     height: 400px;
-    margin: 15px;
+    margin: 25px;
     @media (max-width: ${screens.lg}) {
         width: 100%;
         margin-left: -50px;
@@ -68,25 +70,6 @@ export const GifWrapperCss = styled.div`
         min-height: 321px;
     }
 `
-// @keyframes modal-video {
-//     from {
-//         opacity: 0;
-//     }
-
-//     to {
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes modal-video-inner {
-//     from {
-//         transform: translate(0, 100px);
-//     }
-
-//     to {
-//         transform: translate(0, 0);
-//     }
-// }
 
 const modalVideo = keyframes`
     from {

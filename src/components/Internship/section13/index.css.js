@@ -69,6 +69,9 @@ export const InfoBlockTitleCss = styled.div`
         display: inline-block;
         margin-bottom: 5px;
         cursor: pointer;
+        font-size: 24px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: normal;
     }
 
     p {
